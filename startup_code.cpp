@@ -7,21 +7,76 @@
 #include <sstream>
 #include <cstdlib>
 #include <string>
+#include <iomanip>
 
 // format checker just assumes you have Alarm.bif and Solved_Alarm.bif (your file) in current directory
 using namespace std;
 
 string networkFile, recordFile;
 
+void output();
+
 void printIntVector(vector<int> v) {
     for_each( v.begin(), v.end(), [](int i){cout << i << " ";});
     cout << endl;
 }
 void printFloatVector(vector<float> v) {
-    for_each( v.begin(), v.end(), [](float i){cout << i << " ";});
+    for_each( v.begin(), v.end(), [](float i){
+        if( i > 0.1 ) cout << setprecision(2) << i << " ";
+        else if( i > 0.01 ) cout << setprecision(1) << i << " ";
+        else cout << "0.01 ";
+    });
+}
+void printStringVector(vector<string> v) {
+    for_each( v.begin(), v.end(), [](string i){cout << i << " ";});
     cout << endl;
 }
+int sumIntVector( vector<int> v) {
+    int x = 0;
+    for_each( v.begin(), v.end(), [&](int v){x+=v;});
+    return x;
+}
 
+//to be written to the output file
+int position[37][2] = {
+    54,35,
+    184,113,
+    145,36,
+    68,114,
+    111,177,
+    32,179,
+    238,61,
+    564,38,
+    640,86,
+    738,86,
+    682,168,
+    564,172,
+    722,253,
+    226,237,
+    229,305,
+    366,278,
+    289,305,
+    220,396,
+    154,396,
+    195,176,
+    308,171,
+    120,301,
+    31,239,
+    329,37,
+    1045,292,
+    969,258,
+    1014,162,
+    329,107,
+    926,387,
+    894,293,
+    949,197,
+    754,387,
+    530,393,
+    474,277,
+    881,165,
+    706,344,
+    843,86
+};
 
 // our graph consists of a list of nodes where each node is represented as follows:
 class Graph_Node{
@@ -34,6 +89,8 @@ public:
 	int nvalues;  // Number of categories a variable represented by this node can take
 	vector<string> values; // Categories of possible values
 	vector<float> CPT; // conditional probability table as a 1-d array . Look for BIF format to understand its meaning
+    vector<vector<int>> permutationResult;
+    vector<int> maxIndices;
 
 	// Constructor- a node is initialised with its name and its categories
     Graph_Node(string name,int n,vector<string> vals)
@@ -71,11 +128,13 @@ public:
 		CPT.clear();
 		CPT=new_CPT;
     }
+
     void set_Parents(vector<string> Parent_Nodes)
     {
         Parents.clear();
         Parents=Parent_Nodes;
     }
+
     // add another node in a graph as a child of this node
     int add_child(int new_child_index )
     {
@@ -149,6 +208,31 @@ public:
 
     void display();
 
+//    sets maxIndices and permutationResult
+    void myInitialization();
+
+    void findCPT( vector<int> countFrequencies ) {
+        int sizeCPT = CPT.size();
+        int total;
+        vector<float> newCPT(sizeCPT,-1);
+
+//        for each values of B in P(A|B)
+        for( int i = 0; i < sizeCPT/nvalues; i++ ) {
+            total = 0;
+//            for each values of A given B in P(A|B), find the total number of records
+            for( int j = 0; j < nvalues; j++ ) {
+                total += countFrequencies[i + j*sizeCPT/nvalues];
+            }
+//            for each values of A given B in P(A|B), find P(A,B) / P(B)
+//            i.e. number of records having both A and B / number of records having B irrespective of {A-"?"}
+            for( int j = 0; j < nvalues; j++ ) {
+                newCPT[ i + j*sizeCPT/nvalues ] = (float)countFrequencies[i + j*sizeCPT/nvalues] / total;
+            }
+        }
+
+        set_CPT( newCPT );
+    }
+
 };
 
 // The whole network represted as a list of nodes
@@ -215,6 +299,8 @@ public:
 class patient {
 //    size of this list is the number of nodes in the network
 public:
+    int weight = 1;
+    patient() { weight = 1; }
     vector<string> data;
 };
 
@@ -226,6 +312,17 @@ typedef vector<int>::iterator intIt;
 typedef vector<patient>::iterator patientIt;
 typedef vector<string>::iterator stringIt;
 
+void Graph_Node::myInitialization() {
+
+    maxIndices.push_back( nvalues-1 );
+    for( int i = 0; i < Parents.size(); i++ ) {
+        Graph_NodeIt gIt = Alarm.search_node( Parents[i] );
+        maxIndices.push_back( (*gIt).nvalues-1 );
+    }
+
+    permutationResult = permute(maxIndices);
+
+}
 
 void Graph_Node::display()
 {
@@ -238,15 +335,6 @@ void Graph_Node::display()
     for_each( CPT.begin(), CPT.end(), [](float c){cout << c << " ";});
     cout << "\nMy CPT meanings -> \n";
 
-    vector<int> maxIndices;
-    maxIndices.push_back( nvalues-1 );
-    for( int i = 0; i < Parents.size(); i++ ) {
-        Graph_NodeIt gIt = Alarm.search_node( Parents[i] );
-        maxIndices.push_back( (*gIt).nvalues-1 );
-    }
-
-    vector<vector<int>> permutationResult = permute(maxIndices);
-
     int CPTindex = 0;
     for_each( permutationResult.begin(), permutationResult.end(), [&](vector<int> v){
         cout << "P(" << Node_Name << "=" << values[v[0]] << "|";
@@ -258,7 +346,6 @@ void Graph_Node::display()
     });
 
 }
-
 
 network read_network()
 {
@@ -440,7 +527,8 @@ int main( int argc, char** argv )
     int index = 0;
     for( Graph_NodeIt it = Alarm.Pres_Graph.begin(); it != Alarm.Pres_Graph.end(); it++, index++ ) {
 
-        cout << endl << (*it).Node_Name << " has index " << index;
+        cout << endl << (*it).Node_Name << " has index " << index << " and has been initialized\n";
+        (*it).myInitialization();
 
 //        if find the prior probability of this node who has no parent
 //        else find the CPT of this node who has some parents
@@ -459,8 +547,7 @@ int main( int argc, char** argv )
             });
 
 //            total will be number of patient records - ? corresponding to this entry
-            int total = 0;
-            for_each( countFrequencies.begin(), countFrequencies.end(), [&](int i){total+=i;});
+            int total = sumIntVector( countFrequencies );
 
 //            assign the CPT values
             for( floatIt fIt = newCPT.begin(); fIt != newCPT.end(); fIt++ ) {
@@ -469,11 +556,78 @@ int main( int argc, char** argv )
 
             (*it).set_CPT(newCPT);
         } else {
-//            FIND THE CPT HERE;
+
+            vector<float> newCPT;
+            vector<string> properties, values;
+            vector<int> countFrequencies;
+            properties.push_back( (*it).Node_Name );
+            for_each( (*it).Parents.begin(), (*it).Parents.end(), [&](string s){properties.push_back( s );});
+
+            for_each( (*it).permutationResult.begin(), (*it).permutationResult.end(), [&](vector<int> v){
+                values.clear();
+                values.push_back( (*it).values[ v[0] ] );
+
+                for( intIt iIt = v.begin()+1; iIt != v.end(); iIt++ ) {
+                    Graph_NodeIt gIt = Alarm.search_node( (*it).Parents[iIt-v.begin()-1] );
+                    values.push_back( (*gIt).values[ v[iIt-v.begin()] ] );
+                }
+                printStringVector(values);
+
+//                the first element here is the A in P(A|B) and the rest of the list is B
+//                we have to find P(A,B)/P(B)
+//                P(A,B) = number of records with both A and B present / total number of records with both A and B non "?"
+//                P(B) = number of records with B present / total number of records with both A and B non "?"
+                countFrequencies.push_back( countRecords(properties, values) );
+            });
+
+            // now, I have to set the newCPT based on all the countFrequencies I got
+//            cout << "countFrequencies content -> ";
+//            printIntVector( countFrequencies );
+            (*it).findCPT( countFrequencies );
+
         }
-        cin.ignore();
         (*it).display();
+//        cin.ignore();
     }
 
-    cout << endl;
+//    modify input patient data - E step
+
+
+    output();
+
+}
+
+void output() {
+    cout << "// Bayesian Network in the Interchange Format\n";
+    cout << "// Produced by BayesianNetworks package in JavaBayes\n";
+    cout << "// Output created Sun Nov 02 17:58:15 GMT+00:00 1997\n";
+    cout << "// Bayesian network \n";
+    cout << "network \"Alarm\" { //37 variables and 37 probability distributions\n";
+    cout << "}\n";
+
+    int index = 0;
+    for( Graph_NodeIt gIt = Alarm.Pres_Graph.begin(); gIt != Alarm.Pres_Graph.end(); gIt++, index++ ) {
+        string nodeName = (*gIt).Node_Name;
+        int nvalues = (*gIt).nvalues;
+        cout << "variable  " << nodeName << " { //" << nvalues << " values\n";
+        cout << "\ttype discrete[" << nvalues << "] {";
+        for_each( (*gIt).values.begin(), (*gIt).values.end(), [](string i){cout << "  " << i;});
+        cout << " };\n";
+
+        cout << "\tproperty \"position = ("<< position[index][0] <<", "<< position[index][1] <<")\" ;\n";
+        cout << "}\n";
+    }
+
+    for( Graph_NodeIt gIt = Alarm.Pres_Graph.begin(); gIt != Alarm.Pres_Graph.end(); gIt++, index++ ) {
+        string nodeName = (*gIt).Node_Name;
+        vector<string> parents = (*gIt).Parents;
+        vector<float> CPT = (*gIt).CPT;
+
+        cout << "probability (  " << nodeName;
+        for_each( parents.begin(), parents.end(), [](string i){cout << "  " << i;});
+        cout << " ) { //" << 1+parents.size() << " variable(s) and " << CPT.size() << " values\n";
+        cout << "\ttable ";
+        printFloatVector( CPT );
+        cout << ";\n}\n";
+    }
 }

@@ -178,7 +178,7 @@ probability (  "MinVolSet" ) { //1 variable(s) and 3 values
 }
 probability (  "VentMach"  "MinVolSet" ) { //2 variable(s) and 12 values
 	table 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.97 ;
-}*
+}
 probability (  "Disconnect" ) { //1 variable(s) and 2 values
 	table 0.05 0.95 ;
 }
