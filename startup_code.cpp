@@ -9,10 +9,14 @@
 #include <string>
 #include <iomanip>
 
+#define getNodeFromIndex( i ) (*(Alarm.get_nth_node(i)))
+
 // format checker just assumes you have Alarm.bif and Solved_Alarm.bif (your file) in current directory
 using namespace std;
 
 string networkFile, recordFile;
+
+int dataSize = 0;
 
 void output();
 
@@ -22,7 +26,8 @@ void printIntVector(vector<int> v) {
 }
 void printFloatVector(vector<float> v) {
     for_each( v.begin(), v.end(), [](float i){
-        if( i > 0.1 ) cout << setprecision(2) << i << " ";
+        if( i > 0.99 ) cout << "0.99 ";
+        else if( i > 0.1 ) cout << setprecision(2) << i << " ";
         else if( i > 0.01 ) cout << setprecision(1) << i << " ";
         else cout << "0.01 ";
     });
@@ -34,6 +39,11 @@ void printStringVector(vector<string> v) {
 int sumIntVector( vector<int> v) {
     int x = 0;
     for_each( v.begin(), v.end(), [&](int v){x+=v;});
+    return x;
+}
+float sumFloatVector( vector<float> v) {
+    float x = 0;
+    for_each( v.begin(), v.end(), [&](float v){x+=v;});
     return x;
 }
 
@@ -92,6 +102,10 @@ public:
     vector<vector<int>> permutationResult;
     vector<int> maxIndices;
 
+    vector<string> mbProperties;
+    vector<int> mbPropertyIndices;
+    vector<string> mbValues;
+
 	// Constructor- a node is initialised with its name and its categories
     Graph_Node(string name,int n,vector<string> vals)
 	{
@@ -147,6 +161,19 @@ public:
         return 1;
     }
 
+    void permuteStep( vector<int> maxIndicesLeft, int elemAddedAlready, vector<int> v, vector<vector<int>>* final) {
+        if( maxIndicesLeft.size() == 0 ) {
+            final->push_back( v );
+            return;
+        }
+        for( int i = 0; i <= maxIndicesLeft[0]; i++ ) {
+            v.erase( v.begin()+elemAddedAlready, v.end());
+            v.push_back(i);
+            vector<int> leftNow( maxIndicesLeft.begin()+1,maxIndicesLeft.end());
+            permuteStep( leftNow, elemAddedAlready+1, v, final);
+        }
+    }
+
 //    vector of indices as a result of the permutation
 //    set of all such vectors as a set of all possible permutations in 000,001 ... 110,111 fashion
     vector<vector<int>> permute(vector<int> maxIndices) {
@@ -155,65 +182,20 @@ public:
         vector<vector<int>> final;
         vector<int> v;
 
-        for( int i = 0; i <= maxIndices[0]; i++ ) {
-            v.erase( v.begin(), v.end());
-            v.push_back(i);
-            if( maxIndices.size() == 1 ) {
-                final.push_back(v);
-                v.clear();
-                continue;
-            }
-            for( int j = 0; j <= maxIndices[1]; j++ ) {
-                v.erase( v.begin()+1, v.end());
-                v.push_back(j);
-                if( maxIndices.size() == 2 ) {
-                    final.push_back(v);
-                    v.clear();
-                    continue;
-                }
-                for( int k = 0; k <= maxIndices[2]; k++ ) {
-                    v.erase( v.begin()+2, v.end());
-                    v.push_back(k);
-                    if( maxIndices.size() == 3 ) {
-                        final.push_back(v);
-                        v.clear();
-                        continue;
-                    }
-                    for( int l = 0; l <= maxIndices[3]; l++ ) {
-                        v.erase( v.begin()+3, v.end());
-                        v.push_back(l);
-                        if( maxIndices.size() == 4 ) {
-                            final.push_back(v);
-                            v.clear();
-                            continue;
-                        }
-                        for( int m = 0; m <= maxIndices[4]; m++ ) {
-                            v.erase( v.begin()+4, v.end());
-                            v.push_back(m);
-                            if( maxIndices.size() == 5 ) {
-                                final.push_back(v);
-                                v.clear();
-                                continue;
-                            }
-                            if( maxIndices.size() != 5 ) cout << "IMPOSSIBLE";
-                        }
-                    }
-                }
-            }
-        }
-
+        permuteStep( maxIndices, 0, v, &final);
         return final;
-
     }
 
     void display();
 
+    void markovBlanket();
+
 //    sets maxIndices and permutationResult
     void myInitialization();
 
-    void findCPT( vector<int> countFrequencies ) {
+    void findCPT( vector<float> countFrequencies ) {
         int sizeCPT = CPT.size();
-        int total;
+        float total;
         vector<float> newCPT(sizeCPT,-1);
 
 //        for each values of B in P(A|B)
@@ -240,7 +222,7 @@ class network{
 
 public:
 
-	list <Graph_Node> Pres_Graph;
+    list <Graph_Node> Pres_Graph;
 
 	int addNode(Graph_Node node)
 	{
@@ -299,9 +281,31 @@ public:
 class patient {
 //    size of this list is the number of nodes in the network
 public:
-    int weight = 1;
-    patient() { weight = 1; }
+    float weight = 1;
+
+//    details of the unknown field of this patient
+    int uFieldIndex;
+    string uFieldName;
+
     vector<string> data;
+
+    patient() { weight = 1; }
+
+//    this patient is made from p with "?" replaced by s with weightage as probability
+    patient( patient p, string s, float probability) {
+        this->weight = probability;
+        this->uFieldIndex = p.uFieldIndex;
+        this->uFieldName = p.uFieldName;
+        this->data = p.data;
+        this->data[uFieldIndex] = s;
+    }
+
+    void view() {
+//        cout << "\nWeight is - " << setprecision(8) << weight;
+//        cout << "\nMissing property is - " << uFieldName;
+//        cout << "\nIts Value given is - " << data[uFieldIndex];
+    }
+
 };
 
 vector<patient> data;
@@ -322,6 +326,41 @@ void Graph_Node::myInitialization() {
 
     permutationResult = permute(maxIndices);
 
+//    FIND MARKOV BLANKET
+//    markovBlanket() sets vector<string> mBProperties and vector< vector<string> > mBValues
+//    this is required only once
+    markovBlanket();
+}
+
+//    markovBlanket() sets vector<string> mBProperties and vector< vector<string> > mBValues
+//    this is required only once
+void Graph_Node::markovBlanket() {
+
+//    add my parents
+    for_each( Parents.begin(), Parents.end(), [&](string s){
+        mbProperties.push_back( s );
+        mbPropertyIndices.push_back( Alarm.get_index( s ) );
+    });
+
+//    add my children
+    for_each( Children.begin(), Children.end(), [&](int s){
+        mbProperties.push_back( (*(Alarm.get_nth_node( s ))).Node_Name );
+        mbPropertyIndices.push_back( s );
+    });
+
+//    add my spouses
+    for_each( Children.begin(), Children.end(), [&](int s){
+        Graph_NodeIt gIt = Alarm.get_nth_node( s );
+        for_each( (*gIt).Parents.begin(), (*gIt).Parents.end(), [&](string spouse){
+
+//            if this spouse has not already been added OR its not ME as a father of my own child, add it
+            if( find( mbProperties.begin(), mbProperties.end(), spouse) == mbProperties.end() & spouse != Node_Name ) {
+                mbProperties.push_back( spouse );
+                mbPropertyIndices.push_back( Alarm.get_index( spouse ) );
+            }
+
+        } );
+    });
 }
 
 void Graph_Node::display()
@@ -331,8 +370,10 @@ void Graph_Node::display()
     for_each( values.begin(), values.end(), [](string s){cout << s << " ";});
     cout << "\nMy parents -> ";
     for_each( Parents.begin(), Parents.end(), [](string p){cout << p << " ";});
-    cout << "\nMy CPT contents -> ";
-    for_each( CPT.begin(), CPT.end(), [](float c){cout << c << " ";});
+    cout << "\nMy children -> ";
+    for_each( Children.begin(), Children.end(), [](int p){cout << (*(Alarm.get_nth_node(p))).Node_Name << " ";});
+    cout << "\nMy markov blanket -> ";
+    printStringVector( mbProperties );
     cout << "\nMy CPT meanings -> \n";
 
     int CPTindex = 0;
@@ -342,7 +383,7 @@ void Graph_Node::display()
             Graph_NodeIt gIt = Alarm.search_node(Parents[it-v.begin()-1]);
             cout << Parents[it-v.begin()-1] << "=" << (*gIt).values[v[it-v.begin()]];
         }
-        cout << ") = " << CPT[CPTindex++] << "\n";
+        cout << ") = " << setprecision(6) << CPT[CPTindex++] << "\n";
     });
 
 }
@@ -468,17 +509,22 @@ void read_data() {
 
         for(int i = 0; i < Alarm.netSize(); i++ ) {
             y = lin.find(" ");
+            if( lin.substr(0,y) == "\"?\"" ) {
+                p.uFieldIndex = i;
+                p.uFieldName = getNodeFromIndex( i ).Node_Name;
+            }
             p.data.push_back( lin.substr(0,y) );
             lin = lin.substr(y+1,lin.length()-y);
         }
         data.push_back(p);
     }
+    dataSize = data.size();
     cout << "Data filled with data size - " << data.size() << endl;
 }
 
 //returns the number of patient records where given properties have given values
-int countRecords( vector<string> properties, vector<string> values ) {
-    int x = 0;
+float countRecords( vector<string> properties, vector<string> values ) {
+    float x = 0;
     vector<int> propertyIndices;
     for_each( properties.begin(), properties.end(), [&](string s){
         propertyIndices.push_back( Alarm.get_index( s ) );
@@ -493,10 +539,11 @@ int countRecords( vector<string> properties, vector<string> values ) {
                 present = false;
         }
         if( present )
-            x++;
+            x+=p.weight;
     });
 
 //    laplace smoothing
+//    cout << "returning " << setprecision(5) << x+1 << endl;
     return x+1;
 }
 
@@ -520,34 +567,42 @@ int main( int argc, char** argv )
 
     cout << "Net size is " << Alarm.netSize() << endl;
 
-//    APPLY COUNTING AND IGNORE THE ? VALUES
-
-    vector<string> p,v;
-
     int index = 0;
+
     for( Graph_NodeIt it = Alarm.Pres_Graph.begin(); it != Alarm.Pres_Graph.end(); it++, index++ ) {
 
         cout << endl << (*it).Node_Name << " has index " << index << " and has been initialized\n";
         (*it).myInitialization();
+
+    }
+
+//    APPLY COUNTING AND IGNORE THE ? VALUES
+
+    startCounting:
+
+    vector<string> p,v;
+
+    index = 0;
+    for( Graph_NodeIt it = Alarm.Pres_Graph.begin(); it != Alarm.Pres_Graph.end(); it++, index++ ) {
 
 //        if find the prior probability of this node who has no parent
 //        else find the CPT of this node who has some parents
         if( (*it).Parents.empty() ) {
 
 //            index i of this list is incremented when corresponding value is found in the data
-            vector<int> countFrequencies((*it).nvalues,0);
+            vector<float> countFrequencies((*it).nvalues,0);
             vector<float> newCPT((*it).nvalues,0);
 
 //            check the value stored in each patient record
             for_each( data.begin(), data.end(), [&](patient p){
                 if( p.data[index] != "\"?\"" ) {
                     stringIt sIt = find( (*it).values.begin(), (*it).values.end(), p.data[index] );
-                    countFrequencies[ sIt- (*it).values.begin() ]++;
+                    countFrequencies[ sIt- (*it).values.begin() ]+=p.weight;
                 }
             });
 
 //            total will be number of patient records - ? corresponding to this entry
-            int total = sumIntVector( countFrequencies );
+            float total = sumFloatVector( countFrequencies );
 
 //            assign the CPT values
             for( floatIt fIt = newCPT.begin(); fIt != newCPT.end(); fIt++ ) {
@@ -559,7 +614,7 @@ int main( int argc, char** argv )
 
             vector<float> newCPT;
             vector<string> properties, values;
-            vector<int> countFrequencies;
+            vector<float> countFrequencies;
             properties.push_back( (*it).Node_Name );
             for_each( (*it).Parents.begin(), (*it).Parents.end(), [&](string s){properties.push_back( s );});
 
@@ -571,7 +626,6 @@ int main( int argc, char** argv )
                     Graph_NodeIt gIt = Alarm.search_node( (*it).Parents[iIt-v.begin()-1] );
                     values.push_back( (*gIt).values[ v[iIt-v.begin()] ] );
                 }
-                printStringVector(values);
 
 //                the first element here is the A in P(A|B) and the rest of the list is B
 //                we have to find P(A,B)/P(B)
@@ -580,9 +634,7 @@ int main( int argc, char** argv )
                 countFrequencies.push_back( countRecords(properties, values) );
             });
 
-            // now, I have to set the newCPT based on all the countFrequencies I got
-//            cout << "countFrequencies content -> ";
-//            printIntVector( countFrequencies );
+//            now, I have to set the newCPT based on all the countFrequencies I got
             (*it).findCPT( countFrequencies );
 
         }
@@ -590,10 +642,134 @@ int main( int argc, char** argv )
 //        cin.ignore();
     }
 
-//    modify input patient data - E step
-
-
+//    output the updated CPT
     output();
+
+    cin.ignore();
+
+//    this newData vector will be written to data after the E step
+    vector<patient> newData;
+    index = 0;
+
+//    modify input patient data - E step - depending on the markov blanket of the missing value
+//    for the first time, weight of each record is 1
+//    if expand dataset
+//    else change the probability only
+    if( data.size() == dataSize ) {
+        for_each( data.begin(), data.end(), [&](patient p){
+            cout << "\n\nPatient number -> " << ++index;
+//            cout << "\nnewData.size() -> " << newData.size() << endl;
+
+//            missing data from the patient
+            Graph_NodeIt gIt = Alarm.get_nth_node( p.uFieldIndex );
+            (*gIt).mbValues.clear();
+//            for each markov blanket's node
+            for( stringIt sIt = (*gIt).mbProperties.begin(); sIt != (*gIt).mbProperties.end(); sIt++ ) {
+
+//                index of markov blanket's node
+                int index = Alarm.get_index( *sIt );
+
+//                this patient has p.data[index] value of this markov blanket's node
+//                hence add it to mbValues
+                (*gIt).mbValues.push_back( p.data[index] );
+
+            }
+
+//            now, I have to calculate P(A|B) where A is the node with "?" and B is its markov blanket with the values given
+
+//            total number of records with only the markov blanket specified
+//            this is number of records with B only in P(A|B)
+            float total = 0;
+
+//            if A can take values "Low" "Medium" "High", this vector contains three counts corresponding to these values
+            vector<float> countFrequencies;
+
+//            for each possible values of A in P(A|B)
+            for_each( (*gIt).values.begin(), (*gIt).values.end(), [&](string s){
+                vector<string> properties = (*gIt).mbProperties;
+                vector<string> values = (*gIt).mbValues;
+
+    //            add A to calculate number of records with both A=s and B in P(A=s|B)
+                properties.push_back( (*gIt).Node_Name );
+                values.push_back( s );
+
+//                cout << "\nproperties and values contents ->\n";
+//                printStringVector(properties);
+//                printStringVector(values);
+//                cout << "records with such param -> " << countRecords(properties, values);
+//                cin.ignore();
+                countFrequencies.push_back( countRecords(properties, values) );
+                total += countFrequencies.back();
+    //            cout << "value of total -> " << total << endl;
+            });
+
+//            now, I will find the probability P(A=s|B)
+            for( int i = 0; i < (*gIt).values.size(); i++ ){
+                float probability = countFrequencies[i] / total;
+                patient *newP = new patient( p, (*gIt).values[i], probability);
+                newData.push_back( *newP );
+                newP->view();
+                delete newP;
+            }
+        });
+    } else {
+        for_each( data.begin(), data.end(), [&](patient p){
+            cout << "\n\nPatient number -> " << ++index;
+
+//            missing data from the patient
+            Graph_NodeIt gIt = Alarm.get_nth_node( p.uFieldIndex );
+            (*gIt).mbValues.clear();
+//            for each markov blanket's node
+            for( stringIt sIt = (*gIt).mbProperties.begin(); sIt != (*gIt).mbProperties.end(); sIt++ ) {
+
+//                index of markov blanket's node
+                int index = Alarm.get_index( *sIt );
+
+//                this patient has p.data[index] value of this markov blanket's node
+//                hence add it to mbValues
+                (*gIt).mbValues.push_back( p.data[index] );
+
+            }
+
+//            total number of records with only the markov blanket specified
+//            this is number of records with B only in P(A|B)
+            float total = 0;
+
+//            if A can take values "Low" "Medium" "High", this vector contains three counts corresponding to these values
+            vector<float> countFrequencies;
+
+//            for each possible values of A in P(A|B)
+            for_each( (*gIt).values.begin(), (*gIt).values.end(), [&](string s){
+                vector<string> properties = (*gIt).mbProperties;
+                vector<string> values = (*gIt).mbValues;
+
+//                add A to calculate number of records with both A=s and B in P(A=s|B)
+                properties.push_back( (*gIt).Node_Name );
+                values.push_back( s );
+
+//                cout << "\nproperties and values contents ->\n";
+//                printStringVector(properties);
+//                printStringVector(values);
+//                cout << "records with such param -> " << countRecords(properties, values);
+//                cin.ignore();
+                countFrequencies.push_back( countRecords(properties, values) );
+                total += countFrequencies.back();
+    //            cout << "value of total -> " << total << endl;
+            });
+
+//            now, I will find the probability P(A=s|B)
+            for( int i = 0; i < (*gIt).values.size(); i++ ){
+                float probability = countFrequencies[i] / total;
+                cout << "Old and new probabilities are -> " << p.weight << " " << probability;
+                p.weight = probability;
+            }
+        });
+    }
+
+    data.clear();
+    data = newData;
+
+    goto startCounting;
 
 }
 
