@@ -17,6 +17,7 @@ using namespace std;
 string networkFile, recordFile;
 
 int dataSize = 0;
+float change = 0;
 
 void output();
 
@@ -301,9 +302,13 @@ public:
     }
 
     void view() {
-//        cout << "\nWeight is - " << setprecision(8) << weight;
-//        cout << "\nMissing property is - " << uFieldName;
-//        cout << "\nIts Value given is - " << data[uFieldIndex];
+        cout << "\nWeight is - " << setprecision(8) << weight;
+        cout << "\nMissing property is - " << uFieldName;
+        cout << "\nIts Value given is - " << data[uFieldIndex];
+
+        cout << endl;
+        for_each( data.begin(), data.end(), [](string s){ cout << s << " ";});
+
     }
 
 };
@@ -348,19 +353,19 @@ void Graph_Node::markovBlanket() {
         mbPropertyIndices.push_back( s );
     });
 
-//    add my spouses
-    for_each( Children.begin(), Children.end(), [&](int s){
-        Graph_NodeIt gIt = Alarm.get_nth_node( s );
-        for_each( (*gIt).Parents.begin(), (*gIt).Parents.end(), [&](string spouse){
+////    add my spouses
+//    for_each( Children.begin(), Children.end(), [&](int s){
+//        Graph_NodeIt gIt = Alarm.get_nth_node( s );
+//        for_each( (*gIt).Parents.begin(), (*gIt).Parents.end(), [&](string spouse){
 
-//            if this spouse has not already been added OR its not ME as a father of my own child, add it
-            if( find( mbProperties.begin(), mbProperties.end(), spouse) == mbProperties.end() & spouse != Node_Name ) {
-                mbProperties.push_back( spouse );
-                mbPropertyIndices.push_back( Alarm.get_index( spouse ) );
-            }
+////            if this spouse has not already been added OR its not ME as a father of my own child, add it
+//            if( find( mbProperties.begin(), mbProperties.end(), spouse) == mbProperties.end() & spouse != Node_Name ) {
+//                mbProperties.push_back( spouse );
+//                mbPropertyIndices.push_back( Alarm.get_index( spouse ) );
+//            }
 
-        } );
-    });
+//        } );
+//    });
 }
 
 void Graph_Node::display()
@@ -518,6 +523,7 @@ void read_data() {
         }
         data.push_back(p);
     }
+    data.pop_back();
     dataSize = data.size();
     cout << "Data filled with data size - " << data.size() << endl;
 }
@@ -578,8 +584,9 @@ int main( int argc, char** argv )
 
 //    APPLY COUNTING AND IGNORE THE ? VALUES
 
+    int iterations = 0;
     startCounting:
-
+    iterations++;
     vector<string> p,v;
 
     index = 0;
@@ -643,8 +650,8 @@ int main( int argc, char** argv )
     }
 
 //    output the updated CPT
+    cout << "After " << iterations << " iteration\n";
     output();
-
     cin.ignore();
 
 //    this newData vector will be written to data after the E step
@@ -671,6 +678,7 @@ int main( int argc, char** argv )
 
 //                this patient has p.data[index] value of this markov blanket's node
 //                hence add it to mbValues
+                cout << "\np.data[index] -> " << p.data[index] << endl;
                 (*gIt).mbValues.push_back( p.data[index] );
 
             }
@@ -693,14 +701,14 @@ int main( int argc, char** argv )
                 properties.push_back( (*gIt).Node_Name );
                 values.push_back( s );
 
-//                cout << "\nproperties and values contents ->\n";
-//                printStringVector(properties);
-//                printStringVector(values);
-//                cout << "records with such param -> " << countRecords(properties, values);
+                cout << "\nproperties and values contents ->\n";
+                printStringVector(properties);
+                printStringVector(values);
+                cout << "records with such param -> " << setprecision(5) << countRecords(properties, values);
 //                cin.ignore();
                 countFrequencies.push_back( countRecords(properties, values) );
                 total += countFrequencies.back();
-    //            cout << "value of total -> " << total << endl;
+                cout << "value of total -> " << total << endl;
             });
 
 //            now, I will find the probability P(A=s|B)
@@ -708,16 +716,16 @@ int main( int argc, char** argv )
                 float probability = countFrequencies[i] / total;
                 patient *newP = new patient( p, (*gIt).values[i], probability);
                 newData.push_back( *newP );
-                newP->view();
                 delete newP;
             }
         });
     } else {
-        for_each( data.begin(), data.end(), [&](patient p){
+//        i am gonna modify the patient's weight, hence for_each loop not used
+        for( patientIt pIt = data.begin(); pIt != data.end(); pIt++ ){
             cout << "\n\nPatient number -> " << ++index;
 
-//            missing data from the patient
-            Graph_NodeIt gIt = Alarm.get_nth_node( p.uFieldIndex );
+//            missing data from the patient which has been given some value with weightage in the first iteration
+            Graph_NodeIt gIt = Alarm.get_nth_node( pIt->uFieldIndex );
             (*gIt).mbValues.clear();
 //            for each markov blanket's node
             for( stringIt sIt = (*gIt).mbProperties.begin(); sIt != (*gIt).mbProperties.end(); sIt++ ) {
@@ -727,7 +735,7 @@ int main( int argc, char** argv )
 
 //                this patient has p.data[index] value of this markov blanket's node
 //                hence add it to mbValues
-                (*gIt).mbValues.push_back( p.data[index] );
+                (*gIt).mbValues.push_back( pIt->data[index] );
 
             }
 
@@ -738,38 +746,37 @@ int main( int argc, char** argv )
 //            if A can take values "Low" "Medium" "High", this vector contains three counts corresponding to these values
             vector<float> countFrequencies;
 
-//            for each possible values of A in P(A|B)
-            for_each( (*gIt).values.begin(), (*gIt).values.end(), [&](string s){
-                vector<string> properties = (*gIt).mbProperties;
-                vector<string> values = (*gIt).mbValues;
+            vector<string> properties = (*gIt).mbProperties;
+            vector<string> values = (*gIt).mbValues;
 
-//                add A to calculate number of records with both A=s and B in P(A=s|B)
-                properties.push_back( (*gIt).Node_Name );
-                values.push_back( s );
+//            to find P(B), accomodate laplace smoothing
+            total = countRecords(properties,values) + gIt->nvalues - 1;
 
-//                cout << "\nproperties and values contents ->\n";
-//                printStringVector(properties);
-//                printStringVector(values);
-//                cout << "records with such param -> " << countRecords(properties, values);
-//                cin.ignore();
-                countFrequencies.push_back( countRecords(properties, values) );
-                total += countFrequencies.back();
-    //            cout << "value of total -> " << total << endl;
-            });
+            properties.push_back( (*gIt).Node_Name );
+            values.push_back( pIt->data[pIt->uFieldIndex] );
 
-//            now, I will find the probability P(A=s|B)
-            for( int i = 0; i < (*gIt).values.size(); i++ ){
-                float probability = countFrequencies[i] / total;
-                cout << "Old and new probabilities are -> " << p.weight << " " << probability;
-                p.weight = probability;
-            }
-        });
+//            to find P(A,B)
+            float frequency = countRecords(properties,values);
+
+//            now, I will find the new probability P( A = pIt->data[pIt->uFieldIndex] | B )
+            float probability = frequency / total;
+            cout << "\nOld and new probabilities are -> " << setprecision(10) << pIt->weight << " " << probability;
+            change+= fabs( probability-pIt->weight );
+            cout << "\nvalue of change -> " << change;
+            pIt->weight = probability;
+        }
     }
 
-    data.clear();
-    data = newData;
+    if( data.size() == dataSize ) {
+        data.clear();
+        data = newData;
+    }
 
-    goto startCounting;
+    cout << "\nchange = " << setprecision(10) << change << endl;
+    change = 0;
+    cin.ignore();
+    if( iterations < 10 )
+        goto startCounting;
 
 }
 
