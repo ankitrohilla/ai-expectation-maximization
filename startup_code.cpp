@@ -14,6 +14,10 @@
 // format checker just assumes you have Alarm.bif and Solved_Alarm.bif (your file) in current directory
 using namespace std;
 
+typedef vector<float>::iterator floatIt;
+typedef vector<int>::iterator intIt;
+typedef vector<string>::iterator stringIt;
+
 string networkFile, recordFile;
 
 int dataSize = 0;
@@ -46,6 +50,20 @@ float sumFloatVector( vector<float> v) {
     float x = 0;
     for_each( v.begin(), v.end(), [&](float v){x+=v;});
     return x;
+}
+int findIndexString( vector<string> vs, string s ) {
+    cout << "\n\nIn the vector ";
+    printStringVector(vs);
+    stringIt sIt = find( vs.begin(), vs.end(), s);
+    cout << "found " << s << " at " << sIt-vs.begin() << " index";
+    return sIt-vs.begin();
+}
+int findIndexFloat( vector<float> vs, float s ) {
+    cout << "\n\nIn the vector ";
+    printFloatVector(vs);
+    floatIt sIt = find( vs.begin(), vs.end(), s);
+    cout << "found " << s << " at " << sIt-vs.begin() << " index";
+    return sIt-vs.begin();
 }
 
 //to be written to the output file
@@ -188,8 +206,10 @@ public:
     }
 
     void display();
-
     void markovBlanket();
+
+//    takes in the values for the variable and returns the appropriate probability from the CPT
+    float retProbValue( vector<string> values );
 
 //    sets maxIndices and permutationResult
     void myInitialization();
@@ -316,10 +336,23 @@ public:
 vector<patient> data;
 
 typedef list<Graph_Node>::iterator Graph_NodeIt;
-typedef vector<float>::iterator floatIt;
-typedef vector<int>::iterator intIt;
 typedef vector<patient>::iterator patientIt;
-typedef vector<string>::iterator stringIt;
+
+// takes in the values for the variable and returns the appropriate probability from the CPT
+float Graph_Node::retProbValue( vector<string> values ) {
+
+    int impact = 1;
+    int index = values.size()-1;
+    int finalIndex = 0;
+
+    for( stringIt sIt = mbProperties.end()-1; sIt != mbProperties.begin()-1; sIt--, index-- ) {
+        Graph_NodeIt gIt = Alarm.search_node( *sIt );
+        finalIndex += findIndexString( gIt->values, values[index] ) * impact;
+        cout << "value of finalIndex is " << finalIndex << endl;
+        impact *= gIt->nvalues;
+    }
+    cout << "At index " << finalIndex << ", we got the CPT values\n";
+}
 
 void Graph_Node::myInitialization() {
 
@@ -338,8 +371,11 @@ void Graph_Node::myInitialization() {
 }
 
 //    markovBlanket() sets vector<string> mBProperties and vector< vector<string> > mBValues
-//    this is required only once
+//    this is required only once to set mbProperties
 void Graph_Node::markovBlanket() {
+
+    mbProperties.push_back( Node_Name );
+    mbPropertyIndices.push_back( Alarm.get_index( Node_Name ) );
 
 //    add my parents
     for_each( Parents.begin(), Parents.end(), [&](string s){
@@ -347,11 +383,11 @@ void Graph_Node::markovBlanket() {
         mbPropertyIndices.push_back( Alarm.get_index( s ) );
     });
 
-//    add my children
-    for_each( Children.begin(), Children.end(), [&](int s){
-        mbProperties.push_back( (*(Alarm.get_nth_node( s ))).Node_Name );
-        mbPropertyIndices.push_back( s );
-    });
+////    add my children
+//    for_each( Children.begin(), Children.end(), [&](int s){
+//        mbProperties.push_back( (*(Alarm.get_nth_node( s ))).Node_Name );
+//        mbPropertyIndices.push_back( s );
+//    });
 
 ////    add my spouses
 //    for_each( Children.begin(), Children.end(), [&](int s){
@@ -582,8 +618,6 @@ int main( int argc, char** argv )
 
     }
 
-//    APPLY COUNTING AND IGNORE THE ? VALUES
-
     int iterations = 0;
     startCounting:
     iterations++;
@@ -643,7 +677,7 @@ int main( int argc, char** argv )
 
 //            now, I have to set the newCPT based on all the countFrequencies I got
             (*it).findCPT( countFrequencies );
-
+//            cin.ignore();
         }
         (*it).display();
 //        cin.ignore();
@@ -699,25 +733,20 @@ int main( int argc, char** argv )
 
     //            add A to calculate number of records with both A=s and B in P(A=s|B)
                 properties.push_back( (*gIt).Node_Name );
-                values.push_back( s );
+                values.insert( values.begin(), s );
 
                 cout << "\nproperties and values contents ->\n";
                 printStringVector(properties);
                 printStringVector(values);
-                cout << "records with such param -> " << setprecision(5) << countRecords(properties, values);
-//                cin.ignore();
-                countFrequencies.push_back( countRecords(properties, values) );
-                total += countFrequencies.back();
-                cout << "value of total -> " << total << endl;
-            });
 
-//            now, I will find the probability P(A=s|B)
-            for( int i = 0; i < (*gIt).values.size(); i++ ){
-                float probability = countFrequencies[i] / total;
-                patient *newP = new patient( p, (*gIt).values[i], probability);
+                float prob = (*gIt).retProbValue( values );
+                cout << "prob returned is " << prob << endl << endl;
+                patient *newP = new patient( p, s, prob);
                 newData.push_back( *newP );
                 delete newP;
-            }
+                cin.ignore();
+
+            });
         });
     } else {
 //        i am gonna modify the patient's weight, hence for_each loop not used
