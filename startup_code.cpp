@@ -225,11 +225,12 @@ public:
 	int nvalues; // Number of categories a variable represented by this node can take
 	vector<string> values; // Categories of possible values
 	vector<float> CPT; // conditional probability table as a 1-d array . Look for BIF format to understand its meaning
-	vector<float> MCPT; // conditional probability table
+    //vector<float> MCPT; // conditional probability table
 	vector<vector<int> > permutationResult, mPermutationResult;
 	vector<int> maxIndices, mMaxIndices;
 
-	int sizeCPT, sizeMCPT;
+    int sizeCPT;
+    //int sizeMCPT;
 
 	vector<string> mbProperties;
 	vector<int> mbPropertyIndices;
@@ -263,10 +264,10 @@ public:
 		CPT.clear();
 		CPT = new_CPT;
 	}
-	void set_MCPT(vector<float> new_MCPT) {
+    /*void set_MCPT(vector<float> new_MCPT) {
 		MCPT.clear();
 		MCPT = new_MCPT;
-	}
+    }*/
 
 	void set_Parents(vector<string> Parent_Nodes) {
 		Parents.clear();
@@ -340,7 +341,7 @@ public:
 		set_CPT(newCPT);
 	}
 
-	void findMCPT(vector<float> countFrequencies) {
+    /*void findMCPT(vector<float> countFrequencies) {
 
 		float total;
 		vector<float> newMCPT(sizeMCPT, -1);
@@ -362,7 +363,7 @@ public:
 		}
 
 		set_MCPT(newMCPT);
-	}
+    }*/
 };
 
 // The whole network represted as a list of nodes
@@ -498,10 +499,10 @@ void set_CPT_MAP() {
 
         string key_CPT_map = "";
 
-        for (int j = 0; j < 72; j++) {
+        for (int j = 0; j <60; j++) {
             for (int k = 0; k < 12; k++) {
 
-                string curr_prop = mCPT_Keys[j][k];
+                string curr_prop = CPT_Keys[j][k];
 
                 if (curr_prop.compare("EOF") == 0) {
                     break;
@@ -511,22 +512,22 @@ void set_CPT_MAP() {
 
                 string curr_prop_value = dataMap.find(curr_prop)->second;
 
-                key_MCPT_map += curr_prop + "=" + curr_prop_value + "|";
+                key_CPT_map += curr_prop + "=" + curr_prop_value + "|";
 
             }//End of all properties for a row in MCPT_keys
 
-            cptMapIt cMapIt = MCPT_map.find(key_MCPT_map);
+            cptMapIt cMapIt = CPT_map.find(key_CPT_map);
 
-            if (cMapIt != MCPT_map.end()) {
+            if (cMapIt != CPT_map.end()) {
                 //value existing in the map
-                MCPT_map[key_MCPT_map] = cMapIt->second + data[i].weight;
+                CPT_map[key_CPT_map] = cMapIt->second + data[i].weight;
 
             } else {
                 //value is not yet present in the map
-                MCPT_map[key_MCPT_map] = data[i].weight;
+                CPT_map[key_CPT_map] = data[i].weight;
             }
 
-        }//End of row in MCPT_keys
+        }//End of row in CPT_keys
 
     }//End of data[i]
 }
@@ -851,7 +852,8 @@ int main(int argc, char** argv) {
 
 
 	//=================================================M-Step===============================
-	set_MCPT_MAP();
+    //set_MCPT_MAP();
+    set_CPT_MAP();
 
 	//=================================================E-Step===============================
 
