@@ -1,0 +1,2435 @@
+Data filled with data size - 11100
+
+"Hypovolemia" has index 0 and has been initialized
+came here
+came here2
+came here3
+
+"StrokeVolume" has index 1 and has been initialized
+came here
+came here2
+came here3
+
+"LVFailure" has index 2 and has been initialized
+came here
+came here2
+came here3
+
+"LVEDVolume" has index 3 and has been initialized
+came here
+came here2
+came here3
+
+"PCWP" has index 4 and has been initialized
+came here
+came here2
+came here3
+
+"CVP" has index 5 and has been initialized
+came here
+came here2
+came here3
+
+"History" has index 6 and has been initialized
+came here
+came here2
+came here3
+
+"MinVolSet" has index 7 and has been initialized
+came here
+came here2
+came here3
+
+"VentMach" has index 8 and has been initialized
+came here
+came here2
+came here3
+
+"Disconnect" has index 9 and has been initialized
+came here
+came here2
+came here3
+
+"VentTube" has index 10 and has been initialized
+came here
+came here2
+came here3
+
+"KinkedTube" has index 11 and has been initialized
+came here
+came here2
+came here3
+
+"Press" has index 12 and has been initialized
+came here
+came here2
+came here3
+
+"ErrLowOutput" has index 13 and has been initialized
+came here
+came here2
+came here3
+
+"HRBP" has index 14 and has been initialized
+came here
+came here2
+came here3
+
+"ErrCauter" has index 15 and has been initialized
+came here
+came here2
+came here3
+
+"HREKG" has index 16 and has been initialized
+came here
+came here2
+came here3
+
+"HRSat" has index 17 and has been initialized
+came here
+came here2
+came here3
+
+"BP" has index 18 and has been initialized
+came here
+came here2
+came here3
+
+"CO" has index 19 and has been initialized
+came here
+came here2
+came here3
+
+"HR" has index 20 and has been initialized
+came here
+came here2
+came here3
+
+"TPR" has index 21 and has been initialized
+came here
+came here2
+came here3
+
+"Anaphylaxis" has index 22 and has been initialized
+came here
+came here2
+came here3
+
+"InsuffAnesth" has index 23 and has been initialized
+came here
+came here2
+came here3
+
+"PAP" has index 24 and has been initialized
+came here
+came here2
+came here3
+
+"PulmEmbolus" has index 25 and has been initialized
+came here
+came here2
+came here3
+
+"FiO2" has index 26 and has been initialized
+came here
+came here2
+came here3
+
+"Catechol" has index 27 and has been initialized
+came here
+came here2
+came here3
+
+"SaO2" has index 28 and has been initialized
+came here
+came here2
+came here3
+
+"Shunt" has index 29 and has been initialized
+came here
+came here2
+came here3
+
+"PVSat" has index 30 and has been initialized
+came here
+came here2
+came here3
+
+"MinVol" has index 31 and has been initialized
+came here
+came here2
+came here3
+
+"ExpCO2" has index 32 and has been initialized
+came here
+came here2
+came here3
+
+"ArtCO2" has index 33 and has been initialized
+came here
+came here2
+came here3
+
+"VentAlv" has index 34 and has been initialized
+came here
+came here2
+came here3
+
+"VentLung" has index 35 and has been initialized
+came here
+came here2
+came here3
+
+"Intubation" has index 36 and has been initialized
+came here
+came here2
+came here3
+"Anaphylaxis"="?"| => 290
+"Anaphylaxis"="False"| => 10720
+"Anaphylaxis"="True"| => 90
+"ArtCO2"="?"|"VentAlv"="High"| => 11
+"ArtCO2"="?"|"VentAlv"="Low"| => 30
+"ArtCO2"="?"|"VentAlv"="Normal"| => 211
+"ArtCO2"="?"|"VentAlv"="Zero"| => 40
+"ArtCO2"="?"|"VentLung"="High"| => 6
+"ArtCO2"="?"|"VentLung"="Low"| => 16
+"ArtCO2"="?"|"VentLung"="Normal"| => 232
+"ArtCO2"="?"|"VentLung"="Zero"| => 38
+"ArtCO2"="High"|"VentAlv"="?"| => 68
+"ArtCO2"="High"|"VentAlv"="High"| => 7
+"ArtCO2"="High"|"VentAlv"="Low"| => 1080
+"ArtCO2"="High"|"VentAlv"="Normal"| => 293
+"ArtCO2"="High"|"VentAlv"="Zero"| => 1269
+"ArtCO2"="High"|"VentLung"="?"| => 76
+"ArtCO2"="High"|"VentLung"="High"| => 18
+"ArtCO2"="High"|"VentLung"="Low"| => 586
+"ArtCO2"="High"|"VentLung"="Normal"| => 840
+"ArtCO2"="High"|"VentLung"="Zero"| => 1197
+"ArtCO2"="Low"|"VentAlv"="?"| => 23
+"ArtCO2"="Low"|"VentAlv"="High"| => 381
+"ArtCO2"="Low"|"VentAlv"="Low"| => 8
+"ArtCO2"="Low"|"VentAlv"="Normal"| => 324
+"ArtCO2"="Low"|"VentAlv"="Zero"| => 11
+"ArtCO2"="Low"|"VentLung"="?"| => 17
+"ArtCO2"="Low"|"VentLung"="High"| => 296
+"ArtCO2"="Low"|"VentLung"="Low"| => 9
+"ArtCO2"="Low"|"VentLung"="Normal"| => 406
+"ArtCO2"="Low"|"VentLung"="Zero"| => 19
+"ArtCO2"="Normal"|"VentAlv"="?"| => 194
+"ArtCO2"="Normal"|"VentAlv"="High"| => 37
+"ArtCO2"="Normal"|"VentAlv"="Low"| => 11
+"ArtCO2"="Normal"|"VentAlv"="Normal"| => 7092
+"ArtCO2"="Normal"|"VentAlv"="Zero"| => 10
+"ArtCO2"="Normal"|"VentLung"="?"| => 178
+"ArtCO2"="Normal"|"VentLung"="High"| => 38
+"ArtCO2"="Normal"|"VentLung"="Low"| => 13
+"ArtCO2"="Normal"|"VentLung"="Normal"| => 7088
+"ArtCO2"="Normal"|"VentLung"="Zero"| => 27
+"BP"="?"|"CO"="High"|"TPR"="High"| => 31
+"BP"="?"|"CO"="High"|"TPR"="Low"| => 53
+"BP"="?"|"CO"="High"|"TPR"="Normal"| => 53
+"BP"="?"|"CO"="Low"|"TPR"="High"| => 19
+"BP"="?"|"CO"="Low"|"TPR"="Low"| => 29
+"BP"="?"|"CO"="Low"|"TPR"="Normal"| => 43
+"BP"="?"|"CO"="Normal"|"TPR"="High"| => 34
+"BP"="?"|"CO"="Normal"|"TPR"="Low"| => 13
+"BP"="?"|"CO"="Normal"|"TPR"="Normal"| => 40
+"BP"="High"|"CO"="?"|"TPR"="High"| => 40
+"BP"="High"|"CO"="?"|"TPR"="Low"| => 2
+"BP"="High"|"CO"="?"|"TPR"="Normal"| => 27
+"BP"="High"|"CO"="High"|"TPR"="?"| => 59
+"BP"="High"|"CO"="High"|"TPR"="High"| => 896
+"BP"="High"|"CO"="High"|"TPR"="Low"| => 23
+"BP"="High"|"CO"="High"|"TPR"="Normal"| => 994
+"BP"="High"|"CO"="Low"|"TPR"="?"| => 4
+"BP"="High"|"CO"="Low"|"TPR"="High"| => 83
+"BP"="High"|"CO"="Low"|"TPR"="Low"| => 4
+"BP"="High"|"CO"="Low"|"TPR"="Normal"| => 20
+"BP"="High"|"CO"="Normal"|"TPR"="?"| => 24
+"BP"="High"|"CO"="Normal"|"TPR"="High"| => 661
+"BP"="High"|"CO"="Normal"|"TPR"="Low"| => 5
+"BP"="High"|"CO"="Normal"|"TPR"="Normal"| => 94
+"BP"="Low"|"CO"="?"|"TPR"="High"| => 17
+"BP"="Low"|"CO"="?"|"TPR"="Low"| => 77
+"BP"="Low"|"CO"="?"|"TPR"="Normal"| => 46
+"BP"="Low"|"CO"="High"|"TPR"="?"| => 30
+"BP"="Low"|"CO"="High"|"TPR"="High"| => 9
+"BP"="Low"|"CO"="High"|"TPR"="Low"| => 1699
+"BP"="Low"|"CO"="High"|"TPR"="Normal"| => 50
+"BP"="Low"|"CO"="Low"|"TPR"="?"| => 52
+"BP"="Low"|"CO"="Low"|"TPR"="High"| => 262
+"BP"="Low"|"CO"="Low"|"TPR"="Low"| => 701
+"BP"="Low"|"CO"="Low"|"TPR"="Normal"| => 1101
+"BP"="Low"|"CO"="Normal"|"TPR"="?"| => 23
+"BP"="Low"|"CO"="Normal"|"TPR"="High"| => 57
+"BP"="Low"|"CO"="Normal"|"TPR"="Low"| => 601
+"BP"="Low"|"CO"="Normal"|"TPR"="Normal"| => 145
+"BP"="Normal"|"CO"="?"|"TPR"="High"| => 22
+"BP"="Normal"|"CO"="?"|"TPR"="Low"| => 3
+"BP"="Normal"|"CO"="?"|"TPR"="Normal"| => 46
+"BP"="Normal"|"CO"="High"|"TPR"="?"| => 11
+"BP"="Normal"|"CO"="High"|"TPR"="High"| => 89
+"BP"="Normal"|"CO"="High"|"TPR"="Low"| => 156
+"BP"="Normal"|"CO"="High"|"TPR"="Normal"| => 260
+"BP"="Normal"|"CO"="Low"|"TPR"="?"| => 18
+"BP"="Normal"|"CO"="Low"|"TPR"="High"| => 531
+"BP"="Normal"|"CO"="Low"|"TPR"="Low"| => 7
+"BP"="Normal"|"CO"="Low"|"TPR"="Normal"| => 13
+"BP"="Normal"|"CO"="Normal"|"TPR"="?"| => 51
+"BP"="Normal"|"CO"="Normal"|"TPR"="High"| => 450
+"BP"="Normal"|"CO"="Normal"|"TPR"="Low"| => 5
+"BP"="Normal"|"CO"="Normal"|"TPR"="Normal"| => 1317
+"CO"="?"|"HR"="High"|"StrokeVolume"="High"| => 7
+"CO"="?"|"HR"="High"|"StrokeVolume"="Low"| => 43
+"CO"="?"|"HR"="High"|"StrokeVolume"="Normal"| => 96
+"CO"="?"|"HR"="Low"|"StrokeVolume"="Low"| => 1
+"CO"="?"|"HR"="Low"|"StrokeVolume"="Normal"| => 9
+"CO"="?"|"HR"="Normal"|"StrokeVolume"="High"| => 4
+"CO"="?"|"HR"="Normal"|"StrokeVolume"="Low"| => 35
+"CO"="?"|"HR"="Normal"|"StrokeVolume"="Normal"| => 85
+"CO"="?"|"TPR"="High"| => 79
+"CO"="?"|"TPR"="Low"| => 82
+"CO"="?"|"TPR"="Normal"| => 119
+"CO"="High"|"HR"="?"|"StrokeVolume"="High"| => 11
+"CO"="High"|"HR"="?"|"StrokeVolume"="Normal"| => 117
+"CO"="High"|"HR"="High"|"StrokeVolume"="?"| => 127
+"CO"="High"|"HR"="High"|"StrokeVolume"="High"| => 211
+"CO"="High"|"HR"="High"|"StrokeVolume"="Low"| => 11
+"CO"="High"|"HR"="High"|"StrokeVolume"="Normal"| => 3773
+"CO"="High"|"HR"="Low"|"StrokeVolume"="Low"| => 3
+"CO"="High"|"HR"="Low"|"StrokeVolume"="Normal"| => 1
+"CO"="High"|"HR"="Normal"|"StrokeVolume"="?"| => 5
+"CO"="High"|"HR"="Normal"|"StrokeVolume"="High"| => 112
+"CO"="High"|"HR"="Normal"|"StrokeVolume"="Low"| => 14
+"CO"="High"|"HR"="Normal"|"StrokeVolume"="Normal"| => 28
+"CO"="High"|"TPR"="?"| => 100
+"CO"="High"|"TPR"="High"| => 1025
+"CO"="High"|"TPR"="Low"| => 1931
+"CO"="High"|"TPR"="Normal"| => 1357
+"CO"="Low"|"HR"="?"|"StrokeVolume"="Low"| => 65
+"CO"="Low"|"HR"="?"|"StrokeVolume"="Normal"| => 14
+"CO"="Low"|"HR"="High"|"StrokeVolume"="?"| => 36
+"CO"="Low"|"HR"="High"|"StrokeVolume"="High"| => 3
+"CO"="Low"|"HR"="High"|"StrokeVolume"="Low"| => 1101
+"CO"="Low"|"HR"="High"|"StrokeVolume"="Normal"| => 40
+"CO"="Low"|"HR"="Low"|"StrokeVolume"="?"| => 16
+"CO"="Low"|"HR"="Low"|"StrokeVolume"="High"| => 7
+"CO"="Low"|"HR"="Low"|"StrokeVolume"="Low"| => 122
+"CO"="Low"|"HR"="Low"|"StrokeVolume"="Normal"| => 325
+"CO"="Low"|"HR"="Normal"|"StrokeVolume"="?"| => 39
+"CO"="Low"|"HR"="Normal"|"StrokeVolume"="High"| => 1
+"CO"="Low"|"HR"="Normal"|"StrokeVolume"="Low"| => 993
+"CO"="Low"|"HR"="Normal"|"StrokeVolume"="Normal"| => 125
+"CO"="Low"|"TPR"="?"| => 74
+"CO"="Low"|"TPR"="High"| => 895
+"CO"="Low"|"TPR"="Low"| => 741
+"CO"="Low"|"TPR"="Normal"| => 1177
+"CO"="Normal"|"HR"="?"|"StrokeVolume"="High"| => 2
+"CO"="Normal"|"HR"="?"|"StrokeVolume"="Low"| => 12
+"CO"="Normal"|"HR"="?"|"StrokeVolume"="Normal"| => 94
+"CO"="Normal"|"HR"="High"|"StrokeVolume"="?"| => 17
+"CO"="Normal"|"HR"="High"|"StrokeVolume"="Low"| => 262
+"CO"="Normal"|"HR"="High"|"StrokeVolume"="Normal"| => 145
+"CO"="Normal"|"HR"="Low"|"StrokeVolume"="?"| => 2
+"CO"="Normal"|"HR"="Low"|"StrokeVolume"="High"| => 13
+"CO"="Normal"|"HR"="Low"|"StrokeVolume"="Low"| => 1
+"CO"="Normal"|"HR"="Low"|"StrokeVolume"="Normal"| => 13
+"CO"="Normal"|"HR"="Normal"|"StrokeVolume"="?"| => 77
+"CO"="Normal"|"HR"="Normal"|"StrokeVolume"="High"| => 63
+"CO"="Normal"|"HR"="Normal"|"StrokeVolume"="Low"| => 43
+"CO"="Normal"|"HR"="Normal"|"StrokeVolume"="Normal"| => 2776
+"CO"="Normal"|"TPR"="?"| => 98
+"CO"="Normal"|"TPR"="High"| => 1202
+"CO"="Normal"|"TPR"="Low"| => 624
+"CO"="Normal"|"TPR"="Normal"| => 1596
+"CVP"="?"|"LVEDVolume"="High"| => 30
+"CVP"="?"|"LVEDVolume"="Low"| => 80
+"CVP"="?"|"LVEDVolume"="Normal"| => 205
+"CVP"="High"|"LVEDVolume"="?"| => 27
+"CVP"="High"|"LVEDVolume"="High"| => 578
+"CVP"="High"|"LVEDVolume"="Low"| => 28
+"CVP"="High"|"LVEDVolume"="Normal"| => 89
+"CVP"="Low"|"LVEDVolume"="?"| => 73
+"CVP"="Low"|"LVEDVolume"="High"| => 6
+"CVP"="Low"|"LVEDVolume"="Low"| => 2345
+"CVP"="Low"|"LVEDVolume"="Normal"| => 313
+"CVP"="Normal"|"LVEDVolume"="?"| => 235
+"CVP"="Normal"|"LVEDVolume"="High"| => 221
+"CVP"="Normal"|"LVEDVolume"="Low"| => 101
+"CVP"="Normal"|"LVEDVolume"="Normal"| => 6769
+"Catechol"="?"| => 297
+"Catechol"="?"|"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="High"|"ArtCO2"="Normal"| => 1
+"Catechol"="?"|"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="Low"| => 4
+"Catechol"="?"|"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="Normal"| => 7
+"Catechol"="?"|"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="Low"| => 5
+"Catechol"="?"|"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="Normal"| => 4
+"Catechol"="?"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="High"| => 23
+"Catechol"="?"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="Low"| => 1
+"Catechol"="?"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="Normal"| => 8
+"Catechol"="?"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="High"| => 11
+"Catechol"="?"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="Normal"| => 7
+"Catechol"="?"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="High"| => 25
+"Catechol"="?"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="Low"| => 1
+"Catechol"="?"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="Normal"| => 4
+"Catechol"="?"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="High"| => 1
+"Catechol"="?"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="Low"| => 1
+"Catechol"="?"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="Normal"| => 33
+"Catechol"="?"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="High"| => 2
+"Catechol"="?"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="Normal"| => 36
+"Catechol"="?"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="High"| => 5
+"Catechol"="?"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="Low"| => 6
+"Catechol"="?"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="Normal"| => 48
+"Catechol"="?"|"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="High"|"ArtCO2"="High"| => 1
+"Catechol"="?"|"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="Low"| => 1
+"Catechol"="?"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="High"| => 3
+"Catechol"="?"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="Low"| => 1
+"Catechol"="?"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="Normal"| => 2
+"Catechol"="?"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="High"| => 6
+"Catechol"="?"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="Normal"| => 2
+"Catechol"="?"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="High"| => 4
+"Catechol"="?"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="Normal"| => 2
+"Catechol"="?"|"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="Normal"| => 12
+"Catechol"="?"|"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="High"| => 1
+"Catechol"="?"|"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="Low"| => 1
+"Catechol"="?"|"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="Normal"| => 12
+"Catechol"="?"|"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="Normal"| => 16
+"Catechol"="High"| => 6453
+"Catechol"="High"|"InsuffAnesth"="?"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="Low"| => 4
+"Catechol"="High"|"InsuffAnesth"="?"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="Normal"| => 1
+"Catechol"="High"|"InsuffAnesth"="?"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="Low"| => 1
+"Catechol"="High"|"InsuffAnesth"="?"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="Normal"| => 1
+"Catechol"="High"|"InsuffAnesth"="?"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="High"| => 21
+"Catechol"="High"|"InsuffAnesth"="?"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="Normal"| => 4
+"Catechol"="High"|"InsuffAnesth"="?"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="High"| => 22
+"Catechol"="High"|"InsuffAnesth"="?"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="Normal"| => 3
+"Catechol"="High"|"InsuffAnesth"="?"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="High"| => 21
+"Catechol"="High"|"InsuffAnesth"="?"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="Low"| => 1
+"Catechol"="High"|"InsuffAnesth"="?"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="Normal"| => 8
+"Catechol"="High"|"InsuffAnesth"="?"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="High"| => 4
+"Catechol"="High"|"InsuffAnesth"="?"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="Normal"| => 11
+"Catechol"="High"|"InsuffAnesth"="?"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="High"| => 1
+"Catechol"="High"|"InsuffAnesth"="?"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="Low"| => 3
+"Catechol"="High"|"InsuffAnesth"="?"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="Normal"| => 50
+"Catechol"="High"|"InsuffAnesth"="?"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="High"| => 2
+"Catechol"="High"|"InsuffAnesth"="?"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="Low"| => 1
+"Catechol"="High"|"InsuffAnesth"="?"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="Normal"| => 15
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="?"|"TPR"="High"|"ArtCO2"="High"| => 14
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="?"|"TPR"="High"|"ArtCO2"="Low"| => 1
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="?"|"TPR"="High"|"ArtCO2"="Normal"| => 7
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="?"|"TPR"="Low"|"ArtCO2"="High"| => 10
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="?"|"TPR"="Low"|"ArtCO2"="Low"| => 3
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="?"|"TPR"="Low"|"ArtCO2"="Normal"| => 61
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="?"|"TPR"="Normal"|"ArtCO2"="High"| => 23
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="?"|"TPR"="Normal"|"ArtCO2"="Normal"| => 6
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="High"|"ArtCO2"="?"| => 1
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="High"|"ArtCO2"="High"| => 9
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="High"|"ArtCO2"="Low"| => 3
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="High"| => 11
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="Low"| => 4
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="Normal"| => 5
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="Low"| => 2
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="Normal"| => 1
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="?"|"ArtCO2"="High"| => 53
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="?"|"ArtCO2"="Low"| => 1
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="?"|"ArtCO2"="Normal"| => 16
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="?"| => 20
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="High"| => 499
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="Low"| => 20
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="Normal"| => 121
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="?"| => 26
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="High"| => 520
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="Low"| => 14
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="Normal"| => 122
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="?"| => 25
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="High"| => 673
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="Low"| => 19
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="Normal"| => 194
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="?"|"ArtCO2"="High"| => 1
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="?"|"ArtCO2"="Low"| => 3
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="?"|"ArtCO2"="Normal"| => 36
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="?"| => 1
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="High"| => 44
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="Low"| => 5
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="Normal"| => 58
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="?"| => 33
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="High"| => 54
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="Low"| => 57
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="Normal"| => 1277
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="?"| => 6
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="High"| => 70
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="Low"| => 1
+"Catechol"="High"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="Normal"| => 90
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="?"|"TPR"="High"|"ArtCO2"="High"| => 5
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="?"|"TPR"="High"|"ArtCO2"="Low"| => 6
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="?"|"TPR"="High"|"ArtCO2"="Normal"| => 14
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="?"|"TPR"="Low"|"ArtCO2"="High"| => 2
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="?"|"TPR"="Low"|"ArtCO2"="Normal"| => 8
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="?"|"TPR"="Normal"|"ArtCO2"="High"| => 7
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="?"|"TPR"="Normal"|"ArtCO2"="Normal"| => 11
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="?"|"ArtCO2"="High"| => 1
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="?"|"ArtCO2"="Low"| => 3
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="?"|"ArtCO2"="Normal"| => 5
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="High"|"ArtCO2"="?"| => 1
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="High"|"ArtCO2"="High"| => 4
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="High"|"ArtCO2"="Low"| => 26
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="High"|"ArtCO2"="Normal"| => 20
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="?"| => 2
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="High"| => 2
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="Low"| => 30
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="Normal"| => 21
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="?"| => 3
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="High"| => 5
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="Low"| => 19
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="Normal"| => 28
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="?"|"ArtCO2"="High"| => 9
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="?"|"ArtCO2"="Low"| => 1
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="?"|"ArtCO2"="Normal"| => 4
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="?"| => 4
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="High"| => 117
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="Low"| => 5
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="Normal"| => 26
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="?"| => 9
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="High"| => 134
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="Low"| => 7
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="Normal"| => 29
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="?"| => 6
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="High"| => 143
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="Low"| => 2
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="Normal"| => 55
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="?"|"ArtCO2"="Normal"| => 29
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="?"| => 10
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="High"| => 13
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="Low"| => 14
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="Normal"| => 316
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="?"| => 15
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="High"| => 16
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="Low"| => 17
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="Normal"| => 350
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="?"| => 17
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="High"| => 22
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="Low"| => 26
+"Catechol"="High"|"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="Normal"| => 440
+"Catechol"="Normal"| => 4350
+"Catechol"="Normal"|"InsuffAnesth"="?"|"SaO2"="High"|"TPR"="High"|"ArtCO2"="Normal"| => 4
+"Catechol"="Normal"|"InsuffAnesth"="?"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="High"| => 1
+"Catechol"="Normal"|"InsuffAnesth"="?"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="Low"| => 1
+"Catechol"="Normal"|"InsuffAnesth"="?"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="Normal"| => 2
+"Catechol"="Normal"|"InsuffAnesth"="?"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="Low"| => 2
+"Catechol"="Normal"|"InsuffAnesth"="?"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="Normal"| => 6
+"Catechol"="Normal"|"InsuffAnesth"="?"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="Low"| => 1
+"Catechol"="Normal"|"InsuffAnesth"="?"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="Normal"| => 42
+"Catechol"="Normal"|"InsuffAnesth"="?"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="Normal"| => 3
+"Catechol"="Normal"|"InsuffAnesth"="?"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="High"| => 1
+"Catechol"="Normal"|"InsuffAnesth"="?"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="Low"| => 2
+"Catechol"="Normal"|"InsuffAnesth"="?"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="Normal"| => 65
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="?"|"TPR"="High"|"ArtCO2"="Low"| => 2
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="?"|"TPR"="High"|"ArtCO2"="Normal"| => 45
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="?"|"TPR"="Low"|"ArtCO2"="High"| => 1
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="?"|"TPR"="Low"|"ArtCO2"="Low"| => 4
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="?"|"TPR"="Low"|"ArtCO2"="Normal"| => 4
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="?"|"TPR"="Normal"|"ArtCO2"="Low"| => 4
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="?"|"TPR"="Normal"|"ArtCO2"="Normal"| => 66
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="?"|"ArtCO2"="Low"| => 2
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="?"|"ArtCO2"="Normal"| => 6
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="High"|"ArtCO2"="?"| => 6
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="High"|"ArtCO2"="High"| => 7
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="High"|"ArtCO2"="Low"| => 85
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="High"|"ArtCO2"="Normal"| => 88
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="?"| => 5
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="High"| => 4
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="Low"| => 57
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="Normal"| => 86
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="?"| => 5
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="High"| => 16
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="Low"| => 111
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="Normal"| => 108
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="?"| => 1
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="High"| => 6
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="Low"| => 1
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="Normal"| => 6
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="High"| => 1
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="Low"| => 2
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="Normal"| => 5
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="High"| => 4
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="Low"| => 1
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="Normal"| => 9
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="?"|"ArtCO2"="High"| => 2
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="?"|"ArtCO2"="Low"| => 5
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="?"|"ArtCO2"="Normal"| => 94
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="?"| => 39
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="High"| => 15
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="Low"| => 60
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="Normal"| => 1256
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="?"| => 3
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="High"| => 7
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="Low"| => 9
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="Normal"| => 164
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="?"| => 53
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="High"| => 31
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="Low"| => 74
+"Catechol"="Normal"|"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="Normal"| => 1614
+"Catechol"="Normal"|"InsuffAnesth"="True"|"SaO2"="?"|"TPR"="High"|"ArtCO2"="Normal"| => 1
+"Catechol"="Normal"|"InsuffAnesth"="True"|"SaO2"="?"|"TPR"="Normal"|"ArtCO2"="Low"| => 1
+"Catechol"="Normal"|"InsuffAnesth"="True"|"SaO2"="?"|"TPR"="Normal"|"ArtCO2"="Normal"| => 1
+"Catechol"="Normal"|"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="High"|"ArtCO2"="Low"| => 1
+"Catechol"="Normal"|"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="Low"| => 1
+"Catechol"="Normal"|"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="Normal"| => 3
+"Catechol"="Normal"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="?"|"ArtCO2"="High"| => 1
+"Catechol"="Normal"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="High"| => 2
+"Catechol"="Normal"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="Normal"| => 1
+"Catechol"="Normal"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="High"| => 2
+"Catechol"="Normal"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="Low"| => 1
+"Catechol"="Normal"|"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="High"| => 2
+"Catechol"="Normal"|"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="Normal"| => 21
+"Catechol"="Normal"|"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="Normal"| => 4
+"Catechol"="Normal"|"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="?"| => 1
+"Catechol"="Normal"|"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="Normal"| => 3
+"Disconnect"="?"| => 299
+"Disconnect"="False"| => 10263
+"Disconnect"="True"| => 538
+"ErrCauter"="?"| => 308
+"ErrCauter"="False"| => 9733
+"ErrCauter"="True"| => 1059
+"ErrLowOutput"="?"| => 311
+"ErrLowOutput"="?"|"HR"="High"| => 165
+"ErrLowOutput"="?"|"HR"="Low"| => 12
+"ErrLowOutput"="?"|"HR"="Normal"| => 134
+"ErrLowOutput"="False"| => 10241
+"ErrLowOutput"="False"|"HR"="?"| => 297
+"ErrLowOutput"="False"|"HR"="High"| => 5417
+"ErrLowOutput"="False"|"HR"="Low"| => 477
+"ErrLowOutput"="False"|"HR"="Normal"| => 4050
+"ErrLowOutput"="True"| => 548
+"ErrLowOutput"="True"|"HR"="?"| => 18
+"ErrLowOutput"="True"|"HR"="High"| => 290
+"ErrLowOutput"="True"|"HR"="Low"| => 24
+"ErrLowOutput"="True"|"HR"="Normal"| => 216
+"ExpCO2"="?"|"ArtCO2"="High"|"VentLung"="Low"| => 13
+"ExpCO2"="?"|"ArtCO2"="High"|"VentLung"="Normal"| => 19
+"ExpCO2"="?"|"ArtCO2"="High"|"VentLung"="Zero"| => 26
+"ExpCO2"="?"|"ArtCO2"="Low"|"VentLung"="High"| => 5
+"ExpCO2"="?"|"ArtCO2"="Low"|"VentLung"="Low"| => 1
+"ExpCO2"="?"|"ArtCO2"="Low"|"VentLung"="Normal"| => 15
+"ExpCO2"="?"|"ArtCO2"="Normal"|"VentLung"="Low"| => 1
+"ExpCO2"="?"|"ArtCO2"="Normal"|"VentLung"="Normal"| => 174
+"ExpCO2"="High"|"ArtCO2"="?"|"VentLung"="Low"| => 15
+"ExpCO2"="High"|"ArtCO2"="?"|"VentLung"="Normal"| => 20
+"ExpCO2"="High"|"ArtCO2"="High"|"VentLung"="?"| => 35
+"ExpCO2"="High"|"ArtCO2"="High"|"VentLung"="High"| => 17
+"ExpCO2"="High"|"ArtCO2"="High"|"VentLung"="Low"| => 557
+"ExpCO2"="High"|"ArtCO2"="High"|"VentLung"="Normal"| => 801
+"ExpCO2"="High"|"ArtCO2"="High"|"VentLung"="Zero"| => 9
+"ExpCO2"="High"|"ArtCO2"="Low"|"VentLung"="High"| => 1
+"ExpCO2"="High"|"ArtCO2"="Low"|"VentLung"="Normal"| => 3
+"ExpCO2"="High"|"ArtCO2"="Normal"|"VentLung"="?"| => 2
+"ExpCO2"="High"|"ArtCO2"="Normal"|"VentLung"="Normal"| => 70
+"ExpCO2"="High"|"ArtCO2"="Normal"|"VentLung"="Zero"| => 1
+"ExpCO2"="Low"|"ArtCO2"="?"|"VentLung"="High"| => 6
+"ExpCO2"="Low"|"ArtCO2"="?"|"VentLung"="Normal"| => 16
+"ExpCO2"="Low"|"ArtCO2"="High"|"VentLung"="?"| => 1
+"ExpCO2"="Low"|"ArtCO2"="High"|"VentLung"="Low"| => 6
+"ExpCO2"="Low"|"ArtCO2"="High"|"VentLung"="Normal"| => 4
+"ExpCO2"="Low"|"ArtCO2"="High"|"VentLung"="Zero"| => 12
+"ExpCO2"="Low"|"ArtCO2"="Low"|"VentLung"="?"| => 17
+"ExpCO2"="Low"|"ArtCO2"="Low"|"VentLung"="High"| => 283
+"ExpCO2"="Low"|"ArtCO2"="Low"|"VentLung"="Low"| => 7
+"ExpCO2"="Low"|"ArtCO2"="Low"|"VentLung"="Normal"| => 381
+"ExpCO2"="Low"|"ArtCO2"="Normal"|"VentLung"="?"| => 1
+"ExpCO2"="Low"|"ArtCO2"="Normal"|"VentLung"="Normal"| => 68
+"ExpCO2"="Low"|"ArtCO2"="Normal"|"VentLung"="Zero"| => 1
+"ExpCO2"="Normal"|"ArtCO2"="?"|"VentLung"="Low"| => 1
+"ExpCO2"="Normal"|"ArtCO2"="?"|"VentLung"="Normal"| => 195
+"ExpCO2"="Normal"|"ArtCO2"="?"|"VentLung"="Zero"| => 1
+"ExpCO2"="Normal"|"ArtCO2"="High"|"VentLung"="High"| => 1
+"ExpCO2"="Normal"|"ArtCO2"="High"|"VentLung"="Low"| => 5
+"ExpCO2"="Normal"|"ArtCO2"="High"|"VentLung"="Normal"| => 6
+"ExpCO2"="Normal"|"ArtCO2"="High"|"VentLung"="Zero"| => 13
+"ExpCO2"="Normal"|"ArtCO2"="Low"|"VentLung"="High"| => 4
+"ExpCO2"="Normal"|"ArtCO2"="Low"|"VentLung"="Normal"| => 2
+"ExpCO2"="Normal"|"ArtCO2"="Normal"|"VentLung"="?"| => 173
+"ExpCO2"="Normal"|"ArtCO2"="Normal"|"VentLung"="High"| => 38
+"ExpCO2"="Normal"|"ArtCO2"="Normal"|"VentLung"="Low"| => 11
+"ExpCO2"="Normal"|"ArtCO2"="Normal"|"VentLung"="Normal"| => 6717
+"ExpCO2"="Zero"|"ArtCO2"="?"|"VentLung"="Normal"| => 1
+"ExpCO2"="Zero"|"ArtCO2"="?"|"VentLung"="Zero"| => 37
+"ExpCO2"="Zero"|"ArtCO2"="High"|"VentLung"="?"| => 40
+"ExpCO2"="Zero"|"ArtCO2"="High"|"VentLung"="Low"| => 5
+"ExpCO2"="Zero"|"ArtCO2"="High"|"VentLung"="Normal"| => 10
+"ExpCO2"="Zero"|"ArtCO2"="High"|"VentLung"="Zero"| => 1137
+"ExpCO2"="Zero"|"ArtCO2"="Low"|"VentLung"="High"| => 3
+"ExpCO2"="Zero"|"ArtCO2"="Low"|"VentLung"="Low"| => 1
+"ExpCO2"="Zero"|"ArtCO2"="Low"|"VentLung"="Normal"| => 5
+"ExpCO2"="Zero"|"ArtCO2"="Low"|"VentLung"="Zero"| => 19
+"ExpCO2"="Zero"|"ArtCO2"="Normal"|"VentLung"="?"| => 2
+"ExpCO2"="Zero"|"ArtCO2"="Normal"|"VentLung"="Low"| => 1
+"ExpCO2"="Zero"|"ArtCO2"="Normal"|"VentLung"="Normal"| => 59
+"ExpCO2"="Zero"|"ArtCO2"="Normal"|"VentLung"="Zero"| => 25
+"FiO2"="?"| => 293
+"FiO2"="Low"| => 106
+"FiO2"="Normal"| => 10701
+"HR"="?"|"Catechol"="High"| => 187
+"HR"="?"|"Catechol"="Normal"| => 128
+"HR"="?"|"ErrCauter"="False"| => 284
+"HR"="?"|"ErrCauter"="True"| => 31
+"HR"="?"|"StrokeVolume"="High"| => 13
+"HR"="?"|"StrokeVolume"="Low"| => 77
+"HR"="?"|"StrokeVolume"="Normal"| => 225
+"HR"="High"|"Catechol"="?"| => 160
+"HR"="High"|"Catechol"="High"| => 5658
+"HR"="High"|"Catechol"="Normal"| => 54
+"HR"="High"|"ErrCauter"="?"| => 159
+"HR"="High"|"ErrCauter"="False"| => 5157
+"HR"="High"|"ErrCauter"="True"| => 556
+"HR"="High"|"StrokeVolume"="?"| => 180
+"HR"="High"|"StrokeVolume"="High"| => 221
+"HR"="High"|"StrokeVolume"="Low"| => 1417
+"HR"="High"|"StrokeVolume"="Normal"| => 4054
+"HR"="Low"|"Catechol"="?"| => 13
+"HR"="Low"|"Catechol"="High"| => 62
+"HR"="Low"|"Catechol"="Normal"| => 438
+"HR"="Low"|"ErrCauter"="?"| => 18
+"HR"="Low"|"ErrCauter"="False"| => 439
+"HR"="Low"|"ErrCauter"="True"| => 56
+"HR"="Low"|"StrokeVolume"="?"| => 18
+"HR"="Low"|"StrokeVolume"="High"| => 20
+"HR"="Low"|"StrokeVolume"="Low"| => 127
+"HR"="Low"|"StrokeVolume"="Normal"| => 348
+"HR"="Normal"|"Catechol"="?"| => 124
+"HR"="Normal"|"Catechol"="High"| => 546
+"HR"="Normal"|"Catechol"="Normal"| => 3730
+"HR"="Normal"|"ErrCauter"="?"| => 131
+"HR"="Normal"|"ErrCauter"="False"| => 3853
+"HR"="Normal"|"ErrCauter"="True"| => 416
+"HR"="Normal"|"StrokeVolume"="?"| => 121
+"HR"="Normal"|"StrokeVolume"="High"| => 180
+"HR"="Normal"|"StrokeVolume"="Low"| => 1085
+"HR"="Normal"|"StrokeVolume"="Normal"| => 3014
+"HRBP"="?"|"ErrLowOutput"="False"|"HR"="High"| => 168
+"HRBP"="?"|"ErrLowOutput"="False"|"HR"="Low"| => 8
+"HRBP"="?"|"ErrLowOutput"="False"|"HR"="Normal"| => 113
+"HRBP"="?"|"ErrLowOutput"="True"|"HR"="High"| => 9
+"HRBP"="?"|"ErrLowOutput"="True"|"HR"="Low"| => 1
+"HRBP"="?"|"ErrLowOutput"="True"|"HR"="Normal"| => 7
+"HRBP"="High"|"ErrLowOutput"="?"|"HR"="High"| => 154
+"HRBP"="High"|"ErrLowOutput"="?"|"HR"="Normal"| => 1
+"HRBP"="High"|"ErrLowOutput"="False"|"HR"="?"| => 161
+"HRBP"="High"|"ErrLowOutput"="False"|"HR"="High"| => 5145
+"HRBP"="High"|"ErrLowOutput"="False"|"HR"="Low"| => 6
+"HRBP"="High"|"ErrLowOutput"="False"|"HR"="Normal"| => 38
+"HRBP"="High"|"ErrLowOutput"="True"|"HR"="?"| => 4
+"HRBP"="High"|"ErrLowOutput"="True"|"HR"="High"| => 88
+"HRBP"="High"|"ErrLowOutput"="True"|"HR"="Low"| => 1
+"HRBP"="High"|"ErrLowOutput"="True"|"HR"="Normal"| => 1
+"HRBP"="Low"|"ErrLowOutput"="?"|"HR"="High"| => 6
+"HRBP"="Low"|"ErrLowOutput"="?"|"HR"="Low"| => 12
+"HRBP"="Low"|"ErrLowOutput"="?"|"HR"="Normal"| => 4
+"HRBP"="Low"|"ErrLowOutput"="False"|"HR"="?"| => 18
+"HRBP"="Low"|"ErrLowOutput"="False"|"HR"="High"| => 48
+"HRBP"="Low"|"ErrLowOutput"="False"|"HR"="Low"| => 458
+"HRBP"="Low"|"ErrLowOutput"="False"|"HR"="Normal"| => 37
+"HRBP"="Low"|"ErrLowOutput"="True"|"HR"="?"| => 6
+"HRBP"="Low"|"ErrLowOutput"="True"|"HR"="High"| => 89
+"HRBP"="Low"|"ErrLowOutput"="True"|"HR"="Low"| => 22
+"HRBP"="Low"|"ErrLowOutput"="True"|"HR"="Normal"| => 75
+"HRBP"="Normal"|"ErrLowOutput"="?"|"HR"="High"| => 5
+"HRBP"="Normal"|"ErrLowOutput"="?"|"HR"="Normal"| => 129
+"HRBP"="Normal"|"ErrLowOutput"="False"|"HR"="?"| => 118
+"HRBP"="Normal"|"ErrLowOutput"="False"|"HR"="High"| => 56
+"HRBP"="Normal"|"ErrLowOutput"="False"|"HR"="Low"| => 5
+"HRBP"="Normal"|"ErrLowOutput"="False"|"HR"="Normal"| => 3862
+"HRBP"="Normal"|"ErrLowOutput"="True"|"HR"="?"| => 8
+"HRBP"="Normal"|"ErrLowOutput"="True"|"HR"="High"| => 104
+"HRBP"="Normal"|"ErrLowOutput"="True"|"HR"="Normal"| => 133
+"HREKG"="?"|"HR"="High"|"ErrCauter"="False"| => 134
+"HREKG"="?"|"HR"="High"|"ErrCauter"="True"| => 10
+"HREKG"="?"|"HR"="Low"|"ErrCauter"="False"| => 11
+"HREKG"="?"|"HR"="Low"|"ErrCauter"="True"| => 1
+"HREKG"="?"|"HR"="Normal"|"ErrCauter"="False"| => 125
+"HREKG"="?"|"HR"="Normal"|"ErrCauter"="True"| => 14
+"HREKG"="High"|"HR"="?"|"ErrCauter"="False"| => 158
+"HREKG"="High"|"HR"="?"|"ErrCauter"="True"| => 9
+"HREKG"="High"|"HR"="High"|"ErrCauter"="?"| => 149
+"HREKG"="High"|"HR"="High"|"ErrCauter"="False"| => 4930
+"HREKG"="High"|"HR"="High"|"ErrCauter"="True"| => 186
+"HREKG"="High"|"HR"="Low"|"ErrCauter"="True"| => 20
+"HREKG"="High"|"HR"="Normal"|"ErrCauter"="?"| => 8
+"HREKG"="High"|"HR"="Normal"|"ErrCauter"="False"| => 41
+"HREKG"="High"|"HR"="Normal"|"ErrCauter"="True"| => 124
+"HREKG"="Low"|"HR"="?"|"ErrCauter"="False"| => 15
+"HREKG"="Low"|"HR"="?"|"ErrCauter"="True"| => 12
+"HREKG"="Low"|"HR"="High"|"ErrCauter"="?"| => 4
+"HREKG"="Low"|"HR"="High"|"ErrCauter"="False"| => 47
+"HREKG"="Low"|"HR"="High"|"ErrCauter"="True"| => 174
+"HREKG"="Low"|"HR"="Low"|"ErrCauter"="?"| => 18
+"HREKG"="Low"|"HR"="Low"|"ErrCauter"="False"| => 423
+"HREKG"="Low"|"HR"="Low"|"ErrCauter"="True"| => 20
+"HREKG"="Low"|"HR"="Normal"|"ErrCauter"="?"| => 8
+"HREKG"="Low"|"HR"="Normal"|"ErrCauter"="False"| => 50
+"HREKG"="Low"|"HR"="Normal"|"ErrCauter"="True"| => 159
+"HREKG"="Normal"|"HR"="?"|"ErrCauter"="False"| => 111
+"HREKG"="Normal"|"HR"="?"|"ErrCauter"="True"| => 10
+"HREKG"="Normal"|"HR"="High"|"ErrCauter"="?"| => 6
+"HREKG"="Normal"|"HR"="High"|"ErrCauter"="False"| => 46
+"HREKG"="Normal"|"HR"="High"|"ErrCauter"="True"| => 186
+"HREKG"="Normal"|"HR"="Low"|"ErrCauter"="False"| => 5
+"HREKG"="Normal"|"HR"="Low"|"ErrCauter"="True"| => 15
+"HREKG"="Normal"|"HR"="Normal"|"ErrCauter"="?"| => 115
+"HREKG"="Normal"|"HR"="Normal"|"ErrCauter"="False"| => 3637
+"HREKG"="Normal"|"HR"="Normal"|"ErrCauter"="True"| => 119
+"HRSat"="?"|"HR"="High"|"ErrCauter"="False"| => 154
+"HRSat"="?"|"HR"="High"|"ErrCauter"="True"| => 22
+"HRSat"="?"|"HR"="Low"|"ErrCauter"="False"| => 16
+"HRSat"="?"|"HR"="Low"|"ErrCauter"="True"| => 4
+"HRSat"="?"|"HR"="Normal"|"ErrCauter"="False"| => 115
+"HRSat"="?"|"HR"="Normal"|"ErrCauter"="True"| => 8
+"HRSat"="High"|"HR"="?"|"ErrCauter"="False"| => 160
+"HRSat"="High"|"HR"="?"|"ErrCauter"="True"| => 13
+"HRSat"="High"|"HR"="High"|"ErrCauter"="?"| => 147
+"HRSat"="High"|"HR"="High"|"ErrCauter"="False"| => 4912
+"HRSat"="High"|"HR"="High"|"ErrCauter"="True"| => 187
+"HRSat"="High"|"HR"="Low"|"ErrCauter"="False"| => 5
+"HRSat"="High"|"HR"="Low"|"ErrCauter"="True"| => 17
+"HRSat"="High"|"HR"="Normal"|"ErrCauter"="?"| => 12
+"HRSat"="High"|"HR"="Normal"|"ErrCauter"="False"| => 38
+"HRSat"="High"|"HR"="Normal"|"ErrCauter"="True"| => 152
+"HRSat"="Low"|"HR"="?"|"ErrCauter"="False"| => 16
+"HRSat"="Low"|"HR"="?"|"ErrCauter"="True"| => 8
+"HRSat"="Low"|"HR"="High"|"ErrCauter"="?"| => 5
+"HRSat"="Low"|"HR"="High"|"ErrCauter"="False"| => 47
+"HRSat"="Low"|"HR"="High"|"ErrCauter"="True"| => 177
+"HRSat"="Low"|"HR"="Low"|"ErrCauter"="?"| => 18
+"HRSat"="Low"|"HR"="Low"|"ErrCauter"="False"| => 411
+"HRSat"="Low"|"HR"="Low"|"ErrCauter"="True"| => 16
+"HRSat"="Low"|"HR"="Normal"|"ErrCauter"="?"| => 4
+"HRSat"="Low"|"HR"="Normal"|"ErrCauter"="False"| => 36
+"HRSat"="Low"|"HR"="Normal"|"ErrCauter"="True"| => 128
+"HRSat"="Normal"|"HR"="?"|"ErrCauter"="False"| => 108
+"HRSat"="Normal"|"HR"="?"|"ErrCauter"="True"| => 10
+"HRSat"="Normal"|"HR"="High"|"ErrCauter"="?"| => 7
+"HRSat"="Normal"|"HR"="High"|"ErrCauter"="False"| => 44
+"HRSat"="Normal"|"HR"="High"|"ErrCauter"="True"| => 170
+"HRSat"="Normal"|"HR"="Low"|"ErrCauter"="False"| => 7
+"HRSat"="Normal"|"HR"="Low"|"ErrCauter"="True"| => 19
+"HRSat"="Normal"|"HR"="Normal"|"ErrCauter"="?"| => 115
+"HRSat"="Normal"|"HR"="Normal"|"ErrCauter"="False"| => 3664
+"HRSat"="Normal"|"HR"="Normal"|"ErrCauter"="True"| => 128
+"History"="?"|"LVFailure"="False"| => 306
+"History"="?"|"LVFailure"="True"| => 18
+"History"="False"|"LVFailure"="?"| => 282
+"History"="False"|"LVFailure"="False"| => 9842
+"History"="False"|"LVFailure"="True"| => 47
+"History"="True"|"LVFailure"="?"| => 19
+"History"="True"|"LVFailure"="False"| => 108
+"History"="True"|"LVFailure"="True"| => 478
+"Hypovolemia"="?"| => 284
+"Hypovolemia"="?"|"LVFailure"="False"| => 270
+"Hypovolemia"="?"|"LVFailure"="True"| => 14
+"Hypovolemia"="?"|"StrokeVolume"="High"|"LVEDVolume"="High"|"LVFailure"="False"| => 1
+"Hypovolemia"="?"|"StrokeVolume"="High"|"LVEDVolume"="Low"|"LVFailure"="False"| => 2
+"Hypovolemia"="?"|"StrokeVolume"="High"|"LVEDVolume"="Normal"|"LVFailure"="False"| => 14
+"Hypovolemia"="?"|"StrokeVolume"="Low"|"LVEDVolume"="High"|"LVFailure"="False"| => 1
+"Hypovolemia"="?"|"StrokeVolume"="Low"|"LVEDVolume"="High"|"LVFailure"="True"| => 4
+"Hypovolemia"="?"|"StrokeVolume"="Low"|"LVEDVolume"="Low"|"LVFailure"="False"| => 57
+"Hypovolemia"="?"|"StrokeVolume"="Low"|"LVEDVolume"="Low"|"LVFailure"="True"| => 5
+"Hypovolemia"="?"|"StrokeVolume"="Low"|"LVEDVolume"="Normal"|"LVFailure"="False"| => 9
+"Hypovolemia"="?"|"StrokeVolume"="Normal"|"LVEDVolume"="High"|"LVFailure"="False"| => 8
+"Hypovolemia"="?"|"StrokeVolume"="Normal"|"LVEDVolume"="High"|"LVFailure"="True"| => 5
+"Hypovolemia"="?"|"StrokeVolume"="Normal"|"LVEDVolume"="Low"|"LVFailure"="False"| => 16
+"Hypovolemia"="?"|"StrokeVolume"="Normal"|"LVEDVolume"="Normal"|"LVFailure"="False"| => 162
+"Hypovolemia"="False"| => 8615
+"Hypovolemia"="False"|"LVFailure"="?"| => 240
+"Hypovolemia"="False"|"LVFailure"="False"| => 7962
+"Hypovolemia"="False"|"LVFailure"="True"| => 413
+"Hypovolemia"="False"|"StrokeVolume"="?"|"LVEDVolume"="High"|"LVFailure"="False"| => 13
+"Hypovolemia"="False"|"StrokeVolume"="?"|"LVEDVolume"="High"|"LVFailure"="True"| => 11
+"Hypovolemia"="False"|"StrokeVolume"="?"|"LVEDVolume"="Low"|"LVFailure"="False"| => 14
+"Hypovolemia"="False"|"StrokeVolume"="?"|"LVEDVolume"="Normal"|"LVFailure"="False"| => 218
+"Hypovolemia"="False"|"StrokeVolume"="High"|"LVEDVolume"="?"|"LVFailure"="False"| => 5
+"Hypovolemia"="False"|"StrokeVolume"="High"|"LVEDVolume"="?"|"LVFailure"="True"| => 1
+"Hypovolemia"="False"|"StrokeVolume"="High"|"LVEDVolume"="High"|"LVFailure"="?"| => 1
+"Hypovolemia"="False"|"StrokeVolume"="High"|"LVEDVolume"="High"|"LVFailure"="False"| => 21
+"Hypovolemia"="False"|"StrokeVolume"="High"|"LVEDVolume"="High"|"LVFailure"="True"| => 5
+"Hypovolemia"="False"|"StrokeVolume"="High"|"LVEDVolume"="Low"|"LVFailure"="?"| => 1
+"Hypovolemia"="False"|"StrokeVolume"="High"|"LVEDVolume"="Low"|"LVFailure"="False"| => 18
+"Hypovolemia"="False"|"StrokeVolume"="High"|"LVEDVolume"="Normal"|"LVFailure"="?"| => 12
+"Hypovolemia"="False"|"StrokeVolume"="High"|"LVEDVolume"="Normal"|"LVFailure"="False"| => 329
+"Hypovolemia"="False"|"StrokeVolume"="High"|"LVEDVolume"="Normal"|"LVFailure"="True"| => 1
+"Hypovolemia"="False"|"StrokeVolume"="Low"|"LVEDVolume"="?"|"LVFailure"="False"| => 7
+"Hypovolemia"="False"|"StrokeVolume"="Low"|"LVEDVolume"="?"|"LVFailure"="True"| => 10
+"Hypovolemia"="False"|"StrokeVolume"="Low"|"LVEDVolume"="High"|"LVFailure"="?"| => 5
+"Hypovolemia"="False"|"StrokeVolume"="Low"|"LVEDVolume"="High"|"LVFailure"="False"| => 16
+"Hypovolemia"="False"|"StrokeVolume"="Low"|"LVEDVolume"="High"|"LVFailure"="True"| => 172
+"Hypovolemia"="False"|"StrokeVolume"="Low"|"LVEDVolume"="Low"|"LVFailure"="False"| => 17
+"Hypovolemia"="False"|"StrokeVolume"="Low"|"LVEDVolume"="Low"|"LVFailure"="True"| => 1
+"Hypovolemia"="False"|"StrokeVolume"="Low"|"LVEDVolume"="Normal"|"LVFailure"="?"| => 7
+"Hypovolemia"="False"|"StrokeVolume"="Low"|"LVEDVolume"="Normal"|"LVFailure"="False"| => 349
+"Hypovolemia"="False"|"StrokeVolume"="Low"|"LVEDVolume"="Normal"|"LVFailure"="True"| => 17
+"Hypovolemia"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="?"|"LVFailure"="False"| => 249
+"Hypovolemia"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="?"|"LVFailure"="True"| => 9
+"Hypovolemia"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="High"|"LVFailure"="?"| => 21
+"Hypovolemia"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="High"|"LVFailure"="False"| => 354
+"Hypovolemia"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="High"|"LVFailure"="True"| => 171
+"Hypovolemia"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="Low"|"LVFailure"="?"| => 13
+"Hypovolemia"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="Low"|"LVFailure"="False"| => 315
+"Hypovolemia"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="Low"|"LVFailure"="True"| => 1
+"Hypovolemia"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="Normal"|"LVFailure"="?"| => 180
+"Hypovolemia"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="Normal"|"LVFailure"="False"| => 6037
+"Hypovolemia"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="Normal"|"LVFailure"="True"| => 14
+"Hypovolemia"="True"| => 2201
+"Hypovolemia"="True"|"LVFailure"="?"| => 61
+"Hypovolemia"="True"|"LVFailure"="False"| => 2024
+"Hypovolemia"="True"|"LVFailure"="True"| => 116
+"Hypovolemia"="True"|"StrokeVolume"="?"|"LVEDVolume"="Low"|"LVFailure"="False"| => 57
+"Hypovolemia"="True"|"StrokeVolume"="?"|"LVEDVolume"="Low"|"LVFailure"="True"| => 6
+"Hypovolemia"="True"|"StrokeVolume"="High"|"LVEDVolume"="Low"|"LVFailure"="False"| => 22
+"Hypovolemia"="True"|"StrokeVolume"="High"|"LVEDVolume"="Normal"|"LVFailure"="False"| => 1
+"Hypovolemia"="True"|"StrokeVolume"="Low"|"LVEDVolume"="?"|"LVFailure"="False"| => 50
+"Hypovolemia"="True"|"StrokeVolume"="Low"|"LVEDVolume"="?"|"LVFailure"="True"| => 3
+"Hypovolemia"="True"|"StrokeVolume"="Low"|"LVEDVolume"="High"|"LVFailure"="?"| => 2
+"Hypovolemia"="True"|"StrokeVolume"="Low"|"LVEDVolume"="High"|"LVFailure"="False"| => 21
+"Hypovolemia"="True"|"StrokeVolume"="Low"|"LVEDVolume"="High"|"LVFailure"="True"| => 2
+"Hypovolemia"="True"|"StrokeVolume"="Low"|"LVEDVolume"="Low"|"LVFailure"="?"| => 55
+"Hypovolemia"="True"|"StrokeVolume"="Low"|"LVEDVolume"="Low"|"LVFailure"="False"| => 1770
+"Hypovolemia"="True"|"StrokeVolume"="Low"|"LVEDVolume"="Low"|"LVFailure"="True"| => 100
+"Hypovolemia"="True"|"StrokeVolume"="Low"|"LVEDVolume"="Normal"|"LVFailure"="?"| => 2
+"Hypovolemia"="True"|"StrokeVolume"="Low"|"LVEDVolume"="Normal"|"LVFailure"="False"| => 19
+"Hypovolemia"="True"|"StrokeVolume"="Low"|"LVEDVolume"="Normal"|"LVFailure"="True"| => 5
+"Hypovolemia"="True"|"StrokeVolume"="Normal"|"LVEDVolume"="?"|"LVFailure"="False"| => 1
+"Hypovolemia"="True"|"StrokeVolume"="Normal"|"LVEDVolume"="High"|"LVFailure"="False"| => 1
+"Hypovolemia"="True"|"StrokeVolume"="Normal"|"LVEDVolume"="Low"|"LVFailure"="?"| => 2
+"Hypovolemia"="True"|"StrokeVolume"="Normal"|"LVEDVolume"="Low"|"LVFailure"="False"| => 82
+"InsuffAnesth"="?"| => 304
+"InsuffAnesth"="?"|"SaO2"="High"|"TPR"="High"|"ArtCO2"="Normal"| => 4
+"InsuffAnesth"="?"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="High"| => 1
+"InsuffAnesth"="?"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="Low"| => 5
+"InsuffAnesth"="?"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="Normal"| => 3
+"InsuffAnesth"="?"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="Low"| => 3
+"InsuffAnesth"="?"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="Normal"| => 7
+"InsuffAnesth"="?"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="High"| => 21
+"InsuffAnesth"="?"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="Normal"| => 4
+"InsuffAnesth"="?"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="High"| => 22
+"InsuffAnesth"="?"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="Normal"| => 3
+"InsuffAnesth"="?"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="High"| => 21
+"InsuffAnesth"="?"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="Low"| => 1
+"InsuffAnesth"="?"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="Normal"| => 8
+"InsuffAnesth"="?"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="High"| => 4
+"InsuffAnesth"="?"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="Low"| => 1
+"InsuffAnesth"="?"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="Normal"| => 53
+"InsuffAnesth"="?"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="High"| => 1
+"InsuffAnesth"="?"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="Low"| => 3
+"InsuffAnesth"="?"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="Normal"| => 53
+"InsuffAnesth"="?"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="High"| => 3
+"InsuffAnesth"="?"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="Low"| => 3
+"InsuffAnesth"="?"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="Normal"| => 80
+"InsuffAnesth"="False"| => 8627
+"InsuffAnesth"="False"|"SaO2"="?"|"TPR"="High"|"ArtCO2"="High"| => 14
+"InsuffAnesth"="False"|"SaO2"="?"|"TPR"="High"|"ArtCO2"="Low"| => 3
+"InsuffAnesth"="False"|"SaO2"="?"|"TPR"="High"|"ArtCO2"="Normal"| => 52
+"InsuffAnesth"="False"|"SaO2"="?"|"TPR"="Low"|"ArtCO2"="High"| => 11
+"InsuffAnesth"="False"|"SaO2"="?"|"TPR"="Low"|"ArtCO2"="Low"| => 7
+"InsuffAnesth"="False"|"SaO2"="?"|"TPR"="Low"|"ArtCO2"="Normal"| => 65
+"InsuffAnesth"="False"|"SaO2"="?"|"TPR"="Normal"|"ArtCO2"="High"| => 23
+"InsuffAnesth"="False"|"SaO2"="?"|"TPR"="Normal"|"ArtCO2"="Low"| => 4
+"InsuffAnesth"="False"|"SaO2"="?"|"TPR"="Normal"|"ArtCO2"="Normal"| => 72
+"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="?"|"ArtCO2"="Low"| => 2
+"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="?"|"ArtCO2"="Normal"| => 6
+"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="High"|"ArtCO2"="?"| => 7
+"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="High"|"ArtCO2"="High"| => 16
+"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="High"|"ArtCO2"="Low"| => 88
+"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="High"|"ArtCO2"="Normal"| => 89
+"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="?"| => 5
+"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="High"| => 15
+"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="Low"| => 65
+"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="Normal"| => 98
+"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="?"| => 5
+"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="High"| => 16
+"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="Low"| => 118
+"InsuffAnesth"="False"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="Normal"| => 113
+"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="?"|"ArtCO2"="High"| => 53
+"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="?"|"ArtCO2"="Low"| => 1
+"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="?"|"ArtCO2"="Normal"| => 16
+"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="?"| => 21
+"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="High"| => 528
+"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="Low"| => 22
+"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="Normal"| => 135
+"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="?"| => 26
+"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="High"| => 532
+"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="Low"| => 16
+"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="Normal"| => 134
+"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="?"| => 25
+"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="High"| => 702
+"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="Low"| => 21
+"InsuffAnesth"="False"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="Normal"| => 207
+"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="?"|"ArtCO2"="High"| => 3
+"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="?"|"ArtCO2"="Low"| => 8
+"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="?"|"ArtCO2"="Normal"| => 130
+"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="?"| => 40
+"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="High"| => 60
+"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="Low"| => 66
+"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="Normal"| => 1347
+"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="?"| => 36
+"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="High"| => 63
+"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="Low"| => 66
+"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="Normal"| => 1477
+"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="?"| => 59
+"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="High"| => 106
+"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="Low"| => 81
+"InsuffAnesth"="False"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="Normal"| => 1752
+"InsuffAnesth"="True"| => 2169
+"InsuffAnesth"="True"|"SaO2"="?"|"TPR"="High"|"ArtCO2"="High"| => 5
+"InsuffAnesth"="True"|"SaO2"="?"|"TPR"="High"|"ArtCO2"="Low"| => 6
+"InsuffAnesth"="True"|"SaO2"="?"|"TPR"="High"|"ArtCO2"="Normal"| => 15
+"InsuffAnesth"="True"|"SaO2"="?"|"TPR"="Low"|"ArtCO2"="High"| => 2
+"InsuffAnesth"="True"|"SaO2"="?"|"TPR"="Low"|"ArtCO2"="Normal"| => 8
+"InsuffAnesth"="True"|"SaO2"="?"|"TPR"="Normal"|"ArtCO2"="High"| => 7
+"InsuffAnesth"="True"|"SaO2"="?"|"TPR"="Normal"|"ArtCO2"="Low"| => 1
+"InsuffAnesth"="True"|"SaO2"="?"|"TPR"="Normal"|"ArtCO2"="Normal"| => 12
+"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="?"|"ArtCO2"="High"| => 1
+"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="?"|"ArtCO2"="Low"| => 3
+"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="?"|"ArtCO2"="Normal"| => 5
+"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="High"|"ArtCO2"="?"| => 1
+"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="High"|"ArtCO2"="High"| => 5
+"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="High"|"ArtCO2"="Low"| => 27
+"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="High"|"ArtCO2"="Normal"| => 20
+"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="?"| => 2
+"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="High"| => 2
+"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="Low"| => 30
+"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="Low"|"ArtCO2"="Normal"| => 21
+"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="?"| => 3
+"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="High"| => 5
+"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="Low"| => 21
+"InsuffAnesth"="True"|"SaO2"="High"|"TPR"="Normal"|"ArtCO2"="Normal"| => 31
+"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="?"|"ArtCO2"="High"| => 10
+"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="?"|"ArtCO2"="Low"| => 1
+"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="?"|"ArtCO2"="Normal"| => 4
+"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="?"| => 4
+"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="High"| => 122
+"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="Low"| => 6
+"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="High"|"ArtCO2"="Normal"| => 29
+"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="?"| => 9
+"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="High"| => 142
+"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="Low"| => 8
+"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="Low"|"ArtCO2"="Normal"| => 31
+"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="?"| => 6
+"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="High"| => 149
+"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="Low"| => 2
+"InsuffAnesth"="True"|"SaO2"="Low"|"TPR"="Normal"|"ArtCO2"="Normal"| => 57
+"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="?"|"ArtCO2"="Normal"| => 29
+"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="?"| => 10
+"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="High"| => 13
+"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="Low"| => 14
+"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="High"|"ArtCO2"="Normal"| => 349
+"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="?"| => 15
+"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="High"| => 17
+"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="Low"| => 18
+"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="Low"|"ArtCO2"="Normal"| => 366
+"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="?"| => 18
+"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="High"| => 22
+"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="Low"| => 26
+"InsuffAnesth"="True"|"SaO2"="Normal"|"TPR"="Normal"|"ArtCO2"="Normal"| => 459
+"Intubation"="?"| => 296
+"Intubation"="?"|"VentLung"="High"| => 12
+"Intubation"="?"|"VentLung"="Low"| => 17
+"Intubation"="?"|"VentLung"="Normal"| => 231
+"Intubation"="?"|"VentLung"="Zero"| => 36
+"Intubation"="Esophageal"| => 310
+"Intubation"="Esophageal"|"VentLung"="?"| => 17
+"Intubation"="Esophageal"|"VentLung"="High"| => 4
+"Intubation"="Esophageal"|"VentLung"="Low"| => 1
+"Intubation"="Esophageal"|"VentLung"="Normal"| => 2
+"Intubation"="Esophageal"|"VentLung"="Zero"| => 286
+"Intubation"="Normal"| => 9926
+"Intubation"="Normal"|"VentLung"="?"| => 239
+"Intubation"="Normal"|"VentLung"="High"| => 329
+"Intubation"="Normal"|"VentLung"="Low"| => 572
+"Intubation"="Normal"|"VentLung"="Normal"| => 7896
+"Intubation"="Normal"|"VentLung"="Zero"| => 890
+"Intubation"="OneSided"| => 568
+"Intubation"="OneSided"|"VentLung"="?"| => 15
+"Intubation"="OneSided"|"VentLung"="High"| => 13
+"Intubation"="OneSided"|"VentLung"="Low"| => 34
+"Intubation"="OneSided"|"VentLung"="Normal"| => 437
+"Intubation"="OneSided"|"VentLung"="Zero"| => 69
+"KinkedTube"="?"| => 279
+"KinkedTube"="?"|"Intubation"="Esophageal"|"VentTube"="Normal"| => 9
+"KinkedTube"="?"|"Intubation"="Normal"|"VentTube"="High"| => 8
+"KinkedTube"="?"|"Intubation"="Normal"|"VentTube"="Low"| => 4
+"KinkedTube"="?"|"Intubation"="Normal"|"VentTube"="Normal"| => 227
+"KinkedTube"="?"|"Intubation"="Normal"|"VentTube"="Zero"| => 17
+"KinkedTube"="?"|"Intubation"="OneSided"|"VentTube"="High"| => 1
+"KinkedTube"="?"|"Intubation"="OneSided"|"VentTube"="Normal"| => 13
+"KinkedTube"="?"|"VentTube"="High"|"Intubation"="Normal"| => 8
+"KinkedTube"="?"|"VentTube"="High"|"Intubation"="OneSided"| => 1
+"KinkedTube"="?"|"VentTube"="Low"|"Intubation"="Normal"| => 4
+"KinkedTube"="?"|"VentTube"="Normal"|"Intubation"="Esophageal"| => 9
+"KinkedTube"="?"|"VentTube"="Normal"|"Intubation"="Normal"| => 227
+"KinkedTube"="?"|"VentTube"="Normal"|"Intubation"="OneSided"| => 13
+"KinkedTube"="?"|"VentTube"="Zero"|"Intubation"="Normal"| => 17
+"KinkedTube"="False"| => 10335
+"KinkedTube"="False"|"Intubation"="?"|"VentTube"="High"| => 10
+"KinkedTube"="False"|"Intubation"="?"|"VentTube"="Low"| => 9
+"KinkedTube"="False"|"Intubation"="?"|"VentTube"="Normal"| => 247
+"KinkedTube"="False"|"Intubation"="?"|"VentTube"="Zero"| => 15
+"KinkedTube"="False"|"Intubation"="Esophageal"|"VentTube"="?"| => 5
+"KinkedTube"="False"|"Intubation"="Esophageal"|"VentTube"="High"| => 12
+"KinkedTube"="False"|"Intubation"="Esophageal"|"VentTube"="Low"| => 12
+"KinkedTube"="False"|"Intubation"="Esophageal"|"VentTube"="Normal"| => 243
+"KinkedTube"="False"|"Intubation"="Esophageal"|"VentTube"="Zero"| => 14
+"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="?"| => 247
+"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="High"| => 243
+"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="Low"| => 248
+"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="Normal"| => 7891
+"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="Zero"| => 615
+"KinkedTube"="False"|"Intubation"="OneSided"|"VentTube"="?"| => 20
+"KinkedTube"="False"|"Intubation"="OneSided"|"VentTube"="High"| => 8
+"KinkedTube"="False"|"Intubation"="OneSided"|"VentTube"="Low"| => 17
+"KinkedTube"="False"|"Intubation"="OneSided"|"VentTube"="Normal"| => 435
+"KinkedTube"="False"|"Intubation"="OneSided"|"VentTube"="Zero"| => 44
+"KinkedTube"="False"|"VentTube"="?"|"Intubation"="Esophageal"| => 5
+"KinkedTube"="False"|"VentTube"="?"|"Intubation"="Normal"| => 247
+"KinkedTube"="False"|"VentTube"="?"|"Intubation"="OneSided"| => 20
+"KinkedTube"="False"|"VentTube"="High"|"Intubation"="?"| => 10
+"KinkedTube"="False"|"VentTube"="High"|"Intubation"="Esophageal"| => 12
+"KinkedTube"="False"|"VentTube"="High"|"Intubation"="Normal"| => 243
+"KinkedTube"="False"|"VentTube"="High"|"Intubation"="OneSided"| => 8
+"KinkedTube"="False"|"VentTube"="Low"|"Intubation"="?"| => 9
+"KinkedTube"="False"|"VentTube"="Low"|"Intubation"="Esophageal"| => 12
+"KinkedTube"="False"|"VentTube"="Low"|"Intubation"="Normal"| => 248
+"KinkedTube"="False"|"VentTube"="Low"|"Intubation"="OneSided"| => 17
+"KinkedTube"="False"|"VentTube"="Normal"|"Intubation"="?"| => 247
+"KinkedTube"="False"|"VentTube"="Normal"|"Intubation"="Esophageal"| => 243
+"KinkedTube"="False"|"VentTube"="Normal"|"Intubation"="Normal"| => 7891
+"KinkedTube"="False"|"VentTube"="Normal"|"Intubation"="OneSided"| => 435
+"KinkedTube"="False"|"VentTube"="Zero"|"Intubation"="?"| => 15
+"KinkedTube"="False"|"VentTube"="Zero"|"Intubation"="Esophageal"| => 14
+"KinkedTube"="False"|"VentTube"="Zero"|"Intubation"="Normal"| => 615
+"KinkedTube"="False"|"VentTube"="Zero"|"Intubation"="OneSided"| => 44
+"KinkedTube"="True"| => 486
+"KinkedTube"="True"|"Intubation"="?"|"VentTube"="Low"| => 2
+"KinkedTube"="True"|"Intubation"="?"|"VentTube"="Normal"| => 13
+"KinkedTube"="True"|"Intubation"="Esophageal"|"VentTube"="Normal"| => 15
+"KinkedTube"="True"|"Intubation"="Normal"|"VentTube"="?"| => 10
+"KinkedTube"="True"|"Intubation"="Normal"|"VentTube"="High"| => 9
+"KinkedTube"="True"|"Intubation"="Normal"|"VentTube"="Low"| => 12
+"KinkedTube"="True"|"Intubation"="Normal"|"VentTube"="Normal"| => 378
+"KinkedTube"="True"|"Intubation"="Normal"|"VentTube"="Zero"| => 17
+"KinkedTube"="True"|"Intubation"="OneSided"|"VentTube"="?"| => 1
+"KinkedTube"="True"|"Intubation"="OneSided"|"VentTube"="High"| => 1
+"KinkedTube"="True"|"Intubation"="OneSided"|"VentTube"="Low"| => 1
+"KinkedTube"="True"|"Intubation"="OneSided"|"VentTube"="Normal"| => 25
+"KinkedTube"="True"|"Intubation"="OneSided"|"VentTube"="Zero"| => 2
+"KinkedTube"="True"|"VentTube"="?"|"Intubation"="Normal"| => 10
+"KinkedTube"="True"|"VentTube"="?"|"Intubation"="OneSided"| => 1
+"KinkedTube"="True"|"VentTube"="High"|"Intubation"="Normal"| => 9
+"KinkedTube"="True"|"VentTube"="High"|"Intubation"="OneSided"| => 1
+"KinkedTube"="True"|"VentTube"="Low"|"Intubation"="?"| => 2
+"KinkedTube"="True"|"VentTube"="Low"|"Intubation"="Normal"| => 12
+"KinkedTube"="True"|"VentTube"="Low"|"Intubation"="OneSided"| => 1
+"KinkedTube"="True"|"VentTube"="Normal"|"Intubation"="?"| => 13
+"KinkedTube"="True"|"VentTube"="Normal"|"Intubation"="Esophageal"| => 15
+"KinkedTube"="True"|"VentTube"="Normal"|"Intubation"="Normal"| => 378
+"KinkedTube"="True"|"VentTube"="Normal"|"Intubation"="OneSided"| => 25
+"KinkedTube"="True"|"VentTube"="Zero"|"Intubation"="Normal"| => 17
+"KinkedTube"="True"|"VentTube"="Zero"|"Intubation"="OneSided"| => 2
+"LVEDVolume"="?"| => 335
+"LVEDVolume"="?"|"Hypovolemia"="False"|"LVFailure"="False"| => 261
+"LVEDVolume"="?"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="High"|"CVP"="High"| => 7
+"LVEDVolume"="?"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="High"|"CVP"="Low"| => 1
+"LVEDVolume"="?"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="High"|"CVP"="Normal"| => 5
+"LVEDVolume"="?"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="Low"|"CVP"="Low"| => 10
+"LVEDVolume"="?"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="Low"|"CVP"="Normal"| => 11
+"LVEDVolume"="?"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="Normal"|"CVP"="High"| => 3
+"LVEDVolume"="?"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="Normal"|"CVP"="Low"| => 14
+"LVEDVolume"="?"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="Normal"|"CVP"="Normal"| => 210
+"LVEDVolume"="?"|"Hypovolemia"="False"|"LVFailure"="True"| => 20
+"LVEDVolume"="?"|"Hypovolemia"="False"|"LVFailure"="True"|"PCWP"="High"|"CVP"="High"| => 15
+"LVEDVolume"="?"|"Hypovolemia"="False"|"LVFailure"="True"|"PCWP"="High"|"CVP"="Normal"| => 2
+"LVEDVolume"="?"|"Hypovolemia"="False"|"LVFailure"="True"|"PCWP"="Normal"|"CVP"="Normal"| => 3
+"LVEDVolume"="?"|"Hypovolemia"="True"|"LVFailure"="False"| => 51
+"LVEDVolume"="?"|"Hypovolemia"="True"|"LVFailure"="False"|"PCWP"="High"|"CVP"="High"| => 2
+"LVEDVolume"="?"|"Hypovolemia"="True"|"LVFailure"="False"|"PCWP"="High"|"CVP"="Low"| => 1
+"LVEDVolume"="?"|"Hypovolemia"="True"|"LVFailure"="False"|"PCWP"="Low"|"CVP"="Low"| => 44
+"LVEDVolume"="?"|"Hypovolemia"="True"|"LVFailure"="False"|"PCWP"="Low"|"CVP"="Normal"| => 4
+"LVEDVolume"="?"|"Hypovolemia"="True"|"LVFailure"="True"| => 3
+"LVEDVolume"="?"|"Hypovolemia"="True"|"LVFailure"="True"|"PCWP"="Low"|"CVP"="Low"| => 2
+"LVEDVolume"="?"|"Hypovolemia"="True"|"LVFailure"="True"|"PCWP"="Normal"|"CVP"="Low"| => 1
+"LVEDVolume"="High"| => 835
+"LVEDVolume"="High"|"Hypovolemia"="?"|"LVFailure"="False"| => 10
+"LVEDVolume"="High"|"Hypovolemia"="?"|"LVFailure"="False"|"PCWP"="High"|"CVP"="High"| => 4
+"LVEDVolume"="High"|"Hypovolemia"="?"|"LVFailure"="False"|"PCWP"="High"|"CVP"="Normal"| => 5
+"LVEDVolume"="High"|"Hypovolemia"="?"|"LVFailure"="False"|"PCWP"="Normal"|"CVP"="High"| => 1
+"LVEDVolume"="High"|"Hypovolemia"="?"|"LVFailure"="True"| => 9
+"LVEDVolume"="High"|"Hypovolemia"="?"|"LVFailure"="True"|"PCWP"="High"|"CVP"="High"| => 6
+"LVEDVolume"="High"|"Hypovolemia"="?"|"LVFailure"="True"|"PCWP"="High"|"CVP"="Normal"| => 3
+"LVEDVolume"="High"|"Hypovolemia"="False"|"LVFailure"="?"| => 27
+"LVEDVolume"="High"|"Hypovolemia"="False"|"LVFailure"="?"|"PCWP"="High"|"CVP"="High"| => 18
+"LVEDVolume"="High"|"Hypovolemia"="False"|"LVFailure"="?"|"PCWP"="High"|"CVP"="Normal"| => 8
+"LVEDVolume"="High"|"Hypovolemia"="False"|"LVFailure"="?"|"PCWP"="Low"|"CVP"="High"| => 1
+"LVEDVolume"="High"|"Hypovolemia"="False"|"LVFailure"="False"| => 404
+"LVEDVolume"="High"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="?"|"CVP"="High"| => 8
+"LVEDVolume"="High"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="?"|"CVP"="Normal"| => 6
+"LVEDVolume"="High"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="High"|"CVP"="?"| => 17
+"LVEDVolume"="High"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="High"|"CVP"="High"| => 253
+"LVEDVolume"="High"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="High"|"CVP"="Low"| => 3
+"LVEDVolume"="High"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="High"|"CVP"="Normal"| => 99
+"LVEDVolume"="High"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="Low"|"CVP"="High"| => 6
+"LVEDVolume"="High"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="Normal"|"CVP"="High"| => 8
+"LVEDVolume"="High"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="Normal"|"CVP"="Normal"| => 4
+"LVEDVolume"="High"|"Hypovolemia"="False"|"LVFailure"="True"| => 359
+"LVEDVolume"="High"|"Hypovolemia"="False"|"LVFailure"="True"|"PCWP"="?"|"CVP"="High"| => 11
+"LVEDVolume"="High"|"Hypovolemia"="False"|"LVFailure"="True"|"PCWP"="?"|"CVP"="Normal"| => 1
+"LVEDVolume"="High"|"Hypovolemia"="False"|"LVFailure"="True"|"PCWP"="High"|"CVP"="?"| => 10
+"LVEDVolume"="High"|"Hypovolemia"="False"|"LVFailure"="True"|"PCWP"="High"|"CVP"="High"| => 228
+"LVEDVolume"="High"|"Hypovolemia"="False"|"LVFailure"="True"|"PCWP"="High"|"CVP"="Low"| => 3
+"LVEDVolume"="High"|"Hypovolemia"="False"|"LVFailure"="True"|"PCWP"="High"|"CVP"="Normal"| => 86
+"LVEDVolume"="High"|"Hypovolemia"="False"|"LVFailure"="True"|"PCWP"="Low"|"CVP"="?"| => 1
+"LVEDVolume"="High"|"Hypovolemia"="False"|"LVFailure"="True"|"PCWP"="Low"|"CVP"="High"| => 2
+"LVEDVolume"="High"|"Hypovolemia"="False"|"LVFailure"="True"|"PCWP"="Normal"|"CVP"="?"| => 1
+"LVEDVolume"="High"|"Hypovolemia"="False"|"LVFailure"="True"|"PCWP"="Normal"|"CVP"="High"| => 10
+"LVEDVolume"="High"|"Hypovolemia"="False"|"LVFailure"="True"|"PCWP"="Normal"|"CVP"="Normal"| => 6
+"LVEDVolume"="High"|"Hypovolemia"="True"|"LVFailure"="?"| => 2
+"LVEDVolume"="High"|"Hypovolemia"="True"|"LVFailure"="?"|"PCWP"="High"|"CVP"="High"| => 2
+"LVEDVolume"="High"|"Hypovolemia"="True"|"LVFailure"="False"| => 22
+"LVEDVolume"="High"|"Hypovolemia"="True"|"LVFailure"="False"|"PCWP"="High"|"CVP"="?"| => 1
+"LVEDVolume"="High"|"Hypovolemia"="True"|"LVFailure"="False"|"PCWP"="High"|"CVP"="High"| => 17
+"LVEDVolume"="High"|"Hypovolemia"="True"|"LVFailure"="False"|"PCWP"="High"|"CVP"="Normal"| => 3
+"LVEDVolume"="High"|"Hypovolemia"="True"|"LVFailure"="False"|"PCWP"="Normal"|"CVP"="High"| => 1
+"LVEDVolume"="High"|"Hypovolemia"="True"|"LVFailure"="True"| => 2
+"LVEDVolume"="High"|"Hypovolemia"="True"|"LVFailure"="True"|"PCWP"="High"|"CVP"="High"| => 2
+"LVEDVolume"="Low"| => 2554
+"LVEDVolume"="Low"|"Hypovolemia"="?"|"LVFailure"="False"| => 75
+"LVEDVolume"="Low"|"Hypovolemia"="?"|"LVFailure"="False"|"PCWP"="High"|"CVP"="Low"| => 1
+"LVEDVolume"="Low"|"Hypovolemia"="?"|"LVFailure"="False"|"PCWP"="Low"|"CVP"="High"| => 1
+"LVEDVolume"="Low"|"Hypovolemia"="?"|"LVFailure"="False"|"PCWP"="Low"|"CVP"="Low"| => 67
+"LVEDVolume"="Low"|"Hypovolemia"="?"|"LVFailure"="False"|"PCWP"="Low"|"CVP"="Normal"| => 3
+"LVEDVolume"="Low"|"Hypovolemia"="?"|"LVFailure"="False"|"PCWP"="Normal"|"CVP"="Low"| => 3
+"LVEDVolume"="Low"|"Hypovolemia"="?"|"LVFailure"="True"| => 5
+"LVEDVolume"="Low"|"Hypovolemia"="?"|"LVFailure"="True"|"PCWP"="Low"|"CVP"="Low"| => 5
+"LVEDVolume"="Low"|"Hypovolemia"="False"|"LVFailure"="?"| => 14
+"LVEDVolume"="Low"|"Hypovolemia"="False"|"LVFailure"="?"|"PCWP"="Low"|"CVP"="Low"| => 14
+"LVEDVolume"="Low"|"Hypovolemia"="False"|"LVFailure"="False"| => 364
+"LVEDVolume"="Low"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="?"|"CVP"="High"| => 1
+"LVEDVolume"="Low"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="?"|"CVP"="Low"| => 14
+"LVEDVolume"="Low"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="?"|"CVP"="Normal"| => 1
+"LVEDVolume"="Low"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="High"|"CVP"="Low"| => 1
+"LVEDVolume"="Low"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="Low"|"CVP"="?"| => 13
+"LVEDVolume"="Low"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="Low"|"CVP"="High"| => 3
+"LVEDVolume"="Low"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="Low"|"CVP"="Low"| => 304
+"LVEDVolume"="Low"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="Low"|"CVP"="Normal"| => 10
+"LVEDVolume"="Low"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="Normal"|"CVP"="Low"| => 16
+"LVEDVolume"="Low"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="Normal"|"CVP"="Normal"| => 1
+"LVEDVolume"="Low"|"Hypovolemia"="False"|"LVFailure"="True"| => 2
+"LVEDVolume"="Low"|"Hypovolemia"="False"|"LVFailure"="True"|"PCWP"="Low"|"CVP"="High"| => 1
+"LVEDVolume"="Low"|"Hypovolemia"="False"|"LVFailure"="True"|"PCWP"="Low"|"CVP"="Low"| => 1
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="?"| => 57
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="?"|"PCWP"="High"|"CVP"="Low"| => 1
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="?"|"PCWP"="High"|"CVP"="Normal"| => 1
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="?"|"PCWP"="Low"|"CVP"="Low"| => 50
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="?"|"PCWP"="Low"|"CVP"="Normal"| => 3
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="?"|"PCWP"="Normal"|"CVP"="Low"| => 2
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="False"| => 1931
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="False"|"PCWP"="?"|"CVP"="High"| => 1
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="False"|"PCWP"="?"|"CVP"="Low"| => 41
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="False"|"PCWP"="?"|"CVP"="Normal"| => 4
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="False"|"PCWP"="High"|"CVP"="?"| => 2
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="False"|"PCWP"="High"|"CVP"="Low"| => 12
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="False"|"PCWP"="Low"|"CVP"="?"| => 58
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="False"|"PCWP"="Low"|"CVP"="High"| => 16
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="False"|"PCWP"="Low"|"CVP"="Low"| => 1643
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="False"|"PCWP"="Low"|"CVP"="Normal"| => 70
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="False"|"PCWP"="Normal"|"CVP"="?"| => 2
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="False"|"PCWP"="Normal"|"CVP"="High"| => 3
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="False"|"PCWP"="Normal"|"CVP"="Low"| => 76
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="False"|"PCWP"="Normal"|"CVP"="Normal"| => 3
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="True"| => 106
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="True"|"PCWP"="?"|"CVP"="Low"| => 2
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="True"|"PCWP"="High"|"CVP"="Low"| => 2
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="True"|"PCWP"="Low"|"CVP"="?"| => 5
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="True"|"PCWP"="Low"|"CVP"="High"| => 2
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="True"|"PCWP"="Low"|"CVP"="Low"| => 84
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="True"|"PCWP"="Low"|"CVP"="Normal"| => 5
+"LVEDVolume"="Low"|"Hypovolemia"="True"|"LVFailure"="True"|"PCWP"="Normal"|"CVP"="Low"| => 6
+"LVEDVolume"="Normal"| => 7376
+"LVEDVolume"="Normal"|"Hypovolemia"="?"|"LVFailure"="False"| => 185
+"LVEDVolume"="Normal"|"Hypovolemia"="?"|"LVFailure"="False"|"PCWP"="Low"|"CVP"="Normal"| => 7
+"LVEDVolume"="Normal"|"Hypovolemia"="?"|"LVFailure"="False"|"PCWP"="Normal"|"CVP"="Low"| => 6
+"LVEDVolume"="Normal"|"Hypovolemia"="?"|"LVFailure"="False"|"PCWP"="Normal"|"CVP"="Normal"| => 172
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="?"| => 199
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="?"|"PCWP"="High"|"CVP"="Normal"| => 1
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="?"|"PCWP"="Low"|"CVP"="Normal"| => 9
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="?"|"PCWP"="Normal"|"CVP"="High"| => 1
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="?"|"PCWP"="Normal"|"CVP"="Low"| => 5
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="?"|"PCWP"="Normal"|"CVP"="Normal"| => 183
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="False"| => 6933
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="?"|"CVP"="High"| => 2
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="?"|"CVP"="Low"| => 6
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="?"|"CVP"="Normal"| => 202
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="High"|"CVP"="?"| => 4
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="High"|"CVP"="High"| => 1
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="High"|"CVP"="Low"| => 7
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="High"|"CVP"="Normal"| => 61
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="Low"|"CVP"="?"| => 6
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="Low"|"CVP"="High"| => 5
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="Low"|"CVP"="Low"| => 6
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="Low"|"CVP"="Normal"| => 235
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="Normal"|"CVP"="?"| => 194
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="Normal"|"CVP"="High"| => 79
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="Normal"|"CVP"="Low"| => 282
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="False"|"PCWP"="Normal"|"CVP"="Normal"| => 5843
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="True"| => 32
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="True"|"PCWP"="?"|"CVP"="Normal"| => 1
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="True"|"PCWP"="Normal"|"CVP"="?"| => 1
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="True"|"PCWP"="Normal"|"CVP"="High"| => 1
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="True"|"PCWP"="Normal"|"CVP"="Low"| => 1
+"LVEDVolume"="Normal"|"Hypovolemia"="False"|"LVFailure"="True"|"PCWP"="Normal"|"CVP"="Normal"| => 28
+"LVEDVolume"="Normal"|"Hypovolemia"="True"|"LVFailure"="?"| => 2
+"LVEDVolume"="Normal"|"Hypovolemia"="True"|"LVFailure"="?"|"PCWP"="Normal"|"CVP"="Normal"| => 2
+"LVEDVolume"="Normal"|"Hypovolemia"="True"|"LVFailure"="False"| => 20
+"LVEDVolume"="Normal"|"Hypovolemia"="True"|"LVFailure"="False"|"PCWP"="Normal"|"CVP"="Normal"| => 20
+"LVEDVolume"="Normal"|"Hypovolemia"="True"|"LVFailure"="True"| => 5
+"LVEDVolume"="Normal"|"Hypovolemia"="True"|"LVFailure"="True"|"PCWP"="High"|"CVP"="Normal"| => 1
+"LVEDVolume"="Normal"|"Hypovolemia"="True"|"LVFailure"="True"|"PCWP"="Normal"|"CVP"="Normal"| => 4
+"LVFailure"="?"| => 301
+"LVFailure"="?"|"Hypovolemia"="False"| => 240
+"LVFailure"="?"|"Hypovolemia"="True"| => 61
+"LVFailure"="?"|"StrokeVolume"="High"|"LVEDVolume"="High"|"History"="False"|"Hypovolemia"="False"| => 1
+"LVFailure"="?"|"StrokeVolume"="High"|"LVEDVolume"="Low"|"History"="False"|"Hypovolemia"="False"| => 1
+"LVFailure"="?"|"StrokeVolume"="High"|"LVEDVolume"="Normal"|"History"="False"|"Hypovolemia"="False"| => 12
+"LVFailure"="?"|"StrokeVolume"="Low"|"LVEDVolume"="High"|"History"="False"|"Hypovolemia"="False"| => 1
+"LVFailure"="?"|"StrokeVolume"="Low"|"LVEDVolume"="High"|"History"="False"|"Hypovolemia"="True"| => 2
+"LVFailure"="?"|"StrokeVolume"="Low"|"LVEDVolume"="High"|"History"="True"|"Hypovolemia"="False"| => 4
+"LVFailure"="?"|"StrokeVolume"="Low"|"LVEDVolume"="Low"|"History"="False"|"Hypovolemia"="True"| => 52
+"LVFailure"="?"|"StrokeVolume"="Low"|"LVEDVolume"="Low"|"History"="True"|"Hypovolemia"="True"| => 3
+"LVFailure"="?"|"StrokeVolume"="Low"|"LVEDVolume"="Normal"|"History"="False"|"Hypovolemia"="False"| => 6
+"LVFailure"="?"|"StrokeVolume"="Low"|"LVEDVolume"="Normal"|"History"="False"|"Hypovolemia"="True"| => 2
+"LVFailure"="?"|"StrokeVolume"="Low"|"LVEDVolume"="Normal"|"History"="True"|"Hypovolemia"="False"| => 1
+"LVFailure"="?"|"StrokeVolume"="Normal"|"LVEDVolume"="High"|"History"="False"|"Hypovolemia"="False"| => 14
+"LVFailure"="?"|"StrokeVolume"="Normal"|"LVEDVolume"="High"|"History"="True"|"Hypovolemia"="False"| => 7
+"LVFailure"="?"|"StrokeVolume"="Normal"|"LVEDVolume"="Low"|"History"="False"|"Hypovolemia"="False"| => 13
+"LVFailure"="?"|"StrokeVolume"="Normal"|"LVEDVolume"="Low"|"History"="False"|"Hypovolemia"="True"| => 2
+"LVFailure"="?"|"StrokeVolume"="Normal"|"LVEDVolume"="Normal"|"History"="False"|"Hypovolemia"="False"| => 176
+"LVFailure"="?"|"StrokeVolume"="Normal"|"LVEDVolume"="Normal"|"History"="True"|"Hypovolemia"="False"| => 4
+"LVFailure"="False"| => 10256
+"LVFailure"="False"|"Hypovolemia"="?"| => 270
+"LVFailure"="False"|"Hypovolemia"="False"| => 7962
+"LVFailure"="False"|"Hypovolemia"="True"| => 2024
+"LVFailure"="False"|"StrokeVolume"="?"|"LVEDVolume"="High"|"History"="False"|"Hypovolemia"="False"| => 13
+"LVFailure"="False"|"StrokeVolume"="?"|"LVEDVolume"="Low"|"History"="False"|"Hypovolemia"="False"| => 14
+"LVFailure"="False"|"StrokeVolume"="?"|"LVEDVolume"="Low"|"History"="False"|"Hypovolemia"="True"| => 56
+"LVFailure"="False"|"StrokeVolume"="?"|"LVEDVolume"="Low"|"History"="True"|"Hypovolemia"="True"| => 1
+"LVFailure"="False"|"StrokeVolume"="?"|"LVEDVolume"="Normal"|"History"="False"|"Hypovolemia"="False"| => 216
+"LVFailure"="False"|"StrokeVolume"="?"|"LVEDVolume"="Normal"|"History"="True"|"Hypovolemia"="False"| => 2
+"LVFailure"="False"|"StrokeVolume"="High"|"LVEDVolume"="?"|"History"="False"|"Hypovolemia"="False"| => 5
+"LVFailure"="False"|"StrokeVolume"="High"|"LVEDVolume"="High"|"History"="?"|"Hypovolemia"="False"| => 1
+"LVFailure"="False"|"StrokeVolume"="High"|"LVEDVolume"="High"|"History"="False"|"Hypovolemia"="?"| => 1
+"LVFailure"="False"|"StrokeVolume"="High"|"LVEDVolume"="High"|"History"="False"|"Hypovolemia"="False"| => 20
+"LVFailure"="False"|"StrokeVolume"="High"|"LVEDVolume"="Low"|"History"="False"|"Hypovolemia"="?"| => 2
+"LVFailure"="False"|"StrokeVolume"="High"|"LVEDVolume"="Low"|"History"="False"|"Hypovolemia"="False"| => 17
+"LVFailure"="False"|"StrokeVolume"="High"|"LVEDVolume"="Low"|"History"="False"|"Hypovolemia"="True"| => 22
+"LVFailure"="False"|"StrokeVolume"="High"|"LVEDVolume"="Low"|"History"="True"|"Hypovolemia"="False"| => 1
+"LVFailure"="False"|"StrokeVolume"="High"|"LVEDVolume"="Normal"|"History"="?"|"Hypovolemia"="False"| => 15
+"LVFailure"="False"|"StrokeVolume"="High"|"LVEDVolume"="Normal"|"History"="False"|"Hypovolemia"="?"| => 14
+"LVFailure"="False"|"StrokeVolume"="High"|"LVEDVolume"="Normal"|"History"="False"|"Hypovolemia"="False"| => 311
+"LVFailure"="False"|"StrokeVolume"="High"|"LVEDVolume"="Normal"|"History"="False"|"Hypovolemia"="True"| => 1
+"LVFailure"="False"|"StrokeVolume"="High"|"LVEDVolume"="Normal"|"History"="True"|"Hypovolemia"="False"| => 3
+"LVFailure"="False"|"StrokeVolume"="Low"|"LVEDVolume"="?"|"History"="False"|"Hypovolemia"="False"| => 7
+"LVFailure"="False"|"StrokeVolume"="Low"|"LVEDVolume"="?"|"History"="False"|"Hypovolemia"="True"| => 50
+"LVFailure"="False"|"StrokeVolume"="Low"|"LVEDVolume"="High"|"History"="False"|"Hypovolemia"="?"| => 1
+"LVFailure"="False"|"StrokeVolume"="Low"|"LVEDVolume"="High"|"History"="False"|"Hypovolemia"="False"| => 16
+"LVFailure"="False"|"StrokeVolume"="Low"|"LVEDVolume"="High"|"History"="False"|"Hypovolemia"="True"| => 21
+"LVFailure"="False"|"StrokeVolume"="Low"|"LVEDVolume"="Low"|"History"="?"|"Hypovolemia"="True"| => 57
+"LVFailure"="False"|"StrokeVolume"="Low"|"LVEDVolume"="Low"|"History"="False"|"Hypovolemia"="?"| => 56
+"LVFailure"="False"|"StrokeVolume"="Low"|"LVEDVolume"="Low"|"History"="False"|"Hypovolemia"="False"| => 17
+"LVFailure"="False"|"StrokeVolume"="Low"|"LVEDVolume"="Low"|"History"="False"|"Hypovolemia"="True"| => 1693
+"LVFailure"="False"|"StrokeVolume"="Low"|"LVEDVolume"="Low"|"History"="True"|"Hypovolemia"="?"| => 1
+"LVFailure"="False"|"StrokeVolume"="Low"|"LVEDVolume"="Low"|"History"="True"|"Hypovolemia"="True"| => 20
+"LVFailure"="False"|"StrokeVolume"="Low"|"LVEDVolume"="Normal"|"History"="?"|"Hypovolemia"="False"| => 11
+"LVFailure"="False"|"StrokeVolume"="Low"|"LVEDVolume"="Normal"|"History"="False"|"Hypovolemia"="?"| => 9
+"LVFailure"="False"|"StrokeVolume"="Low"|"LVEDVolume"="Normal"|"History"="False"|"Hypovolemia"="False"| => 334
+"LVFailure"="False"|"StrokeVolume"="Low"|"LVEDVolume"="Normal"|"History"="False"|"Hypovolemia"="True"| => 19
+"LVFailure"="False"|"StrokeVolume"="Low"|"LVEDVolume"="Normal"|"History"="True"|"Hypovolemia"="False"| => 4
+"LVFailure"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="?"|"History"="False"|"Hypovolemia"="False"| => 247
+"LVFailure"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="?"|"History"="False"|"Hypovolemia"="True"| => 1
+"LVFailure"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="?"|"History"="True"|"Hypovolemia"="False"| => 2
+"LVFailure"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="High"|"History"="?"|"Hypovolemia"="False"| => 9
+"LVFailure"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="High"|"History"="False"|"Hypovolemia"="?"| => 8
+"LVFailure"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="High"|"History"="False"|"Hypovolemia"="False"| => 339
+"LVFailure"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="High"|"History"="False"|"Hypovolemia"="True"| => 1
+"LVFailure"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="High"|"History"="True"|"Hypovolemia"="False"| => 6
+"LVFailure"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="Low"|"History"="?"|"Hypovolemia"="False"| => 7
+"LVFailure"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="Low"|"History"="?"|"Hypovolemia"="True"| => 5
+"LVFailure"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="Low"|"History"="False"|"Hypovolemia"="?"| => 16
+"LVFailure"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="Low"|"History"="False"|"Hypovolemia"="False"| => 303
+"LVFailure"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="Low"|"History"="False"|"Hypovolemia"="True"| => 77
+"LVFailure"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="Low"|"History"="True"|"Hypovolemia"="False"| => 5
+"LVFailure"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="Normal"|"History"="?"|"Hypovolemia"="False"| => 201
+"LVFailure"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="Normal"|"History"="False"|"Hypovolemia"="?"| => 158
+"LVFailure"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="Normal"|"History"="False"|"Hypovolemia"="False"| => 5777
+"LVFailure"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="Normal"|"History"="True"|"Hypovolemia"="?"| => 4
+"LVFailure"="False"|"StrokeVolume"="Normal"|"LVEDVolume"="Normal"|"History"="True"|"Hypovolemia"="False"| => 59
+"LVFailure"="True"| => 543
+"LVFailure"="True"|"Hypovolemia"="?"| => 14
+"LVFailure"="True"|"Hypovolemia"="False"| => 413
+"LVFailure"="True"|"Hypovolemia"="True"| => 116
+"LVFailure"="True"|"StrokeVolume"="?"|"LVEDVolume"="High"|"History"="False"|"Hypovolemia"="False"| => 4
+"LVFailure"="True"|"StrokeVolume"="?"|"LVEDVolume"="High"|"History"="True"|"Hypovolemia"="False"| => 7
+"LVFailure"="True"|"StrokeVolume"="?"|"LVEDVolume"="Low"|"History"="True"|"Hypovolemia"="True"| => 6
+"LVFailure"="True"|"StrokeVolume"="High"|"LVEDVolume"="?"|"History"="True"|"Hypovolemia"="False"| => 1
+"LVFailure"="True"|"StrokeVolume"="High"|"LVEDVolume"="High"|"History"="?"|"Hypovolemia"="False"| => 1
+"LVFailure"="True"|"StrokeVolume"="High"|"LVEDVolume"="High"|"History"="True"|"Hypovolemia"="False"| => 4
+"LVFailure"="True"|"StrokeVolume"="High"|"LVEDVolume"="Normal"|"History"="True"|"Hypovolemia"="False"| => 1
+"LVFailure"="True"|"StrokeVolume"="Low"|"LVEDVolume"="?"|"History"="False"|"Hypovolemia"="False"| => 1
+"LVFailure"="True"|"StrokeVolume"="Low"|"LVEDVolume"="?"|"History"="True"|"Hypovolemia"="False"| => 9
+"LVFailure"="True"|"StrokeVolume"="Low"|"LVEDVolume"="?"|"History"="True"|"Hypovolemia"="True"| => 3
+"LVFailure"="True"|"StrokeVolume"="Low"|"LVEDVolume"="High"|"History"="?"|"Hypovolemia"="False"| => 4
+"LVFailure"="True"|"StrokeVolume"="Low"|"LVEDVolume"="High"|"History"="False"|"Hypovolemia"="False"| => 16
+"LVFailure"="True"|"StrokeVolume"="Low"|"LVEDVolume"="High"|"History"="True"|"Hypovolemia"="?"| => 4
+"LVFailure"="True"|"StrokeVolume"="Low"|"LVEDVolume"="High"|"History"="True"|"Hypovolemia"="False"| => 152
+"LVFailure"="True"|"StrokeVolume"="Low"|"LVEDVolume"="High"|"History"="True"|"Hypovolemia"="True"| => 2
+"LVFailure"="True"|"StrokeVolume"="Low"|"LVEDVolume"="Low"|"History"="?"|"Hypovolemia"="True"| => 3
+"LVFailure"="True"|"StrokeVolume"="Low"|"LVEDVolume"="Low"|"History"="False"|"Hypovolemia"="True"| => 6
+"LVFailure"="True"|"StrokeVolume"="Low"|"LVEDVolume"="Low"|"History"="True"|"Hypovolemia"="?"| => 5
+"LVFailure"="True"|"StrokeVolume"="Low"|"LVEDVolume"="Low"|"History"="True"|"Hypovolemia"="False"| => 1
+"LVFailure"="True"|"StrokeVolume"="Low"|"LVEDVolume"="Low"|"History"="True"|"Hypovolemia"="True"| => 91
+"LVFailure"="True"|"StrokeVolume"="Low"|"LVEDVolume"="Normal"|"History"="?"|"Hypovolemia"="False"| => 1
+"LVFailure"="True"|"StrokeVolume"="Low"|"LVEDVolume"="Normal"|"History"="False"|"Hypovolemia"="False"| => 4
+"LVFailure"="True"|"StrokeVolume"="Low"|"LVEDVolume"="Normal"|"History"="True"|"Hypovolemia"="False"| => 12
+"LVFailure"="True"|"StrokeVolume"="Low"|"LVEDVolume"="Normal"|"History"="True"|"Hypovolemia"="True"| => 5
+"LVFailure"="True"|"StrokeVolume"="Normal"|"LVEDVolume"="?"|"History"="True"|"Hypovolemia"="False"| => 9
+"LVFailure"="True"|"StrokeVolume"="Normal"|"LVEDVolume"="High"|"History"="?"|"Hypovolemia"="False"| => 8
+"LVFailure"="True"|"StrokeVolume"="Normal"|"LVEDVolume"="High"|"History"="False"|"Hypovolemia"="?"| => 1
+"LVFailure"="True"|"StrokeVolume"="Normal"|"LVEDVolume"="High"|"History"="False"|"Hypovolemia"="False"| => 13
+"LVFailure"="True"|"StrokeVolume"="Normal"|"LVEDVolume"="High"|"History"="True"|"Hypovolemia"="?"| => 4
+"LVFailure"="True"|"StrokeVolume"="Normal"|"LVEDVolume"="High"|"History"="True"|"Hypovolemia"="False"| => 150
+"LVFailure"="True"|"StrokeVolume"="Normal"|"LVEDVolume"="Low"|"History"="True"|"Hypovolemia"="False"| => 1
+"LVFailure"="True"|"StrokeVolume"="Normal"|"LVEDVolume"="Normal"|"History"="?"|"Hypovolemia"="False"| => 1
+"LVFailure"="True"|"StrokeVolume"="Normal"|"LVEDVolume"="Normal"|"History"="False"|"Hypovolemia"="False"| => 2
+"LVFailure"="True"|"StrokeVolume"="Normal"|"LVEDVolume"="Normal"|"History"="True"|"Hypovolemia"="False"| => 11
+"MinVol"="?"|"VentLung"="High"|"Intubation"="Normal"| => 8
+"MinVol"="?"|"VentLung"="Low"|"Intubation"="Normal"| => 20
+"MinVol"="?"|"VentLung"="Normal"|"Intubation"="Normal"| => 230
+"MinVol"="?"|"VentLung"="Normal"|"Intubation"="OneSided"| => 7
+"MinVol"="?"|"VentLung"="Zero"|"Intubation"="Esophageal"| => 7
+"MinVol"="?"|"VentLung"="Zero"|"Intubation"="Normal"| => 26
+"MinVol"="?"|"VentLung"="Zero"|"Intubation"="OneSided"| => 1
+"MinVol"="High"|"VentLung"="?"|"Intubation"="Normal"| => 12
+"MinVol"="High"|"VentLung"="?"|"Intubation"="OneSided"| => 2
+"MinVol"="High"|"VentLung"="High"|"Intubation"="?"| => 11
+"MinVol"="High"|"VentLung"="High"|"Intubation"="Normal"| => 312
+"MinVol"="High"|"VentLung"="High"|"Intubation"="OneSided"| => 13
+"MinVol"="High"|"VentLung"="Low"|"Intubation"="Normal"| => 2
+"MinVol"="High"|"VentLung"="Low"|"Intubation"="OneSided"| => 1
+"MinVol"="High"|"VentLung"="Normal"|"Intubation"="?"| => 2
+"MinVol"="High"|"VentLung"="Normal"|"Intubation"="Normal"| => 88
+"MinVol"="High"|"VentLung"="Normal"|"Intubation"="OneSided"| => 6
+"MinVol"="High"|"VentLung"="Zero"|"Intubation"="Esophageal"| => 1
+"MinVol"="High"|"VentLung"="Zero"|"Intubation"="Normal"| => 5
+"MinVol"="High"|"VentLung"="Zero"|"Intubation"="OneSided"| => 1
+"MinVol"="Low"|"VentLung"="?"|"Intubation"="Normal"| => 22
+"MinVol"="Low"|"VentLung"="High"|"Intubation"="?"| => 1
+"MinVol"="Low"|"VentLung"="High"|"Intubation"="Esophageal"| => 2
+"MinVol"="Low"|"VentLung"="High"|"Intubation"="Normal"| => 3
+"MinVol"="Low"|"VentLung"="Low"|"Intubation"="?"| => 17
+"MinVol"="Low"|"VentLung"="Low"|"Intubation"="Normal"| => 539
+"MinVol"="Low"|"VentLung"="Low"|"Intubation"="OneSided"| => 33
+"MinVol"="Low"|"VentLung"="Normal"|"Intubation"="?"| => 1
+"MinVol"="Low"|"VentLung"="Normal"|"Intubation"="Esophageal"| => 1
+"MinVol"="Low"|"VentLung"="Normal"|"Intubation"="Normal"| => 77
+"MinVol"="Low"|"VentLung"="Normal"|"Intubation"="OneSided"| => 6
+"MinVol"="Low"|"VentLung"="Zero"|"Intubation"="Esophageal"| => 3
+"MinVol"="Low"|"VentLung"="Zero"|"Intubation"="Normal"| => 8
+"MinVol"="Low"|"VentLung"="Zero"|"Intubation"="OneSided"| => 1
+"MinVol"="Normal"|"VentLung"="?"|"Intubation"="Normal"| => 185
+"MinVol"="Normal"|"VentLung"="?"|"Intubation"="OneSided"| => 12
+"MinVol"="Normal"|"VentLung"="High"|"Intubation"="Normal"| => 4
+"MinVol"="Normal"|"VentLung"="Low"|"Intubation"="Normal"| => 6
+"MinVol"="Normal"|"VentLung"="Normal"|"Intubation"="?"| => 222
+"MinVol"="Normal"|"VentLung"="Normal"|"Intubation"="Normal"| => 7434
+"MinVol"="Normal"|"VentLung"="Normal"|"Intubation"="OneSided"| => 411
+"MinVol"="Normal"|"VentLung"="Zero"|"Intubation"="Esophageal"| => 1
+"MinVol"="Normal"|"VentLung"="Zero"|"Intubation"="Normal"| => 7
+"MinVol"="Zero"|"VentLung"="?"|"Intubation"="Esophageal"| => 17
+"MinVol"="Zero"|"VentLung"="?"|"Intubation"="Normal"| => 20
+"MinVol"="Zero"|"VentLung"="?"|"Intubation"="OneSided"| => 1
+"MinVol"="Zero"|"VentLung"="High"|"Intubation"="Esophageal"| => 2
+"MinVol"="Zero"|"VentLung"="High"|"Intubation"="Normal"| => 2
+"MinVol"="Zero"|"VentLung"="Low"|"Intubation"="Esophageal"| => 1
+"MinVol"="Zero"|"VentLung"="Low"|"Intubation"="Normal"| => 5
+"MinVol"="Zero"|"VentLung"="Normal"|"Intubation"="?"| => 6
+"MinVol"="Zero"|"VentLung"="Normal"|"Intubation"="Esophageal"| => 1
+"MinVol"="Zero"|"VentLung"="Normal"|"Intubation"="Normal"| => 67
+"MinVol"="Zero"|"VentLung"="Normal"|"Intubation"="OneSided"| => 7
+"MinVol"="Zero"|"VentLung"="Zero"|"Intubation"="?"| => 36
+"MinVol"="Zero"|"VentLung"="Zero"|"Intubation"="Esophageal"| => 274
+"MinVol"="Zero"|"VentLung"="Zero"|"Intubation"="Normal"| => 844
+"MinVol"="Zero"|"VentLung"="Zero"|"Intubation"="OneSided"| => 66
+"MinVolSet"="?"| => 304
+"MinVolSet"="High"| => 109
+"MinVolSet"="Low"| => 105
+"MinVolSet"="Normal"| => 10582
+"PAP"="?"|"PulmEmbolus"="False"| => 323
+"PAP"="?"|"PulmEmbolus"="True"| => 6
+"PAP"="High"|"PulmEmbolus"="?"| => 19
+"PAP"="High"|"PulmEmbolus"="False"| => 495
+"PAP"="High"|"PulmEmbolus"="True"| => 90
+"PAP"="Low"|"PulmEmbolus"="?"| => 13
+"PAP"="Low"|"PulmEmbolus"="False"| => 522
+"PAP"="Normal"|"PulmEmbolus"="?"| => 276
+"PAP"="Normal"|"PulmEmbolus"="False"| => 9335
+"PAP"="Normal"|"PulmEmbolus"="True"| => 21
+"PCWP"="?"|"LVEDVolume"="High"| => 26
+"PCWP"="?"|"LVEDVolume"="Low"| => 64
+"PCWP"="?"|"LVEDVolume"="Normal"| => 211
+"PCWP"="High"|"LVEDVolume"="?"| => 33
+"PCWP"="High"|"LVEDVolume"="High"| => 768
+"PCWP"="High"|"LVEDVolume"="Low"| => 20
+"PCWP"="High"|"LVEDVolume"="Normal"| => 75
+"PCWP"="Low"|"LVEDVolume"="?"| => 71
+"PCWP"="Low"|"LVEDVolume"="High"| => 10
+"PCWP"="Low"|"LVEDVolume"="Low"| => 2358
+"PCWP"="Low"|"LVEDVolume"="Normal"| => 268
+"PCWP"="Normal"|"LVEDVolume"="?"| => 231
+"PCWP"="Normal"|"LVEDVolume"="High"| => 31
+"PCWP"="Normal"|"LVEDVolume"="Low"| => 112
+"PCWP"="Normal"|"LVEDVolume"="Normal"| => 6822
+"PVSat"="?"|"VentAlv"="High"|"FiO2"="Normal"| => 8
+"PVSat"="?"|"VentAlv"="Low"|"FiO2"="Low"| => 1
+"PVSat"="?"|"VentAlv"="Low"|"FiO2"="Normal"| => 33
+"PVSat"="?"|"VentAlv"="Normal"|"FiO2"="Low"| => 2
+"PVSat"="?"|"VentAlv"="Normal"|"FiO2"="Normal"| => 216
+"PVSat"="?"|"VentAlv"="Zero"|"FiO2"="Normal"| => 30
+"PVSat"="High"|"VentAlv"="?"|"FiO2"="Normal"| => 25
+"PVSat"="High"|"VentAlv"="High"|"FiO2"="?"| => 8
+"PVSat"="High"|"VentAlv"="High"|"FiO2"="Normal"| => 407
+"PVSat"="High"|"VentAlv"="Low"|"FiO2"="Normal"| => 12
+"PVSat"="High"|"VentAlv"="Normal"|"FiO2"="?"| => 9
+"PVSat"="High"|"VentAlv"="Normal"|"FiO2"="Normal"| => 314
+"PVSat"="High"|"VentAlv"="Zero"|"FiO2"="Normal"| => 9
+"PVSat"="Low"|"VentAlv"="?"|"FiO2"="Low"| => 3
+"PVSat"="Low"|"VentAlv"="?"|"FiO2"="Normal"| => 63
+"PVSat"="Low"|"VentAlv"="High"|"FiO2"="Low"| => 4
+"PVSat"="Low"|"VentAlv"="High"|"FiO2"="Normal"| => 2
+"PVSat"="Low"|"VentAlv"="Low"|"FiO2"="?"| => 33
+"PVSat"="Low"|"VentAlv"="Low"|"FiO2"="Low"| => 12
+"PVSat"="Low"|"VentAlv"="Low"|"FiO2"="Normal"| => 1027
+"PVSat"="Low"|"VentAlv"="Normal"|"FiO2"="?"| => 4
+"PVSat"="Low"|"VentAlv"="Normal"|"FiO2"="Low"| => 69
+"PVSat"="Low"|"VentAlv"="Normal"|"FiO2"="Normal"| => 71
+"PVSat"="Low"|"VentAlv"="Zero"|"FiO2"="?"| => 37
+"PVSat"="Low"|"VentAlv"="Zero"|"FiO2"="Low"| => 12
+"PVSat"="Low"|"VentAlv"="Zero"|"FiO2"="Normal"| => 1232
+"PVSat"="Normal"|"VentAlv"="?"|"FiO2"="Normal"| => 194
+"PVSat"="Normal"|"VentAlv"="High"|"FiO2"="Normal"| => 7
+"PVSat"="Normal"|"VentAlv"="Low"|"FiO2"="?"| => 1
+"PVSat"="Normal"|"VentAlv"="Low"|"FiO2"="Normal"| => 10
+"PVSat"="Normal"|"VentAlv"="Normal"|"FiO2"="?"| => 201
+"PVSat"="Normal"|"VentAlv"="Normal"|"FiO2"="Low"| => 3
+"PVSat"="Normal"|"VentAlv"="Normal"|"FiO2"="Normal"| => 7031
+"PVSat"="Normal"|"VentAlv"="Zero"|"FiO2"="Normal"| => 10
+"Press"="?"|"KinkedTube"="False"|"Intubation"="Esophageal"|"VentTube"="High"| => 1
+"Press"="?"|"KinkedTube"="False"|"Intubation"="Esophageal"|"VentTube"="Normal"| => 8
+"Press"="?"|"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="High"| => 7
+"Press"="?"|"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="Low"| => 5
+"Press"="?"|"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="Normal"| => 198
+"Press"="?"|"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="Zero"| => 28
+"Press"="?"|"KinkedTube"="False"|"Intubation"="OneSided"|"VentTube"="Low"| => 1
+"Press"="?"|"KinkedTube"="False"|"Intubation"="OneSided"|"VentTube"="Normal"| => 10
+"Press"="?"|"KinkedTube"="False"|"Intubation"="OneSided"|"VentTube"="Zero"| => 1
+"Press"="?"|"KinkedTube"="True"|"Intubation"="Normal"|"VentTube"="Low"| => 1
+"Press"="?"|"KinkedTube"="True"|"Intubation"="Normal"|"VentTube"="Normal"| => 11
+"Press"="?"|"KinkedTube"="True"|"Intubation"="Normal"|"VentTube"="Zero"| => 1
+"Press"="?"|"KinkedTube"="True"|"Intubation"="OneSided"|"VentTube"="Normal"| => 2
+"Press"="High"|"KinkedTube"="?"|"Intubation"="Normal"|"VentTube"="High"| => 8
+"Press"="High"|"KinkedTube"="?"|"Intubation"="Normal"|"VentTube"="Normal"| => 10
+"Press"="High"|"KinkedTube"="?"|"Intubation"="Normal"|"VentTube"="Zero"| => 1
+"Press"="High"|"KinkedTube"="?"|"Intubation"="OneSided"|"VentTube"="High"| => 1
+"Press"="High"|"KinkedTube"="?"|"Intubation"="OneSided"|"VentTube"="Normal"| => 6
+"Press"="High"|"KinkedTube"="False"|"Intubation"="?"|"VentTube"="High"| => 10
+"Press"="High"|"KinkedTube"="False"|"Intubation"="?"|"VentTube"="Normal"| => 7
+"Press"="High"|"KinkedTube"="False"|"Intubation"="Esophageal"|"VentTube"="Normal"| => 4
+"Press"="High"|"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="?"| => 11
+"Press"="High"|"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="High"| => 230
+"Press"="High"|"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="Low"| => 2
+"Press"="High"|"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="Normal"| => 61
+"Press"="High"|"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="Zero"| => 5
+"Press"="High"|"KinkedTube"="False"|"Intubation"="OneSided"|"VentTube"="?"| => 8
+"Press"="High"|"KinkedTube"="False"|"Intubation"="OneSided"|"VentTube"="High"| => 8
+"Press"="High"|"KinkedTube"="False"|"Intubation"="OneSided"|"VentTube"="Normal"| => 252
+"Press"="High"|"KinkedTube"="True"|"Intubation"="?"|"VentTube"="Normal"| => 12
+"Press"="High"|"KinkedTube"="True"|"Intubation"="Esophageal"|"VentTube"="Normal"| => 5
+"Press"="High"|"KinkedTube"="True"|"Intubation"="Normal"|"VentTube"="?"| => 7
+"Press"="High"|"KinkedTube"="True"|"Intubation"="Normal"|"VentTube"="High"| => 9
+"Press"="High"|"KinkedTube"="True"|"Intubation"="Normal"|"VentTube"="Low"| => 2
+"Press"="High"|"KinkedTube"="True"|"Intubation"="Normal"|"VentTube"="Normal"| => 340
+"Press"="High"|"KinkedTube"="True"|"Intubation"="Normal"|"VentTube"="Zero"| => 1
+"Press"="High"|"KinkedTube"="True"|"Intubation"="OneSided"|"VentTube"="?"| => 1
+"Press"="High"|"KinkedTube"="True"|"Intubation"="OneSided"|"VentTube"="Low"| => 1
+"Press"="High"|"KinkedTube"="True"|"Intubation"="OneSided"|"VentTube"="Normal"| => 21
+"Press"="Low"|"KinkedTube"="?"|"Intubation"="Esophageal"|"VentTube"="Normal"| => 7
+"Press"="Low"|"KinkedTube"="?"|"Intubation"="Normal"|"VentTube"="Low"| => 4
+"Press"="Low"|"KinkedTube"="?"|"Intubation"="Normal"|"VentTube"="Normal"| => 3
+"Press"="Low"|"KinkedTube"="False"|"Intubation"="?"|"VentTube"="Low"| => 7
+"Press"="Low"|"KinkedTube"="False"|"Intubation"="?"|"VentTube"="Normal"| => 4
+"Press"="Low"|"KinkedTube"="False"|"Intubation"="Esophageal"|"VentTube"="?"| => 5
+"Press"="Low"|"KinkedTube"="False"|"Intubation"="Esophageal"|"VentTube"="High"| => 9
+"Press"="Low"|"KinkedTube"="False"|"Intubation"="Esophageal"|"VentTube"="Low"| => 6
+"Press"="Low"|"KinkedTube"="False"|"Intubation"="Esophageal"|"VentTube"="Normal"| => 168
+"Press"="Low"|"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="?"| => 13
+"Press"="Low"|"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="High"| => 2
+"Press"="Low"|"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="Low"| => 237
+"Press"="Low"|"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="Normal"| => 74
+"Press"="Low"|"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="Zero"| => 5
+"Press"="Low"|"KinkedTube"="False"|"Intubation"="OneSided"|"VentTube"="?"| => 2
+"Press"="Low"|"KinkedTube"="False"|"Intubation"="OneSided"|"VentTube"="Low"| => 14
+"Press"="Low"|"KinkedTube"="False"|"Intubation"="OneSided"|"VentTube"="Normal"| => 3
+"Press"="Low"|"KinkedTube"="False"|"Intubation"="OneSided"|"VentTube"="Zero"| => 1
+"Press"="Low"|"KinkedTube"="True"|"Intubation"="?"|"VentTube"="Low"| => 2
+"Press"="Low"|"KinkedTube"="True"|"Intubation"="Esophageal"|"VentTube"="Normal"| => 4
+"Press"="Low"|"KinkedTube"="True"|"Intubation"="Normal"|"VentTube"="?"| => 1
+"Press"="Low"|"KinkedTube"="True"|"Intubation"="Normal"|"VentTube"="Low"| => 6
+"Press"="Low"|"KinkedTube"="True"|"Intubation"="Normal"|"VentTube"="Normal"| => 3
+"Press"="Normal"|"KinkedTube"="?"|"Intubation"="Normal"|"VentTube"="Normal"| => 212
+"Press"="Normal"|"KinkedTube"="?"|"Intubation"="OneSided"|"VentTube"="Normal"| => 7
+"Press"="Normal"|"KinkedTube"="False"|"Intubation"="?"|"VentTube"="Normal"| => 232
+"Press"="Normal"|"KinkedTube"="False"|"Intubation"="Esophageal"|"VentTube"="Normal"| => 14
+"Press"="Normal"|"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="?"| => 205
+"Press"="Normal"|"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="High"| => 2
+"Press"="Normal"|"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="Low"| => 2
+"Press"="Normal"|"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="Normal"| => 7467
+"Press"="Normal"|"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="Zero"| => 2
+"Press"="Normal"|"KinkedTube"="False"|"Intubation"="OneSided"|"VentTube"="?"| => 9
+"Press"="Normal"|"KinkedTube"="False"|"Intubation"="OneSided"|"VentTube"="Low"| => 2
+"Press"="Normal"|"KinkedTube"="False"|"Intubation"="OneSided"|"VentTube"="Normal"| => 164
+"Press"="Normal"|"KinkedTube"="False"|"Intubation"="OneSided"|"VentTube"="Zero"| => 1
+"Press"="Normal"|"KinkedTube"="True"|"Intubation"="?"|"VentTube"="Normal"| => 1
+"Press"="Normal"|"KinkedTube"="True"|"Intubation"="Esophageal"|"VentTube"="Normal"| => 6
+"Press"="Normal"|"KinkedTube"="True"|"Intubation"="Normal"|"VentTube"="?"| => 2
+"Press"="Normal"|"KinkedTube"="True"|"Intubation"="Normal"|"VentTube"="Low"| => 3
+"Press"="Normal"|"KinkedTube"="True"|"Intubation"="Normal"|"VentTube"="Normal"| => 24
+"Press"="Normal"|"KinkedTube"="True"|"Intubation"="OneSided"|"VentTube"="Normal"| => 2
+"Press"="Zero"|"KinkedTube"="?"|"Intubation"="Esophageal"|"VentTube"="Normal"| => 2
+"Press"="Zero"|"KinkedTube"="?"|"Intubation"="Normal"|"VentTube"="Normal"| => 2
+"Press"="Zero"|"KinkedTube"="?"|"Intubation"="Normal"|"VentTube"="Zero"| => 16
+"Press"="Zero"|"KinkedTube"="False"|"Intubation"="?"|"VentTube"="Low"| => 2
+"Press"="Zero"|"KinkedTube"="False"|"Intubation"="?"|"VentTube"="Normal"| => 4
+"Press"="Zero"|"KinkedTube"="False"|"Intubation"="?"|"VentTube"="Zero"| => 15
+"Press"="Zero"|"KinkedTube"="False"|"Intubation"="Esophageal"|"VentTube"="High"| => 2
+"Press"="Zero"|"KinkedTube"="False"|"Intubation"="Esophageal"|"VentTube"="Low"| => 6
+"Press"="Zero"|"KinkedTube"="False"|"Intubation"="Esophageal"|"VentTube"="Normal"| => 49
+"Press"="Zero"|"KinkedTube"="False"|"Intubation"="Esophageal"|"VentTube"="Zero"| => 14
+"Press"="Zero"|"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="?"| => 18
+"Press"="Zero"|"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="High"| => 2
+"Press"="Zero"|"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="Low"| => 2
+"Press"="Zero"|"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="Normal"| => 91
+"Press"="Zero"|"KinkedTube"="False"|"Intubation"="Normal"|"VentTube"="Zero"| => 575
+"Press"="Zero"|"KinkedTube"="False"|"Intubation"="OneSided"|"VentTube"="?"| => 1
+"Press"="Zero"|"KinkedTube"="False"|"Intubation"="OneSided"|"VentTube"="Normal"| => 6
+"Press"="Zero"|"KinkedTube"="False"|"Intubation"="OneSided"|"VentTube"="Zero"| => 41
+"Press"="Zero"|"KinkedTube"="True"|"Intubation"="Normal"|"VentTube"="Zero"| => 15
+"Press"="Zero"|"KinkedTube"="True"|"Intubation"="OneSided"|"VentTube"="High"| => 1
+"Press"="Zero"|"KinkedTube"="True"|"Intubation"="OneSided"|"VentTube"="Zero"| => 2
+"PulmEmbolus"="?"| => 308
+"PulmEmbolus"="?"|"Intubation"="Esophageal"| => 8
+"PulmEmbolus"="?"|"Intubation"="Normal"| => 284
+"PulmEmbolus"="?"|"Intubation"="OneSided"| => 16
+"PulmEmbolus"="False"| => 10675
+"PulmEmbolus"="False"|"Intubation"="?"| => 294
+"PulmEmbolus"="False"|"Intubation"="Esophageal"| => 299
+"PulmEmbolus"="False"|"Intubation"="Normal"| => 9537
+"PulmEmbolus"="False"|"Intubation"="OneSided"| => 545
+"PulmEmbolus"="True"| => 117
+"PulmEmbolus"="True"|"Intubation"="?"| => 2
+"PulmEmbolus"="True"|"Intubation"="Esophageal"| => 3
+"PulmEmbolus"="True"|"Intubation"="Normal"| => 105
+"PulmEmbolus"="True"|"Intubation"="OneSided"| => 7
+"SaO2"="?"|"Shunt"="High"|"PVSat"="High"| => 1
+"SaO2"="?"|"Shunt"="High"|"PVSat"="Low"| => 11
+"SaO2"="?"|"Shunt"="High"|"PVSat"="Normal"| => 7
+"SaO2"="?"|"Shunt"="Normal"|"PVSat"="High"| => 19
+"SaO2"="?"|"Shunt"="Normal"|"PVSat"="Low"| => 52
+"SaO2"="?"|"Shunt"="Normal"|"PVSat"="Normal"| => 217
+"SaO2"="High"|"Shunt"="?"|"PVSat"="High"| => 20
+"SaO2"="High"|"Shunt"="High"|"PVSat"="Low"| => 7
+"SaO2"="High"|"Shunt"="High"|"PVSat"="Normal"| => 3
+"SaO2"="High"|"Shunt"="Normal"|"PVSat"="?"| => 21
+"SaO2"="High"|"Shunt"="Normal"|"PVSat"="High"| => 690
+"SaO2"="High"|"Shunt"="Normal"|"PVSat"="Low"| => 25
+"SaO2"="High"|"Shunt"="Normal"|"PVSat"="Normal"| => 77
+"SaO2"="Low"|"Shunt"="?"|"PVSat"="High"| => 1
+"SaO2"="Low"|"Shunt"="?"|"PVSat"="Low"| => 71
+"SaO2"="Low"|"Shunt"="?"|"PVSat"="Normal"| => 16
+"SaO2"="Low"|"Shunt"="High"|"PVSat"="?"| => 24
+"SaO2"="Low"|"Shunt"="High"|"PVSat"="High"| => 27
+"SaO2"="Low"|"Shunt"="High"|"PVSat"="Low"| => 569
+"SaO2"="Low"|"Shunt"="High"|"PVSat"="Normal"| => 463
+"SaO2"="Low"|"Shunt"="Normal"|"PVSat"="?"| => 53
+"SaO2"="Low"|"Shunt"="Normal"|"PVSat"="High"| => 12
+"SaO2"="Low"|"Shunt"="Normal"|"PVSat"="Low"| => 1810
+"SaO2"="Low"|"Shunt"="Normal"|"PVSat"="Normal"| => 53
+"SaO2"="Normal"|"Shunt"="?"|"PVSat"="High"| => 1
+"SaO2"="Normal"|"Shunt"="?"|"PVSat"="Normal"| => 208
+"SaO2"="Normal"|"Shunt"="High"|"PVSat"="High"| => 8
+"SaO2"="Normal"|"Shunt"="High"|"PVSat"="Low"| => 9
+"SaO2"="Normal"|"Shunt"="High"|"PVSat"="Normal"| => 2
+"SaO2"="Normal"|"Shunt"="Normal"|"PVSat"="?"| => 192
+"SaO2"="Normal"|"Shunt"="Normal"|"PVSat"="High"| => 5
+"SaO2"="Normal"|"Shunt"="Normal"|"PVSat"="Low"| => 15
+"SaO2"="Normal"|"Shunt"="Normal"|"PVSat"="Normal"| => 6411
+"Shunt"="?"|"PVSat"="High"| => 22
+"Shunt"="?"|"PVSat"="Low"| => 71
+"Shunt"="?"|"PVSat"="Normal"| => 224
+"Shunt"="?"|"PulmEmbolus"="False"|"Intubation"="Esophageal"| => 9
+"Shunt"="?"|"PulmEmbolus"="False"|"Intubation"="Normal"| => 290
+"Shunt"="?"|"PulmEmbolus"="False"|"Intubation"="OneSided"| => 14
+"Shunt"="?"|"PulmEmbolus"="True"|"Intubation"="Normal"| => 4
+"Shunt"="High"|"PVSat"="?"| => 24
+"Shunt"="High"|"PVSat"="High"| => 36
+"Shunt"="High"|"PVSat"="Low"| => 596
+"Shunt"="High"|"PVSat"="Normal"| => 475
+"Shunt"="High"|"PulmEmbolus"="?"|"Intubation"="Normal"| => 16
+"Shunt"="High"|"PulmEmbolus"="?"|"Intubation"="OneSided"| => 15
+"Shunt"="High"|"PulmEmbolus"="False"|"Intubation"="?"| => 25
+"Shunt"="High"|"PulmEmbolus"="False"|"Intubation"="Esophageal"| => 12
+"Shunt"="High"|"PulmEmbolus"="False"|"Intubation"="Normal"| => 451
+"Shunt"="High"|"PulmEmbolus"="False"|"Intubation"="OneSided"| => 508
+"Shunt"="High"|"PulmEmbolus"="True"|"Intubation"="?"| => 2
+"Shunt"="High"|"PulmEmbolus"="True"|"Intubation"="Esophageal"| => 3
+"Shunt"="High"|"PulmEmbolus"="True"|"Intubation"="Normal"| => 92
+"Shunt"="High"|"PulmEmbolus"="True"|"Intubation"="OneSided"| => 7
+"Shunt"="Normal"|"PVSat"="?"| => 266
+"Shunt"="Normal"|"PVSat"="High"| => 726
+"Shunt"="Normal"|"PVSat"="Low"| => 1902
+"Shunt"="Normal"|"PVSat"="Normal"| => 6758
+"Shunt"="Normal"|"PulmEmbolus"="?"|"Intubation"="Esophageal"| => 8
+"Shunt"="Normal"|"PulmEmbolus"="?"|"Intubation"="Normal"| => 268
+"Shunt"="Normal"|"PulmEmbolus"="?"|"Intubation"="OneSided"| => 1
+"Shunt"="Normal"|"PulmEmbolus"="False"|"Intubation"="?"| => 269
+"Shunt"="Normal"|"PulmEmbolus"="False"|"Intubation"="Esophageal"| => 278
+"Shunt"="Normal"|"PulmEmbolus"="False"|"Intubation"="Normal"| => 8796
+"Shunt"="Normal"|"PulmEmbolus"="False"|"Intubation"="OneSided"| => 23
+"Shunt"="Normal"|"PulmEmbolus"="True"|"Intubation"="Normal"| => 9
+"StrokeVolume"="?"|"LVFailure"="False"|"Hypovolemia"="False"| => 245
+"StrokeVolume"="?"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="High"|"HR"="High"| => 123
+"StrokeVolume"="?"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="High"|"HR"="Normal"| => 4
+"StrokeVolume"="?"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="Low"|"HR"="High"| => 8
+"StrokeVolume"="?"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="Low"|"HR"="Low"| => 11
+"StrokeVolume"="?"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="Low"|"HR"="Normal"| => 12
+"StrokeVolume"="?"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="Normal"|"HR"="High"| => 10
+"StrokeVolume"="?"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="Normal"|"HR"="Low"| => 2
+"StrokeVolume"="?"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="Normal"|"HR"="Normal"| => 75
+"StrokeVolume"="?"|"LVFailure"="False"|"Hypovolemia"="True"| => 57
+"StrokeVolume"="?"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="High"|"HR"="High"| => 2
+"StrokeVolume"="?"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="High"|"HR"="Normal"| => 1
+"StrokeVolume"="?"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="Low"|"HR"="High"| => 22
+"StrokeVolume"="?"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="Low"|"HR"="Low"| => 4
+"StrokeVolume"="?"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="Low"|"HR"="Normal"| => 22
+"StrokeVolume"="?"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="Normal"|"HR"="High"| => 6
+"StrokeVolume"="?"|"LVFailure"="True"|"Hypovolemia"="False"| => 11
+"StrokeVolume"="?"|"LVFailure"="True"|"Hypovolemia"="False"|"CO"="High"|"HR"="High"| => 2
+"StrokeVolume"="?"|"LVFailure"="True"|"Hypovolemia"="False"|"CO"="Low"|"HR"="High"| => 3
+"StrokeVolume"="?"|"LVFailure"="True"|"Hypovolemia"="False"|"CO"="Low"|"HR"="Normal"| => 3
+"StrokeVolume"="?"|"LVFailure"="True"|"Hypovolemia"="False"|"CO"="Normal"|"HR"="High"| => 1
+"StrokeVolume"="?"|"LVFailure"="True"|"Hypovolemia"="False"|"CO"="Normal"|"HR"="Normal"| => 2
+"StrokeVolume"="?"|"LVFailure"="True"|"Hypovolemia"="True"| => 6
+"StrokeVolume"="?"|"LVFailure"="True"|"Hypovolemia"="True"|"CO"="Low"|"HR"="High"| => 3
+"StrokeVolume"="?"|"LVFailure"="True"|"Hypovolemia"="True"|"CO"="Low"|"HR"="Low"| => 1
+"StrokeVolume"="?"|"LVFailure"="True"|"Hypovolemia"="True"|"CO"="Low"|"HR"="Normal"| => 2
+"StrokeVolume"="High"|"LVFailure"="?"|"Hypovolemia"="False"| => 14
+"StrokeVolume"="High"|"LVFailure"="?"|"Hypovolemia"="False"|"CO"="High"|"HR"="High"| => 7
+"StrokeVolume"="High"|"LVFailure"="?"|"Hypovolemia"="False"|"CO"="High"|"HR"="Normal"| => 3
+"StrokeVolume"="High"|"LVFailure"="?"|"Hypovolemia"="False"|"CO"="Low"|"HR"="Low"| => 1
+"StrokeVolume"="High"|"LVFailure"="?"|"Hypovolemia"="False"|"CO"="Normal"|"HR"="Normal"| => 3
+"StrokeVolume"="High"|"LVFailure"="False"|"Hypovolemia"="?"| => 17
+"StrokeVolume"="High"|"LVFailure"="False"|"Hypovolemia"="?"|"CO"="High"|"HR"="High"| => 13
+"StrokeVolume"="High"|"LVFailure"="False"|"Hypovolemia"="?"|"CO"="High"|"HR"="Normal"| => 2
+"StrokeVolume"="High"|"LVFailure"="False"|"Hypovolemia"="?"|"CO"="Normal"|"HR"="Normal"| => 2
+"StrokeVolume"="High"|"LVFailure"="False"|"Hypovolemia"="False"| => 373
+"StrokeVolume"="High"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="?"|"HR"="High"| => 6
+"StrokeVolume"="High"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="?"|"HR"="Normal"| => 4
+"StrokeVolume"="High"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="High"|"HR"="?"| => 10
+"StrokeVolume"="High"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="High"|"HR"="High"| => 174
+"StrokeVolume"="High"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="High"|"HR"="Normal"| => 101
+"StrokeVolume"="High"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="Low"|"HR"="High"| => 3
+"StrokeVolume"="High"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="Low"|"HR"="Low"| => 5
+"StrokeVolume"="High"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="Low"|"HR"="Normal"| => 1
+"StrokeVolume"="High"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="Normal"|"HR"="?"| => 2
+"StrokeVolume"="High"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="Normal"|"HR"="Low"| => 12
+"StrokeVolume"="High"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="Normal"|"HR"="Normal"| => 55
+"StrokeVolume"="High"|"LVFailure"="False"|"Hypovolemia"="True"| => 23
+"StrokeVolume"="High"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="?"|"HR"="High"| => 1
+"StrokeVolume"="High"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="High"|"HR"="?"| => 1
+"StrokeVolume"="High"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="High"|"HR"="High"| => 12
+"StrokeVolume"="High"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="High"|"HR"="Normal"| => 6
+"StrokeVolume"="High"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="Low"|"HR"="Low"| => 1
+"StrokeVolume"="High"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="Normal"|"HR"="Low"| => 1
+"StrokeVolume"="High"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="Normal"|"HR"="Normal"| => 1
+"StrokeVolume"="High"|"LVFailure"="True"|"Hypovolemia"="False"| => 7
+"StrokeVolume"="High"|"LVFailure"="True"|"Hypovolemia"="False"|"CO"="High"|"HR"="High"| => 5
+"StrokeVolume"="High"|"LVFailure"="True"|"Hypovolemia"="False"|"CO"="Normal"|"HR"="Normal"| => 2
+"StrokeVolume"="Low"|"LVFailure"="?"|"Hypovolemia"="False"| => 12
+"StrokeVolume"="Low"|"LVFailure"="?"|"Hypovolemia"="False"|"CO"="Low"|"HR"="High"| => 4
+"StrokeVolume"="Low"|"LVFailure"="?"|"Hypovolemia"="False"|"CO"="Low"|"HR"="Low"| => 1
+"StrokeVolume"="Low"|"LVFailure"="?"|"Hypovolemia"="False"|"CO"="Low"|"HR"="Normal"| => 5
+"StrokeVolume"="Low"|"LVFailure"="?"|"Hypovolemia"="False"|"CO"="Normal"|"HR"="High"| => 1
+"StrokeVolume"="Low"|"LVFailure"="?"|"Hypovolemia"="False"|"CO"="Normal"|"HR"="Low"| => 1
+"StrokeVolume"="Low"|"LVFailure"="?"|"Hypovolemia"="True"| => 59
+"StrokeVolume"="Low"|"LVFailure"="?"|"Hypovolemia"="True"|"CO"="Low"|"HR"="High"| => 23
+"StrokeVolume"="Low"|"LVFailure"="?"|"Hypovolemia"="True"|"CO"="Low"|"HR"="Low"| => 2
+"StrokeVolume"="Low"|"LVFailure"="?"|"Hypovolemia"="True"|"CO"="Low"|"HR"="Normal"| => 28
+"StrokeVolume"="Low"|"LVFailure"="?"|"Hypovolemia"="True"|"CO"="Normal"|"HR"="High"| => 5
+"StrokeVolume"="Low"|"LVFailure"="?"|"Hypovolemia"="True"|"CO"="Normal"|"HR"="Normal"| => 1
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="?"| => 67
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="?"|"CO"="High"|"HR"="Normal"| => 1
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="?"|"CO"="Low"|"HR"="High"| => 31
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="?"|"CO"="Low"|"HR"="Low"| => 1
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="?"|"CO"="Low"|"HR"="Normal"| => 24
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="?"|"CO"="Normal"|"HR"="High"| => 9
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="?"|"CO"="Normal"|"HR"="Normal"| => 1
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="False"| => 389
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="?"|"HR"="High"| => 5
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="?"|"HR"="Normal"| => 7
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="High"|"HR"="High"| => 2
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="High"|"HR"="Normal"| => 6
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="Low"|"HR"="?"| => 10
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="Low"|"HR"="High"| => 158
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="Low"|"HR"="Low"| => 14
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="Low"|"HR"="Normal"| => 138
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="Normal"|"HR"="?"| => 3
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="Normal"|"HR"="High"| => 39
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="Normal"|"HR"="Normal"| => 7
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="True"| => 1860
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="?"|"HR"="High"| => 28
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="?"|"HR"="Low"| => 1
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="?"|"HR"="Normal"| => 26
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="High"|"HR"="High"| => 9
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="High"|"HR"="Low"| => 2
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="High"|"HR"="Normal"| => 6
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="Low"|"HR"="?"| => 45
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="Low"|"HR"="High"| => 764
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="Low"|"HR"="Low"| => 93
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="Low"|"HR"="Normal"| => 684
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="Normal"|"HR"="?"| => 8
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="Normal"|"HR"="High"| => 164
+"StrokeVolume"="Low"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="Normal"|"HR"="Normal"| => 30
+"StrokeVolume"="Low"|"LVFailure"="True"|"Hypovolemia"="?"| => 9
+"StrokeVolume"="Low"|"LVFailure"="True"|"Hypovolemia"="?"|"CO"="Low"|"HR"="High"| => 3
+"StrokeVolume"="Low"|"LVFailure"="True"|"Hypovolemia"="?"|"CO"="Low"|"HR"="Normal"| => 4
+"StrokeVolume"="Low"|"LVFailure"="True"|"Hypovolemia"="?"|"CO"="Normal"|"HR"="High"| => 2
+"StrokeVolume"="Low"|"LVFailure"="True"|"Hypovolemia"="False"| => 200
+"StrokeVolume"="Low"|"LVFailure"="True"|"Hypovolemia"="False"|"CO"="?"|"HR"="High"| => 4
+"StrokeVolume"="Low"|"LVFailure"="True"|"Hypovolemia"="False"|"CO"="?"|"HR"="Normal"| => 1
+"StrokeVolume"="Low"|"LVFailure"="True"|"Hypovolemia"="False"|"CO"="High"|"HR"="Normal"| => 1
+"StrokeVolume"="Low"|"LVFailure"="True"|"Hypovolemia"="False"|"CO"="Low"|"HR"="?"| => 7
+"StrokeVolume"="Low"|"LVFailure"="True"|"Hypovolemia"="False"|"CO"="Low"|"HR"="High"| => 82
+"StrokeVolume"="Low"|"LVFailure"="True"|"Hypovolemia"="False"|"CO"="Low"|"HR"="Low"| => 7
+"StrokeVolume"="Low"|"LVFailure"="True"|"Hypovolemia"="False"|"CO"="Low"|"HR"="Normal"| => 74
+"StrokeVolume"="Low"|"LVFailure"="True"|"Hypovolemia"="False"|"CO"="Normal"|"HR"="High"| => 21
+"StrokeVolume"="Low"|"LVFailure"="True"|"Hypovolemia"="False"|"CO"="Normal"|"HR"="Normal"| => 3
+"StrokeVolume"="Low"|"LVFailure"="True"|"Hypovolemia"="True"| => 110
+"StrokeVolume"="Low"|"LVFailure"="True"|"Hypovolemia"="True"|"CO"="?"|"HR"="High"| => 6
+"StrokeVolume"="Low"|"LVFailure"="True"|"Hypovolemia"="True"|"CO"="?"|"HR"="Normal"| => 1
+"StrokeVolume"="Low"|"LVFailure"="True"|"Hypovolemia"="True"|"CO"="High"|"HR"="Low"| => 1
+"StrokeVolume"="Low"|"LVFailure"="True"|"Hypovolemia"="True"|"CO"="Low"|"HR"="?"| => 3
+"StrokeVolume"="Low"|"LVFailure"="True"|"Hypovolemia"="True"|"CO"="Low"|"HR"="High"| => 36
+"StrokeVolume"="Low"|"LVFailure"="True"|"Hypovolemia"="True"|"CO"="Low"|"HR"="Low"| => 4
+"StrokeVolume"="Low"|"LVFailure"="True"|"Hypovolemia"="True"|"CO"="Low"|"HR"="Normal"| => 36
+"StrokeVolume"="Low"|"LVFailure"="True"|"Hypovolemia"="True"|"CO"="Normal"|"HR"="?"| => 1
+"StrokeVolume"="Low"|"LVFailure"="True"|"Hypovolemia"="True"|"CO"="Normal"|"HR"="High"| => 21
+"StrokeVolume"="Low"|"LVFailure"="True"|"Hypovolemia"="True"|"CO"="Normal"|"HR"="Normal"| => 1
+"StrokeVolume"="Normal"|"LVFailure"="?"|"Hypovolemia"="False"| => 214
+"StrokeVolume"="Normal"|"LVFailure"="?"|"Hypovolemia"="False"|"CO"="High"|"HR"="High"| => 116
+"StrokeVolume"="Normal"|"LVFailure"="?"|"Hypovolemia"="False"|"CO"="Low"|"HR"="High"| => 1
+"StrokeVolume"="Normal"|"LVFailure"="?"|"Hypovolemia"="False"|"CO"="Low"|"HR"="Low"| => 6
+"StrokeVolume"="Normal"|"LVFailure"="?"|"Hypovolemia"="False"|"CO"="Low"|"HR"="Normal"| => 1
+"StrokeVolume"="Normal"|"LVFailure"="?"|"Hypovolemia"="False"|"CO"="Normal"|"HR"="High"| => 4
+"StrokeVolume"="Normal"|"LVFailure"="?"|"Hypovolemia"="False"|"CO"="Normal"|"HR"="Normal"| => 86
+"StrokeVolume"="Normal"|"LVFailure"="?"|"Hypovolemia"="True"| => 2
+"StrokeVolume"="Normal"|"LVFailure"="?"|"Hypovolemia"="True"|"CO"="High"|"HR"="High"| => 2
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="?"| => 186
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="?"|"CO"="High"|"HR"="High"| => 85
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="?"|"CO"="High"|"HR"="Normal"| => 1
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="?"|"CO"="Low"|"HR"="Low"| => 8
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="?"|"CO"="Low"|"HR"="Normal"| => 3
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="?"|"CO"="Normal"|"HR"="High"| => 5
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="?"|"CO"="Normal"|"HR"="Low"| => 1
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="?"|"CO"="Normal"|"HR"="Normal"| => 83
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="False"| => 6955
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="?"|"HR"="High"| => 94
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="?"|"HR"="Low"| => 9
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="?"|"HR"="Normal"| => 82
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="High"|"HR"="?"| => 110
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="High"|"HR"="High"| => 3442
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="High"|"HR"="Low"| => 1
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="High"|"HR"="Normal"| => 26
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="Low"|"HR"="?"| => 13
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="Low"|"HR"="High"| => 39
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="Low"|"HR"="Low"| => 298
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="Low"|"HR"="Normal"| => 119
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="Normal"|"HR"="?"| => 91
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="Normal"|"HR"="High"| => 131
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="Normal"|"HR"="Low"| => 12
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="False"|"CO"="Normal"|"HR"="Normal"| => 2488
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="True"| => 84
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="?"|"HR"="High"| => 2
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="?"|"HR"="Normal"| => 2
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="High"|"HR"="?"| => 3
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="High"|"HR"="High"| => 30
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="Low"|"HR"="Low"| => 3
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="Low"|"HR"="Normal"| => 2
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="Normal"|"HR"="?"| => 2
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="Normal"|"HR"="High"| => 3
+"StrokeVolume"="Normal"|"LVFailure"="False"|"Hypovolemia"="True"|"CO"="Normal"|"HR"="Normal"| => 37
+"StrokeVolume"="Normal"|"LVFailure"="True"|"Hypovolemia"="?"| => 5
+"StrokeVolume"="Normal"|"LVFailure"="True"|"Hypovolemia"="?"|"CO"="Normal"|"HR"="Normal"| => 5
+"StrokeVolume"="Normal"|"LVFailure"="True"|"Hypovolemia"="False"| => 195
+"StrokeVolume"="Normal"|"LVFailure"="True"|"Hypovolemia"="False"|"CO"="?"|"HR"="Normal"| => 1
+"StrokeVolume"="Normal"|"LVFailure"="True"|"Hypovolemia"="False"|"CO"="High"|"HR"="?"| => 4
+"StrokeVolume"="Normal"|"LVFailure"="True"|"Hypovolemia"="False"|"CO"="High"|"HR"="High"| => 98
+"StrokeVolume"="Normal"|"LVFailure"="True"|"Hypovolemia"="False"|"CO"="High"|"HR"="Normal"| => 1
+"StrokeVolume"="Normal"|"LVFailure"="True"|"Hypovolemia"="False"|"CO"="Low"|"HR"="?"| => 1
+"StrokeVolume"="Normal"|"LVFailure"="True"|"Hypovolemia"="False"|"CO"="Low"|"HR"="Low"| => 10
+"StrokeVolume"="Normal"|"LVFailure"="True"|"Hypovolemia"="False"|"CO"="Normal"|"HR"="?"| => 1
+"StrokeVolume"="Normal"|"LVFailure"="True"|"Hypovolemia"="False"|"CO"="Normal"|"HR"="High"| => 2
+"StrokeVolume"="Normal"|"LVFailure"="True"|"Hypovolemia"="False"|"CO"="Normal"|"HR"="Normal"| => 77
+"TPR"="?"|"Anaphylaxis"="False"| => 270
+"TPR"="?"|"Anaphylaxis"="True"| => 2
+"TPR"="High"|"Anaphylaxis"="?"| => 76
+"TPR"="High"|"Anaphylaxis"="False"| => 3124
+"TPR"="High"|"Anaphylaxis"="True"| => 1
+"TPR"="Low"|"Anaphylaxis"="?"| => 79
+"TPR"="Low"|"Anaphylaxis"="False"| => 3212
+"TPR"="Low"|"Anaphylaxis"="True"| => 87
+"TPR"="Normal"|"Anaphylaxis"="?"| => 135
+"TPR"="Normal"|"Anaphylaxis"="False"| => 4114
+"VentAlv"="?"| => 285
+"VentAlv"="?"|"FiO2"="Low"| => 3
+"VentAlv"="?"|"FiO2"="Normal"| => 282
+"VentAlv"="?"|"Intubation"="Esophageal"|"VentLung"="Zero"| => 5
+"VentAlv"="?"|"Intubation"="Normal"|"VentLung"="High"| => 10
+"VentAlv"="?"|"Intubation"="Normal"|"VentLung"="Low"| => 11
+"VentAlv"="?"|"Intubation"="Normal"|"VentLung"="Normal"| => 216
+"VentAlv"="?"|"Intubation"="Normal"|"VentLung"="Zero"| => 32
+"VentAlv"="?"|"Intubation"="OneSided"|"VentLung"="Low"| => 2
+"VentAlv"="?"|"Intubation"="OneSided"|"VentLung"="Normal"| => 8
+"VentAlv"="?"|"Intubation"="OneSided"|"VentLung"="Zero"| => 1
+"VentAlv"="High"| => 436
+"VentAlv"="High"|"FiO2"="?"| => 8
+"VentAlv"="High"|"FiO2"="Low"| => 4
+"VentAlv"="High"|"FiO2"="Normal"| => 424
+"VentAlv"="High"|"Intubation"="?"|"VentLung"="High"| => 12
+"VentAlv"="High"|"Intubation"="?"|"VentLung"="Normal"| => 1
+"VentAlv"="High"|"Intubation"="?"|"VentLung"="Zero"| => 1
+"VentAlv"="High"|"Intubation"="Esophageal"|"VentLung"="High"| => 4
+"VentAlv"="High"|"Intubation"="Esophageal"|"VentLung"="Zero"| => 4
+"VentAlv"="High"|"Intubation"="Normal"|"VentLung"="?"| => 10
+"VentAlv"="High"|"Intubation"="Normal"|"VentLung"="High"| => 310
+"VentAlv"="High"|"Intubation"="Normal"|"VentLung"="Low"| => 9
+"VentAlv"="High"|"Intubation"="Normal"|"VentLung"="Normal"| => 76
+"VentAlv"="High"|"Intubation"="Normal"|"VentLung"="Zero"| => 4
+"VentAlv"="High"|"Intubation"="OneSided"|"VentLung"="High"| => 1
+"VentAlv"="High"|"Intubation"="OneSided"|"VentLung"="Normal"| => 3
+"VentAlv"="High"|"Intubation"="OneSided"|"VentLung"="Zero"| => 1
+"VentAlv"="Low"| => 1129
+"VentAlv"="Low"|"FiO2"="?"| => 34
+"VentAlv"="Low"|"FiO2"="Low"| => 13
+"VentAlv"="Low"|"FiO2"="Normal"| => 1082
+"VentAlv"="Low"|"Intubation"="?"|"VentLung"="Low"| => 16
+"VentAlv"="Low"|"Intubation"="?"|"VentLung"="Normal"| => 10
+"VentAlv"="Low"|"Intubation"="?"|"VentLung"="Zero"| => 1
+"VentAlv"="Low"|"Intubation"="Esophageal"|"VentLung"="?"| => 1
+"VentAlv"="Low"|"Intubation"="Esophageal"|"VentLung"="Low"| => 1
+"VentAlv"="Low"|"Intubation"="Esophageal"|"VentLung"="Zero"| => 3
+"VentAlv"="Low"|"Intubation"="Normal"|"VentLung"="?"| => 20
+"VentAlv"="Low"|"Intubation"="Normal"|"VentLung"="High"| => 2
+"VentAlv"="Low"|"Intubation"="Normal"|"VentLung"="Low"| => 541
+"VentAlv"="Low"|"Intubation"="Normal"|"VentLung"="Normal"| => 60
+"VentAlv"="Low"|"Intubation"="Normal"|"VentLung"="Zero"| => 6
+"VentAlv"="Low"|"Intubation"="OneSided"|"VentLung"="?"| => 14
+"VentAlv"="Low"|"Intubation"="OneSided"|"VentLung"="High"| => 10
+"VentAlv"="Low"|"Intubation"="OneSided"|"VentLung"="Low"| => 32
+"VentAlv"="Low"|"Intubation"="OneSided"|"VentLung"="Normal"| => 411
+"VentAlv"="Low"|"Intubation"="OneSided"|"VentLung"="Zero"| => 1
+"VentAlv"="Normal"| => 7920
+"VentAlv"="Normal"|"FiO2"="?"| => 214
+"VentAlv"="Normal"|"FiO2"="Low"| => 74
+"VentAlv"="Normal"|"FiO2"="Normal"| => 7632
+"VentAlv"="Normal"|"Intubation"="?"|"VentLung"="Low"| => 1
+"VentAlv"="Normal"|"Intubation"="?"|"VentLung"="Normal"| => 217
+"VentAlv"="Normal"|"Intubation"="Esophageal"|"VentLung"="Normal"| => 2
+"VentAlv"="Normal"|"Intubation"="Esophageal"|"VentLung"="Zero"| => 3
+"VentAlv"="Normal"|"Intubation"="Normal"|"VentLung"="?"| => 187
+"VentAlv"="Normal"|"Intubation"="Normal"|"VentLung"="High"| => 5
+"VentAlv"="Normal"|"Intubation"="Normal"|"VentLung"="Low"| => 5
+"VentAlv"="Normal"|"Intubation"="Normal"|"VentLung"="Normal"| => 7469
+"VentAlv"="Normal"|"Intubation"="Normal"|"VentLung"="Zero"| => 12
+"VentAlv"="Normal"|"Intubation"="OneSided"|"VentLung"="?"| => 1
+"VentAlv"="Normal"|"Intubation"="OneSided"|"VentLung"="High"| => 2
+"VentAlv"="Normal"|"Intubation"="OneSided"|"VentLung"="Normal"| => 14
+"VentAlv"="Normal"|"Intubation"="OneSided"|"VentLung"="Zero"| => 2
+"VentAlv"="Zero"| => 1330
+"VentAlv"="Zero"|"FiO2"="?"| => 37
+"VentAlv"="Zero"|"FiO2"="Low"| => 12
+"VentAlv"="Zero"|"FiO2"="Normal"| => 1281
+"VentAlv"="Zero"|"Intubation"="?"|"VentLung"="Normal"| => 3
+"VentAlv"="Zero"|"Intubation"="?"|"VentLung"="Zero"| => 34
+"VentAlv"="Zero"|"Intubation"="Esophageal"|"VentLung"="?"| => 16
+"VentAlv"="Zero"|"Intubation"="Esophageal"|"VentLung"="Zero"| => 271
+"VentAlv"="Zero"|"Intubation"="Normal"|"VentLung"="?"| => 22
+"VentAlv"="Zero"|"Intubation"="Normal"|"VentLung"="High"| => 2
+"VentAlv"="Zero"|"Intubation"="Normal"|"VentLung"="Low"| => 6
+"VentAlv"="Zero"|"Intubation"="Normal"|"VentLung"="Normal"| => 75
+"VentAlv"="Zero"|"Intubation"="Normal"|"VentLung"="Zero"| => 836
+"VentAlv"="Zero"|"Intubation"="OneSided"|"VentLung"="Normal"| => 1
+"VentAlv"="Zero"|"Intubation"="OneSided"|"VentLung"="Zero"| => 64
+"VentLung"="?"|"Intubation"="Esophageal"| => 17
+"VentLung"="?"|"Intubation"="Normal"| => 239
+"VentLung"="?"|"Intubation"="OneSided"| => 15
+"VentLung"="?"|"KinkedTube"="False"|"VentTube"="High"|"Intubation"="Esophageal"| => 1
+"VentLung"="?"|"KinkedTube"="False"|"VentTube"="High"|"Intubation"="Normal"| => 9
+"VentLung"="?"|"KinkedTube"="False"|"VentTube"="High"|"Intubation"="OneSided"| => 2
+"VentLung"="?"|"KinkedTube"="False"|"VentTube"="Low"|"Intubation"="Esophageal"| => 1
+"VentLung"="?"|"KinkedTube"="False"|"VentTube"="Low"|"Intubation"="Normal"| => 10
+"VentLung"="?"|"KinkedTube"="False"|"VentTube"="Normal"|"Intubation"="Esophageal"| => 14
+"VentLung"="?"|"KinkedTube"="False"|"VentTube"="Normal"|"Intubation"="Normal"| => 197
+"VentLung"="?"|"KinkedTube"="False"|"VentTube"="Normal"|"Intubation"="OneSided"| => 12
+"VentLung"="?"|"KinkedTube"="False"|"VentTube"="Zero"|"Intubation"="Normal"| => 13
+"VentLung"="?"|"KinkedTube"="False"|"VentTube"="Zero"|"Intubation"="OneSided"| => 1
+"VentLung"="?"|"KinkedTube"="True"|"VentTube"="Normal"|"Intubation"="Esophageal"| => 1
+"VentLung"="?"|"KinkedTube"="True"|"VentTube"="Normal"|"Intubation"="Normal"| => 10
+"VentLung"="High"|"Intubation"="?"| => 12
+"VentLung"="High"|"Intubation"="Esophageal"| => 4
+"VentLung"="High"|"Intubation"="Normal"| => 329
+"VentLung"="High"|"Intubation"="OneSided"| => 13
+"VentLung"="High"|"KinkedTube"="?"|"VentTube"="High"|"Intubation"="Normal"| => 8
+"VentLung"="High"|"KinkedTube"="?"|"VentTube"="Normal"|"Intubation"="Normal"| => 2
+"VentLung"="High"|"KinkedTube"="False"|"VentTube"="?"|"Intubation"="Normal"| => 9
+"VentLung"="High"|"KinkedTube"="False"|"VentTube"="High"|"Intubation"="?"| => 10
+"VentLung"="High"|"KinkedTube"="False"|"VentTube"="High"|"Intubation"="Normal"| => 225
+"VentLung"="High"|"KinkedTube"="False"|"VentTube"="High"|"Intubation"="OneSided"| => 6
+"VentLung"="High"|"KinkedTube"="False"|"VentTube"="Low"|"Intubation"="Normal"| => 5
+"VentLung"="High"|"KinkedTube"="False"|"VentTube"="Normal"|"Intubation"="?"| => 2
+"VentLung"="High"|"KinkedTube"="False"|"VentTube"="Normal"|"Intubation"="Esophageal"| => 4
+"VentLung"="High"|"KinkedTube"="False"|"VentTube"="Normal"|"Intubation"="Normal"| => 70
+"VentLung"="High"|"KinkedTube"="False"|"VentTube"="Normal"|"Intubation"="OneSided"| => 6
+"VentLung"="High"|"KinkedTube"="False"|"VentTube"="Zero"|"Intubation"="Normal"| => 6
+"VentLung"="High"|"KinkedTube"="False"|"VentTube"="Zero"|"Intubation"="OneSided"| => 1
+"VentLung"="High"|"KinkedTube"="True"|"VentTube"="Normal"|"Intubation"="Normal"| => 4
+"VentLung"="Low"|"Intubation"="?"| => 17
+"VentLung"="Low"|"Intubation"="Esophageal"| => 1
+"VentLung"="Low"|"Intubation"="Normal"| => 572
+"VentLung"="Low"|"Intubation"="OneSided"| => 34
+"VentLung"="Low"|"KinkedTube"="?"|"VentTube"="Low"|"Intubation"="Normal"| => 3
+"VentLung"="Low"|"KinkedTube"="?"|"VentTube"="Normal"|"Intubation"="Normal"| => 12
+"VentLung"="Low"|"KinkedTube"="?"|"VentTube"="Normal"|"Intubation"="OneSided"| => 1
+"VentLung"="Low"|"KinkedTube"="False"|"VentTube"="?"|"Intubation"="Normal"| => 14
+"VentLung"="Low"|"KinkedTube"="False"|"VentTube"="?"|"Intubation"="OneSided"| => 2
+"VentLung"="Low"|"KinkedTube"="False"|"VentTube"="High"|"Intubation"="Normal"| => 5
+"VentLung"="Low"|"KinkedTube"="False"|"VentTube"="Low"|"Intubation"="?"| => 8
+"VentLung"="Low"|"KinkedTube"="False"|"VentTube"="Low"|"Intubation"="Normal"| => 228
+"VentLung"="Low"|"KinkedTube"="False"|"VentTube"="Low"|"Intubation"="OneSided"| => 16
+"VentLung"="Low"|"KinkedTube"="False"|"VentTube"="Normal"|"Intubation"="?"| => 4
+"VentLung"="Low"|"KinkedTube"="False"|"VentTube"="Normal"|"Intubation"="Esophageal"| => 1
+"VentLung"="Low"|"KinkedTube"="False"|"VentTube"="Normal"|"Intubation"="Normal"| => 84
+"VentLung"="Low"|"KinkedTube"="False"|"VentTube"="Normal"|"Intubation"="OneSided"| => 6
+"VentLung"="Low"|"KinkedTube"="False"|"VentTube"="Zero"|"Intubation"="Normal"| => 3
+"VentLung"="Low"|"KinkedTube"="True"|"VentTube"="?"|"Intubation"="Normal"| => 4
+"VentLung"="Low"|"KinkedTube"="True"|"VentTube"="High"|"Intubation"="Normal"| => 6
+"VentLung"="Low"|"KinkedTube"="True"|"VentTube"="Low"|"Intubation"="Normal"| => 1
+"VentLung"="Low"|"KinkedTube"="True"|"VentTube"="Normal"|"Intubation"="?"| => 5
+"VentLung"="Low"|"KinkedTube"="True"|"VentTube"="Normal"|"Intubation"="Normal"| => 212
+"VentLung"="Low"|"KinkedTube"="True"|"VentTube"="Normal"|"Intubation"="OneSided"| => 9
+"VentLung"="Normal"|"Intubation"="?"| => 231
+"VentLung"="Normal"|"Intubation"="Esophageal"| => 2
+"VentLung"="Normal"|"Intubation"="Normal"| => 7896
+"VentLung"="Normal"|"Intubation"="OneSided"| => 437
+"VentLung"="Normal"|"KinkedTube"="?"|"VentTube"="Normal"|"Intubation"="Normal"| => 210
+"VentLung"="Normal"|"KinkedTube"="?"|"VentTube"="Normal"|"Intubation"="OneSided"| => 11
+"VentLung"="Normal"|"KinkedTube"="False"|"VentTube"="?"|"Intubation"="Esophageal"| => 1
+"VentLung"="Normal"|"KinkedTube"="False"|"VentTube"="?"|"Intubation"="Normal"| => 204
+"VentLung"="Normal"|"KinkedTube"="False"|"VentTube"="?"|"Intubation"="OneSided"| => 18
+"VentLung"="Normal"|"KinkedTube"="False"|"VentTube"="High"|"Intubation"="Normal"| => 2
+"VentLung"="Normal"|"KinkedTube"="False"|"VentTube"="Low"|"Intubation"="Normal"| => 3
+"VentLung"="Normal"|"KinkedTube"="False"|"VentTube"="Low"|"Intubation"="OneSided"| => 1
+"VentLung"="Normal"|"KinkedTube"="False"|"VentTube"="Normal"|"Intubation"="?"| => 231
+"VentLung"="Normal"|"KinkedTube"="False"|"VentTube"="Normal"|"Intubation"="Esophageal"| => 1
+"VentLung"="Normal"|"KinkedTube"="False"|"VentTube"="Normal"|"Intubation"="Normal"| => 7472
+"VentLung"="Normal"|"KinkedTube"="False"|"VentTube"="Normal"|"Intubation"="OneSided"| => 407
+"VentLung"="Normal"|"KinkedTube"="False"|"VentTube"="Zero"|"Intubation"="Normal"| => 5
+"VentLung"="Zero"|"Intubation"="?"| => 36
+"VentLung"="Zero"|"Intubation"="Esophageal"| => 286
+"VentLung"="Zero"|"Intubation"="Normal"| => 890
+"VentLung"="Zero"|"Intubation"="OneSided"| => 69
+"VentLung"="Zero"|"KinkedTube"="?"|"VentTube"="High"|"Intubation"="OneSided"| => 1
+"VentLung"="Zero"|"KinkedTube"="?"|"VentTube"="Low"|"Intubation"="Normal"| => 1
+"VentLung"="Zero"|"KinkedTube"="?"|"VentTube"="Normal"|"Intubation"="Esophageal"| => 9
+"VentLung"="Zero"|"KinkedTube"="?"|"VentTube"="Normal"|"Intubation"="Normal"| => 3
+"VentLung"="Zero"|"KinkedTube"="?"|"VentTube"="Normal"|"Intubation"="OneSided"| => 1
+"VentLung"="Zero"|"KinkedTube"="?"|"VentTube"="Zero"|"Intubation"="Normal"| => 17
+"VentLung"="Zero"|"KinkedTube"="False"|"VentTube"="?"|"Intubation"="Esophageal"| => 4
+"VentLung"="Zero"|"KinkedTube"="False"|"VentTube"="?"|"Intubation"="Normal"| => 20
+"VentLung"="Zero"|"KinkedTube"="False"|"VentTube"="High"|"Intubation"="Esophageal"| => 11
+"VentLung"="Zero"|"KinkedTube"="False"|"VentTube"="High"|"Intubation"="Normal"| => 2
+"VentLung"="Zero"|"KinkedTube"="False"|"VentTube"="Low"|"Intubation"="?"| => 1
+"VentLung"="Zero"|"KinkedTube"="False"|"VentTube"="Low"|"Intubation"="Esophageal"| => 11
+"VentLung"="Zero"|"KinkedTube"="False"|"VentTube"="Low"|"Intubation"="Normal"| => 2
+"VentLung"="Zero"|"KinkedTube"="False"|"VentTube"="Normal"|"Intubation"="?"| => 10
+"VentLung"="Zero"|"KinkedTube"="False"|"VentTube"="Normal"|"Intubation"="Esophageal"| => 223
+"VentLung"="Zero"|"KinkedTube"="False"|"VentTube"="Normal"|"Intubation"="Normal"| => 68
+"VentLung"="Zero"|"KinkedTube"="False"|"VentTube"="Normal"|"Intubation"="OneSided"| => 4
+"VentLung"="Zero"|"KinkedTube"="False"|"VentTube"="Zero"|"Intubation"="?"| => 15
+"VentLung"="Zero"|"KinkedTube"="False"|"VentTube"="Zero"|"Intubation"="Esophageal"| => 14
+"VentLung"="Zero"|"KinkedTube"="False"|"VentTube"="Zero"|"Intubation"="Normal"| => 588
+"VentLung"="Zero"|"KinkedTube"="False"|"VentTube"="Zero"|"Intubation"="OneSided"| => 42
+"VentLung"="Zero"|"KinkedTube"="True"|"VentTube"="?"|"Intubation"="Normal"| => 6
+"VentLung"="Zero"|"KinkedTube"="True"|"VentTube"="?"|"Intubation"="OneSided"| => 1
+"VentLung"="Zero"|"KinkedTube"="True"|"VentTube"="High"|"Intubation"="Normal"| => 3
+"VentLung"="Zero"|"KinkedTube"="True"|"VentTube"="High"|"Intubation"="OneSided"| => 1
+"VentLung"="Zero"|"KinkedTube"="True"|"VentTube"="Low"|"Intubation"="?"| => 2
+"VentLung"="Zero"|"KinkedTube"="True"|"VentTube"="Low"|"Intubation"="Normal"| => 11
+"VentLung"="Zero"|"KinkedTube"="True"|"VentTube"="Low"|"Intubation"="OneSided"| => 1
+"VentLung"="Zero"|"KinkedTube"="True"|"VentTube"="Normal"|"Intubation"="?"| => 8
+"VentLung"="Zero"|"KinkedTube"="True"|"VentTube"="Normal"|"Intubation"="Esophageal"| => 14
+"VentLung"="Zero"|"KinkedTube"="True"|"VentTube"="Normal"|"Intubation"="Normal"| => 152
+"VentLung"="Zero"|"KinkedTube"="True"|"VentTube"="Normal"|"Intubation"="OneSided"| => 16
+"VentLung"="Zero"|"KinkedTube"="True"|"VentTube"="Zero"|"Intubation"="Normal"| => 17
+"VentLung"="Zero"|"KinkedTube"="True"|"VentTube"="Zero"|"Intubation"="OneSided"| => 2
+"VentMach"="?"|"Disconnect"="False"| => 311
+"VentMach"="?"|"Disconnect"="True"| => 18
+"VentMach"="?"|"MinVolSet"="High"| => 1
+"VentMach"="?"|"MinVolSet"="Low"| => 1
+"VentMach"="?"|"MinVolSet"="Normal"| => 327
+"VentMach"="High"|"Disconnect"="?"| => 8
+"VentMach"="High"|"Disconnect"="False"| => 186
+"VentMach"="High"|"Disconnect"="True"| => 11
+"VentMach"="High"|"MinVolSet"="?"| => 3
+"VentMach"="High"|"MinVolSet"="High"| => 107
+"VentMach"="High"|"MinVolSet"="Low"| => 2
+"VentMach"="High"|"MinVolSet"="Normal"| => 93
+"VentMach"="Low"|"Disconnect"="?"| => 5
+"VentMach"="Low"|"Disconnect"="False"| => 200
+"VentMach"="Low"|"Disconnect"="True"| => 6
+"VentMach"="Low"|"MinVolSet"="?"| => 9
+"VentMach"="Low"|"MinVolSet"="Low"| => 98
+"VentMach"="Low"|"MinVolSet"="Normal"| => 104
+"VentMach"="Normal"|"Disconnect"="?"| => 283
+"VentMach"="Normal"|"Disconnect"="False"| => 9465
+"VentMach"="Normal"|"Disconnect"="True"| => 497
+"VentMach"="Normal"|"MinVolSet"="?"| => 286
+"VentMach"="Normal"|"MinVolSet"="High"| => 1
+"VentMach"="Normal"|"MinVolSet"="Low"| => 3
+"VentMach"="Normal"|"MinVolSet"="Normal"| => 9955
+"VentMach"="Zero"|"Disconnect"="?"| => 3
+"VentMach"="Zero"|"Disconnect"="False"| => 101
+"VentMach"="Zero"|"Disconnect"="True"| => 6
+"VentMach"="Zero"|"MinVolSet"="?"| => 6
+"VentMach"="Zero"|"MinVolSet"="Low"| => 1
+"VentMach"="Zero"|"MinVolSet"="Normal"| => 103
+"VentTube"="?"|"VentMach"="High"|"Disconnect"="False"| => 3
+"VentTube"="?"|"VentMach"="High"|"Disconnect"="True"| => 1
+"VentTube"="?"|"VentMach"="Low"|"Disconnect"="False"| => 10
+"VentTube"="?"|"VentMach"="Normal"|"Disconnect"="False"| => 252
+"VentTube"="?"|"VentMach"="Normal"|"Disconnect"="True"| => 15
+"VentTube"="?"|"VentMach"="Zero"|"Disconnect"="False"| => 2
+"VentTube"="High"|"VentMach"="?"|"Disconnect"="False"| => 12
+"VentTube"="High"|"VentMach"="High"|"Disconnect"="?"| => 7
+"VentTube"="High"|"VentMach"="High"|"Disconnect"="False"| => 179
+"VentTube"="High"|"VentMach"="Low"|"Disconnect"="False"| => 2
+"VentTube"="High"|"VentMach"="Normal"|"Disconnect"="?"| => 3
+"VentTube"="High"|"VentMach"="Normal"|"Disconnect"="False"| => 85
+"VentTube"="High"|"VentMach"="Normal"|"Disconnect"="True"| => 3
+"VentTube"="High"|"VentMach"="Zero"|"Disconnect"="False"| => 1
+"VentTube"="Low"|"VentMach"="?"|"Disconnect"="False"| => 7
+"VentTube"="Low"|"VentMach"="High"|"Disconnect"="False"| => 1
+"VentTube"="Low"|"VentMach"="Low"|"Disconnect"="?"| => 5
+"VentTube"="Low"|"VentMach"="Low"|"Disconnect"="False"| => 183
+"VentTube"="Low"|"VentMach"="Low"|"Disconnect"="True"| => 1
+"VentTube"="Low"|"VentMach"="Normal"|"Disconnect"="?"| => 2
+"VentTube"="Low"|"VentMach"="Normal"|"Disconnect"="False"| => 100
+"VentTube"="Low"|"VentMach"="Normal"|"Disconnect"="True"| => 3
+"VentTube"="Low"|"VentMach"="Zero"|"Disconnect"="False"| => 3
+"VentTube"="Normal"|"VentMach"="?"|"Disconnect"="False"| => 283
+"VentTube"="Normal"|"VentMach"="High"|"Disconnect"="False"| => 2
+"VentTube"="Normal"|"VentMach"="Low"|"Disconnect"="False"| => 1
+"VentTube"="Normal"|"VentMach"="Low"|"Disconnect"="True"| => 1
+"VentTube"="Normal"|"VentMach"="Normal"|"Disconnect"="?"| => 266
+"VentTube"="Normal"|"VentMach"="Normal"|"Disconnect"="False"| => 8932
+"VentTube"="Normal"|"VentMach"="Normal"|"Disconnect"="True"| => 7
+"VentTube"="Normal"|"VentMach"="Zero"|"Disconnect"="False"| => 4
+"VentTube"="Zero"|"VentMach"="?"|"Disconnect"="False"| => 9
+"VentTube"="Zero"|"VentMach"="?"|"Disconnect"="True"| => 18
+"VentTube"="Zero"|"VentMach"="High"|"Disconnect"="?"| => 1
+"VentTube"="Zero"|"VentMach"="High"|"Disconnect"="False"| => 1
+"VentTube"="Zero"|"VentMach"="High"|"Disconnect"="True"| => 10
+"VentTube"="Zero"|"VentMach"="Low"|"Disconnect"="False"| => 4
+"VentTube"="Zero"|"VentMach"="Low"|"Disconnect"="True"| => 4
+"VentTube"="Zero"|"VentMach"="Normal"|"Disconnect"="?"| => 12
+"VentTube"="Zero"|"VentMach"="Normal"|"Disconnect"="False"| => 96
+"VentTube"="Zero"|"VentMach"="Normal"|"Disconnect"="True"| => 469
+"VentTube"="Zero"|"VentMach"="Zero"|"Disconnect"="?"| => 3
+"VentTube"="Zero"|"VentMach"="Zero"|"Disconnect"="False"| => 91
+"VentTube"="Zero"|"VentMach"="Zero"|"Disconnect"="True"| => 6
+// Bayesian Network in the Interchange Format
+// Produced by BayesianNetworks package in JavaBayes
+// Output created Sun Nov 02 17:58:15 GMT+00:00 1997
+// Bayesian network 
+network "Alarm" { //37 variables and 37 probability distributions
+}
+variable  "Hypovolemia" { //2 values
+	type discrete[2] {  "True"  "False" };
+	property "position = (54, 35)" ;
+}
+variable  "StrokeVolume" { //3 values
+	type discrete[3] {  "Low"  "Normal"  "High" };
+	property "position = (184, 113)" ;
+}
+variable  "LVFailure" { //2 values
+	type discrete[2] {  "True"  "False" };
+	property "position = (145, 36)" ;
+}
+variable  "LVEDVolume" { //3 values
+	type discrete[3] {  "Low"  "Normal"  "High" };
+	property "position = (68, 114)" ;
+}
+variable  "PCWP" { //3 values
+	type discrete[3] {  "Low"  "Normal"  "High" };
+	property "position = (111, 177)" ;
+}
+variable  "CVP" { //3 values
+	type discrete[3] {  "Low"  "Normal"  "High" };
+	property "position = (32, 179)" ;
+}
+variable  "History" { //2 values
+	type discrete[2] {  "True"  "False" };
+	property "position = (238, 61)" ;
+}
+variable  "MinVolSet" { //3 values
+	type discrete[3] {  "Low"  "Normal"  "High" };
+	property "position = (564, 38)" ;
+}
+variable  "VentMach" { //4 values
+	type discrete[4] {  "Zero"  "Low"  "Normal"  "High" };
+	property "position = (640, 86)" ;
+}
+variable  "Disconnect" { //2 values
+	type discrete[2] {  "True"  "False" };
+	property "position = (738, 86)" ;
+}
+variable  "VentTube" { //4 values
+	type discrete[4] {  "Zero"  "Low"  "Normal"  "High" };
+	property "position = (682, 168)" ;
+}
+variable  "KinkedTube" { //2 values
+	type discrete[2] {  "True"  "False" };
+	property "position = (564, 172)" ;
+}
+variable  "Press" { //4 values
+	type discrete[4] {  "Zero"  "Low"  "Normal"  "High" };
+	property "position = (722, 253)" ;
+}
+variable  "ErrLowOutput" { //2 values
+	type discrete[2] {  "True"  "False" };
+	property "position = (226, 237)" ;
+}
+variable  "HRBP" { //3 values
+	type discrete[3] {  "Low"  "Normal"  "High" };
+	property "position = (229, 305)" ;
+}
+variable  "ErrCauter" { //2 values
+	type discrete[2] {  "True"  "False" };
+	property "position = (366, 278)" ;
+}
+variable  "HREKG" { //3 values
+	type discrete[3] {  "Low"  "Normal"  "High" };
+	property "position = (289, 305)" ;
+}
+variable  "HRSat" { //3 values
+	type discrete[3] {  "Low"  "Normal"  "High" };
+	property "position = (220, 396)" ;
+}
+variable  "BP" { //3 values
+	type discrete[3] {  "Low"  "Normal"  "High" };
+	property "position = (154, 396)" ;
+}
+variable  "CO" { //3 values
+	type discrete[3] {  "Low"  "Normal"  "High" };
+	property "position = (195, 176)" ;
+}
+variable  "HR" { //3 values
+	type discrete[3] {  "Low"  "Normal"  "High" };
+	property "position = (308, 171)" ;
+}
+variable  "TPR" { //3 values
+	type discrete[3] {  "Low"  "Normal"  "High" };
+	property "position = (120, 301)" ;
+}
+variable  "Anaphylaxis" { //2 values
+	type discrete[2] {  "True"  "False" };
+	property "position = (31, 239)" ;
+}
+variable  "InsuffAnesth" { //2 values
+	type discrete[2] {  "True"  "False" };
+	property "position = (329, 37)" ;
+}
+variable  "PAP" { //3 values
+	type discrete[3] {  "Low"  "Normal"  "High" };
+	property "position = (1045, 292)" ;
+}
+variable  "PulmEmbolus" { //2 values
+	type discrete[2] {  "True"  "False" };
+	property "position = (969, 258)" ;
+}
+variable  "FiO2" { //2 values
+	type discrete[2] {  "Low"  "Normal" };
+	property "position = (1014, 162)" ;
+}
+variable  "Catechol" { //2 values
+	type discrete[2] {  "Normal"  "High" };
+	property "position = (329, 107)" ;
+}
+variable  "SaO2" { //3 values
+	type discrete[3] {  "Low"  "Normal"  "High" };
+	property "position = (926, 387)" ;
+}
+variable  "Shunt" { //2 values
+	type discrete[2] {  "Normal"  "High" };
+	property "position = (894, 293)" ;
+}
+variable  "PVSat" { //3 values
+	type discrete[3] {  "Low"  "Normal"  "High" };
+	property "position = (949, 197)" ;
+}
+variable  "MinVol" { //4 values
+	type discrete[4] {  "Zero"  "Low"  "Normal"  "High" };
+	property "position = (754, 387)" ;
+}
+variable  "ExpCO2" { //4 values
+	type discrete[4] {  "Zero"  "Low"  "Normal"  "High" };
+	property "position = (530, 393)" ;
+}
+variable  "ArtCO2" { //3 values
+	type discrete[3] {  "Low"  "Normal"  "High" };
+	property "position = (474, 277)" ;
+}
+variable  "VentAlv" { //4 values
+	type discrete[4] {  "Zero"  "Low"  "Normal"  "High" };
+	property "position = (881, 165)" ;
+}
+variable  "VentLung" { //4 values
+	type discrete[4] {  "Zero"  "Low"  "Normal"  "High" };
+	property "position = (706, 344)" ;
+}
+variable  "Intubation" { //3 values
+	type discrete[3] {  "Normal"  "Esophageal"  "OneSided" };
+	property "position = (843, 86)" ;
+}
+probability (  "Hypovolemia" ) { //1 variable(s) and 2 values
+	table 0.2 0.78 ;
+}
+probability (  "StrokeVolume"  "LVFailure"  "Hypovolemia" ) { //3 variable(s) and 12 values
+	table 0.95 0.48 0.92 0.05 0.01 0.47 0.04 0.87 0.01 0.02 0.01 0.05 ;
+}
+probability (  "LVFailure" ) { //1 variable(s) and 2 values
+	table 0.05 0.92 ;
+}
+probability (  "LVEDVolume"  "Hypovolemia"  "LVFailure" ) { //3 variable(s) and 12 values
+	table 0.91 0.95 0.01 0.05 0.04 0.01 0.08 0.87 0.02 0.01 0.87 0.05 ;
+}
+probability (  "PCWP"  "LVEDVolume" ) { //2 variable(s) and 9 values
+	table 0.92 0.04 0.01 0.04 0.92 0.04 0.01 0.01 0.92 ;
+}
+probability (  "CVP"  "LVEDVolume" ) { //2 variable(s) and 9 values
+	table 0.92 0.04 0.01 0.04 0.92 0.26 0.01 0.01 0.69 ;
+}
+probability (  "History"  "LVFailure" ) { //2 variable(s) and 4 values
+	table 0.88 0.01 0.09 0.96 ;
+}
+probability (  "MinVolSet" ) { //1 variable(s) and 3 values
+	table 0.01 0.95 0.01 ;
+}
+probability (  "VentMach"  "MinVolSet" ) { //2 variable(s) and 12 values
+	table 0.01 0.01 0.01 0.93 0.01 0.01 0.03 0.94 0.01 0.02 0.01 0.98 ;
+}
+probability (  "Disconnect" ) { //1 variable(s) and 2 values
+	table 0.05 0.92 ;
+}
+probability (  "VentTube"  "VentMach"  "Disconnect" ) { //3 variable(s) and 32 values
+	table 0.99 0.9 0.67 0.02 0.94 0.01 0.91 0.01 0.01 0.03 0.17 0.92 0.01 0.01 0.01 0.01 0.01 0.04 0.17 0.01 0.01 0.94 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.96 ;
+}
+probability (  "KinkedTube" ) { //1 variable(s) and 2 values
+	table 0.04 0.93 ;
+}
+probability (  "Press"  "KinkedTube"  "Intubation"  "VentTube" ) { //4 variable(s) and 96 values
+	table 0.88 0.01 0.01 0.01 0.25 0.25 0.01 0.25 0.99 0.01 0.01 0.99 0.93 0.01 0.01 0.01 0.99 0.5 0.2 0.17 0.93 0.01 0.01 0.01 0.01 0.5 0.01 0.01 0.25 0.25 0.27 0.25 0.01 0.01 0.01 0.01 0.01 0.96 0.01 0.01 0.01 0.5 0.69 0.75 0.02 0.82 0.01 0.01 0.01 0.25 0.06 0.01 0.25 0.25 0.4 0.25 0.01 0.01 0.08 0.01 0.01 0.01 0.95 0.01 0.01 0.01 0.06 0.01 0.02 0.12 0.38 0.01 0.06 0.17 0.9 0.99 0.25 0.25 0.33 0.25 0.01 0.99 0.84 0.01 0.01 0.01 0.01 0.95 0.01 0.01 0.02 0.01 0.01 0.01 0.58 0.99 ;
+}
+probability (  "ErrLowOutput" ) { //1 variable(s) and 2 values
+	table 0.05 0.92 ;
+}
+probability (  "HRBP"  "ErrLowOutput"  "HR" ) { //3 variable(s) and 18 values
+	table 0.92 0.35 0.31 0.96 0.01 0.01 0.01 0.62 0.36 0.01 0.95 0.01 0.04 0.01 0.3 0.01 0.01 0.95 ;
+}
+probability (  "ErrCauter" ) { //1 variable(s) and 2 values
+	table 0.1 0.88 ;
+}
+probability (  "HREKG"  "HR"  "ErrCauter" ) { //3 variable(s) and 18 values
+	table 0.36 0.96 0.38 0.01 0.31 0.01 0.27 0.01 0.29 0.94 0.33 0.01 0.36 0.01 0.3 0.01 0.33 0.96 ;
+}
+probability (  "HRSat"  "HR"  "ErrCauter" ) { //3 variable(s) and 18 values
+	table 0.29 0.94 0.31 0.01 0.32 0.01 0.34 0.02 0.31 0.95 0.31 0.01 0.3 0.01 0.37 0.01 0.34 0.95 ;
+}
+probability (  "BP"  "CO"  "TPR" ) { //3 variable(s) and 27 values
+	table 0.95 0.94 0.29 0.96 0.09 0.05 0.88 0.04 0.01 0.01 0.01 0.59 0.01 0.83 0.37 0.08 0.19 0.09 0.01 0.02 0.09 0.01 0.06 0.55 0.01 0.73 0.87 ;
+}
+probability (  "CO"  "HR"  "StrokeVolume" ) { //3 variable(s) and 27 values
+	table 0.96 0.93 0.35 0.92 0.04 0.01 0.78 0.01 0.01 0.01 0.04 0.65 0.04 0.92 0.35 0.18 0.04 0.01 0.02 0.01 0.01 0.01 0.01 0.62 0.01 0.93 0.95 ;
+}
+probability (  "HR"  "Catechol" ) { //2 variable(s) and 6 values
+	table 0.1 0.01 0.86 0.08 0.01 0.88 ;
+}
+probability (  "TPR"  "Anaphylaxis" ) { //2 variable(s) and 6 values
+	table 0.97 0.3 0.01 0.38 0.01 0.29 ;
+}
+probability (  "Anaphylaxis" ) { //1 variable(s) and 2 values
+	table 0.01 0.97 ;
+}
+probability (  "InsuffAnesth" ) { //1 variable(s) and 2 values
+	table 0.2 0.78 ;
+}
+probability (  "PAP"  "PulmEmbolus" ) { //2 variable(s) and 6 values
+	table 0.01 0.05 0.18 0.87 0.77 0.05 ;
+}
+probability (  "PulmEmbolus" ) { //1 variable(s) and 2 values
+	table 0.01 0.96 ;
+}
+probability (  "FiO2" ) { //1 variable(s) and 2 values
+	table 0.01 0.96 ;
+}
+probability (  "Catechol"  "InsuffAnesth"  "SaO2"  "TPR"  "ArtCO2" ) { //5 variable(s) and 108 values
+	table 0.12 0.01 0.01 0.01 0.01 0.01 0.01 0.03 0.02 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.06 0.01 0.01 0.01 0.01 0.05 0.1 0.01 0.04 0.01 0.01 0.12 0.04 0.01 0.05 0.04 0.01 0.05 0.04 0.01 0.14 0.11 0.11 0.91 0.92 0.29 0.91 0.93 0.25 0.88 0.88 0.27 0.94 0.96 0.99 0.97 0.99 0.44 0.88 0.94 0.94 0.99 0.96 0.96 0.83 0.9 0.96 0.94 0.96 0.94 0.99 0.96 0.99 0.99 0.91 0.99 0.99 0.99 0.99 0.9 0.9 0.99 0.96 0.99 0.8 0.88 0.91 0.98 0.9 0.94 0.96 0.91 0.9 0.95 0.86 0.86 0.86 0.01 0.05 0.66 0.08 0.04 0.73 0.06 0.05 0.73 0.02 0.01 0.01 0.03 0.01 0.56 ;
+}
+probability (  "SaO2"  "Shunt"  "PVSat" ) { //3 variable(s) and 18 values
+	table 0.95 0.01 0.02 0.95 0.97 0.75 0.01 0.95 0.01 0.02 0.01 0.22 0.01 0.01 0.95 0.01 0.01 0.01 ;
+}
+probability (  "Shunt"  "PulmEmbolus"  "Intubation" ) { //3 variable(s) and 12 values
+	table 0.09 0.01 0.01 0.92 0.93 0.04 0.88 0.99 0.99 0.05 0.04 0.93 ;
+}
+probability (  "PVSat"  "VentAlv"  "FiO2" ) { //3 variable(s) and 24 values
+	table 0.99 0.96 0.92 0.95 0.93 0.01 0.99 0.01 0.01 0.01 0.01 0.01 0.04 0.92 0.01 0.02 0.01 0.01 0.01 0.01 0.01 0.04 0.01 0.96 ;
+}
+probability (  "MinVol"  "VentLung"  "Intubation" ) { //3 variable(s) and 48 values
+	table 0.95 0.96 0.96 0.01 0.99 0.01 0.01 0.5 0.02 0.01 0.5 0.01 0.01 0.01 0.01 0.94 0.01 0.97 0.01 0.5 0.01 0.01 0.5 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.94 0.01 0.94 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.03 0.01 0.01 0.01 0.95 0.01 0.99 ;
+}
+probability (  "ExpCO2"  "ArtCO2"  "VentLung" ) { //3 variable(s) and 48 values
+	table 0.99 0.11 0.01 0.01 0.93 0.08 0.01 0.01 0.95 0.01 0.01 0.01 0.01 0.78 0.94 0.96 0.04 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.85 0.95 0.99 0.01 0.01 0.01 0.06 0.01 0.01 0.01 0.01 0.04 0.01 0.01 0.01 0.01 0.95 0.95 0.94 ;
+}
+probability (  "ArtCO2"  "VentAlv" ) { //2 variable(s) and 12 values
+	table 0.01 0.01 0.04 0.87 0.01 0.01 0.9 0.08 0.95 0.96 0.04 0.02 ;
+}
+probability (  "VentAlv"  "Intubation"  "VentLung" ) { //3 variable(s) and 48 values
+	table 0.94 0.01 0.01 0.01 0.95 0.01 0.01 0.01 0.93 0.01 0.01 0.01 0.01 0.95 0.01 0.01 0.01 0.99 0.01 0.01 0.01 0.94 0.94 0.77 0.01 0.01 0.95 0.02 0.01 0.01 0.99 0.01 0.03 0.01 0.03 0.15 0.01 0.02 0.01 0.94 0.01 0.01 0.01 0.99 0.01 0.01 0.01 0.08 ;
+}
+probability (  "VentLung"  "KinkedTube"  "VentTube"  "Intubation" ) { //4 variable(s) and 96 values
+	table 0.99 0.25 0.99 0.92 0.25 0.99 0.4 0.93 0.64 0.33 0.25 0.99 0.96 0.99 0.95 0.01 0.92 0.01 0.01 0.92 0.01 0.01 0.92 0.01 0.01 0.25 0.01 0.08 0.25 0.01 0.56 0.01 0.36 0.67 0.25 0.01 0.01 0.01 0.01 0.92 0.01 0.94 0.01 0.01 0.01 0.02 0.01 0.01 0.01 0.25 0.01 0.01 0.25 0.01 0.01 0.01 0.01 0.01 0.25 0.01 0.01 0.01 0.01 0.01 0.01 0.06 0.95 0.01 0.94 0.01 0.01 0.01 0.01 0.25 0.01 0.01 0.25 0.01 0.01 0.01 0.01 0.01 0.25 0.01 0.01 0.01 0.02 0.02 0.01 0.01 0.01 0.02 0.01 0.93 0.01 0.75 ;
+}
+probability (  "Intubation" ) { //1 variable(s) and 3 values
+	table 0.89 0.03 0.05 ;
+}
