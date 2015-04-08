@@ -11,13 +11,14 @@
 #include <map>
 
 #define getNodeFromIndex( i ) (*(Alarm.get_nth_node(i)))
+#define FULLY_KNOWN "KNOWN"
 
 // format checker just assumes you have Alarm.bif and Solved_Alarm.bif (your file) in current directory
 using namespace std;
 
 string networkFile, recordFile;
 
-int dataSize = 0;
+unsigned int initialDataSize = 0;
 
 map<string, float> CPT_map;
 map<string, float> MCPT_map;
@@ -81,12 +82,9 @@ int findIndexString(vector<string> vs, string s) {
 }
 
 //to be written to the output file
-int position[37][2] = { 54, 35, 184, 113, 145, 36, 68, 114, 111, 177, 32, 179,
-		238, 61, 564, 38, 640, 86, 738, 86, 682, 168, 564, 172, 722, 253, 226,
-		237, 229, 305, 366, 278, 289, 305, 220, 396, 154, 396, 195, 176, 308,
-		171, 120, 301, 31, 239, 329, 37, 1045, 292, 969, 258, 1014, 162, 329,
-		107, 926, 387, 894, 293, 949, 197, 754, 387, 530, 393, 474, 277, 881,
-		165, 706, 344, 843, 86 };
+int position[37][2] = { 54, 35, 184, 113, 145, 36, 68, 114, 111, 177, 32, 179, 238, 61, 564, 38, 640, 86, 738, 86, 682, 168, 564, 172, 722, 253, 226,
+		237, 229, 305, 366, 278, 289, 305, 220, 396, 154, 396, 195, 176, 308, 171, 120, 301, 31, 239, 329, 37, 1045, 292, 969, 258, 1014, 162, 329,
+		107, 926, 387, 894, 293, 949, 197, 754, 387, 530, 393, 474, 277, 881, 165, 706, 344, 843, 86 };
 
 void set_MCPT_MAP();
 void set_CPT_MAP();
@@ -145,8 +143,7 @@ string CPT_Keys[][12] = { { "\"Hypovolemia\"", "EOF" },
 
 { "\"FiO2\"", "EOF" },
 
-{ "\"Catechol\"", "\"InsuffAnesth\"", "\"SaO2\"", "\"TPR\"", "\"ArtCO2\"",
-		"EOF" },
+{ "\"Catechol\"", "\"InsuffAnesth\"", "\"SaO2\"", "\"TPR\"", "\"ArtCO2\"", "EOF" },
 
 { "\"SaO2\"", "\"Shunt\"", "\"PVSat\"", "EOF" },
 
@@ -206,208 +203,152 @@ string CPT_Keys[][12] = { { "\"Hypovolemia\"", "EOF" },
 
 };
 
-string
-		mCPT_Keys[][12] =
-				{ { "\"Hypovolemia\"", "\"StrokeVolume\"", "\"LVEDVolume\"",
-						"\"LVFailure\"", "EOF" },
+string mCPT_Keys[][12] = { { "\"Hypovolemia\"", "\"StrokeVolume\"", "\"LVEDVolume\"", "\"LVFailure\"", "EOF" },
 
-				{ "\"StrokeVolume\"", "\"LVFailure\"", "\"Hypovolemia\"",
-						"\"CO\"", "\"HR\"", "EOF" },
+{ "\"StrokeVolume\"", "\"LVFailure\"", "\"Hypovolemia\"", "\"CO\"", "\"HR\"", "EOF" },
 
-				{ "\"LVFailure\"", "\"StrokeVolume\"", "\"LVEDVolume\"",
-						"\"History\"", "\"Hypovolemia\"", "EOF" },
+{ "\"LVFailure\"", "\"StrokeVolume\"", "\"LVEDVolume\"", "\"History\"", "\"Hypovolemia\"", "EOF" },
 
-				{ "\"LVEDVolume\"", "\"Hypovolemia\"", "\"LVFailure\"",
-						"\"PCWP\"", "\"CVP\"", "EOF" },
+{ "\"LVEDVolume\"", "\"Hypovolemia\"", "\"LVFailure\"", "\"PCWP\"", "\"CVP\"", "EOF" },
 
-				{ "\"PCWP\"", "\"LVEDVolume\"", "EOF" },
+{ "\"PCWP\"", "\"LVEDVolume\"", "EOF" },
 
-				{ "\"CVP\"", "\"LVEDVolume\"", "EOF" },
+{ "\"CVP\"", "\"LVEDVolume\"", "EOF" },
 
-				{ "\"History\"", "\"LVFailure\"", "EOF" },
+{ "\"History\"", "\"LVFailure\"", "EOF" },
 
-				{ "\"MinVolSet\"", "\"VentMach\"", "EOF" },
+{ "\"MinVolSet\"", "\"VentMach\"", "EOF" },
 
-				{ "\"VentMach\"", "\"MinVolSet\"", "\"VentTube\"",
-						"\"Disconnect\"", "EOF" },
+{ "\"VentMach\"", "\"MinVolSet\"", "\"VentTube\"", "\"Disconnect\"", "EOF" },
 
-				{ "\"Disconnect\"", "\"VentTube\"", "\"VentMach\"", "EOF" },
+{ "\"Disconnect\"", "\"VentTube\"", "\"VentMach\"", "EOF" },
 
-				{ "\"VentTube\"", "\"VentMach\"", "\"Disconnect\"",
-						"\"Press\"", "\"VentLung\"", "\"KinkedTube\"",
-						"\"Intubation\"", "EOF" },
+{ "\"VentTube\"", "\"VentMach\"", "\"Disconnect\"", "\"Press\"", "\"VentLung\"", "\"KinkedTube\"", "\"Intubation\"", "EOF" },
 
-				{ "\"KinkedTube\"", "\"Press\"", "\"VentLung\"",
-						"\"Intubation\"", "\"VentTube\"", "EOF" },
+{ "\"KinkedTube\"", "\"Press\"", "\"VentLung\"", "\"Intubation\"", "\"VentTube\"", "EOF" },
 
-				{ "\"Press\"", "\"KinkedTube\"", "\"Intubation\"",
-						"\"VentTube\"", "EOF" },
+{ "\"Press\"", "\"KinkedTube\"", "\"Intubation\"", "\"VentTube\"", "EOF" },
 
-				{ "\"ErrLowOutput\"", "\"HRBP\"", "\"HR\"", "EOF" },
+{ "\"ErrLowOutput\"", "\"HRBP\"", "\"HR\"", "EOF" },
 
-				{ "\"HRBP\"", "\"ErrLowOutput\"", "\"HR\"", "EOF" },
+{ "\"HRBP\"", "\"ErrLowOutput\"", "\"HR\"", "EOF" },
 
-				{ "\"ErrCauter\"", "\"HREKG\"", "\"HRSat\"", "\"HR\"", "EOF" },
+{ "\"ErrCauter\"", "\"HREKG\"", "\"HRSat\"", "\"HR\"", "EOF" },
 
-				{ "\"HREKG\"", "\"HR\"", "\"ErrCauter\"", "EOF" },
+{ "\"HREKG\"", "\"HR\"", "\"ErrCauter\"", "EOF" },
 
-				{ "\"HRSat\"", "\"HR\"", "\"ErrCauter\"", "EOF" },
+{ "\"HRSat\"", "\"HR\"", "\"ErrCauter\"", "EOF" },
 
-				{ "\"BP\"", "\"CO\"", "\"TPR\"", "EOF" },
+{ "\"BP\"", "\"CO\"", "\"TPR\"", "EOF" },
 
-				{ "\"CO\"", "\"HR\"", "\"StrokeVolume\"", "\"BP\"", "\"TPR\"",
-						"EOF" },
+{ "\"CO\"", "\"HR\"", "\"StrokeVolume\"", "\"BP\"", "\"TPR\"", "EOF" },
 
-				{ "\"HR\"", "\"Catechol\"", "\"HRBP\"", "\"HREKG\"",
-						"\"HRSat\"", "\"CO\"", "\"ErrLowOutput\"",
-						"\"ErrCauter\"", "\"StrokeVolume\"", "EOF" },
+{ "\"HR\"", "\"Catechol\"", "\"HRBP\"", "\"HREKG\"", "\"HRSat\"", "\"CO\"", "\"ErrLowOutput\"", "\"ErrCauter\"", "\"StrokeVolume\"", "EOF" },
 
-				{ "\"TPR\"", "\"Anaphylaxis\"", "\"BP\"", "\"Catechol\"",
-						"\"CO\"", "\"InsuffAnesth\"", "\"SaO2\"", "\"ArtCO2\"",
-						"EOF" },
+{ "\"TPR\"", "\"Anaphylaxis\"", "\"BP\"", "\"Catechol\"", "\"CO\"", "\"InsuffAnesth\"", "\"SaO2\"", "\"ArtCO2\"", "EOF" },
 
-				{ "\"Anaphylaxis\"", "\"TPR\"", "EOF" },
+{ "\"Anaphylaxis\"", "\"TPR\"", "EOF" },
 
-				{ "\"InsuffAnesth\"", "\"Catechol\"", "\"SaO2\"", "\"TPR\"",
-						"\"ArtCO2\"", "EOF" },
+{ "\"InsuffAnesth\"", "\"Catechol\"", "\"SaO2\"", "\"TPR\"", "\"ArtCO2\"", "EOF" },
 
-				{ "\"PAP\"", "\"PulmEmbolus\"", "EOF" },
+{ "\"PAP\"", "\"PulmEmbolus\"", "EOF" },
 
-				{ "\"PulmEmbolus\"", "\"PAP\"", "\"Shunt\"", "\"Intubation\"",
-						"EOF" },
+{ "\"PulmEmbolus\"", "\"PAP\"", "\"Shunt\"", "\"Intubation\"", "EOF" },
 
-				{ "\"FiO2\"", "\"PVSat\"", "\"VentAlv\"", "EOF" },
+{ "\"FiO2\"", "\"PVSat\"", "\"VentAlv\"", "EOF" },
 
-				{ "\"Catechol\"", "\"InsuffAnesth\"", "\"SaO2\"", "\"TPR\"",
-						"\"ArtCO2\"", "\"HR\"", "EOF" },
+{ "\"Catechol\"", "\"InsuffAnesth\"", "\"SaO2\"", "\"TPR\"", "\"ArtCO2\"", "\"HR\"", "EOF" },
 
-				{ "\"SaO2\"", "\"Shunt\"", "\"PVSat\"", "\"Catechol\"",
-						"\"InsuffAnesth\"", "\"TPR\"", "\"ArtCO2\"", "EOF" },
+{ "\"SaO2\"", "\"Shunt\"", "\"PVSat\"", "\"Catechol\"", "\"InsuffAnesth\"", "\"TPR\"", "\"ArtCO2\"", "EOF" },
 
-				{ "\"Shunt\"", "\"PulmEmbolus\"", "\"Intubation\"", "\"SaO2\"",
-						"\"PVSat\"", "EOF" },
+{ "\"Shunt\"", "\"PulmEmbolus\"", "\"Intubation\"", "\"SaO2\"", "\"PVSat\"", "EOF" },
 
-				{ "\"PVSat\"", "\"VentAlv\"", "\"FiO2\"", "\"SaO2\"",
-						"\"Shunt\"", "EOF" },
+{ "\"PVSat\"", "\"VentAlv\"", "\"FiO2\"", "\"SaO2\"", "\"Shunt\"", "EOF" },
 
-				{ "\"MinVol\"", "\"VentLung\"", "\"Intubation\"", "EOF" },
+{ "\"MinVol\"", "\"VentLung\"", "\"Intubation\"", "EOF" },
 
-				{ "\"ExpCO2\"", "\"ArtCO2\"", "\"VentLung\"", "EOF" },
+{ "\"ExpCO2\"", "\"ArtCO2\"", "\"VentLung\"", "EOF" },
 
-				{ "\"ArtCO2\"", "\"VentAlv\"", "\"Catechol\"", "\"ExpCO2\"",
-						"\"InsuffAnesth\"", "\"SaO2\"", "\"TPR\"",
-						"\"VentLung\"", "EOF" },
+{ "\"ArtCO2\"", "\"VentAlv\"", "\"Catechol\"", "\"ExpCO2\"", "\"InsuffAnesth\"", "\"SaO2\"", "\"TPR\"", "\"VentLung\"", "EOF" },
 
-				{ "\"VentAlv\"", "\"Intubation\"", "\"VentLung\"", "\"PVSat\"",
-						"\"ArtCO2\"", "\"FiO2\"", "EOF" },
+{ "\"VentAlv\"", "\"Intubation\"", "\"VentLung\"", "\"PVSat\"", "\"ArtCO2\"", "\"FiO2\"", "EOF" },
 
-				{ "\"VentLung\"", "\"KinkedTube\"", "\"VentTube\"",
-						"\"Intubation\"", "\"MinVol\"", "\"ExpCO2\"",
-						"\"VentAlv\"", "\"ArtCO2\"", "EOF" },
+{ "\"VentLung\"", "\"KinkedTube\"", "\"VentTube\"", "\"Intubation\"", "\"MinVol\"", "\"ExpCO2\"", "\"VentAlv\"", "\"ArtCO2\"", "EOF" },
 
-				{ "\"Intubation\"", "\"Press\"", "\"Shunt\"", "\"MinVol\"",
-						"\"VentAlv\"", "\"VentLung\"", "\"KinkedTube\"",
-						"\"VentTube\"", "\"PulmEmbolus\"", "EOF" },
+		{ "\"Intubation\"", "\"Press\"", "\"Shunt\"", "\"MinVol\"", "\"VentAlv\"", "\"VentLung\"", "\"KinkedTube\"", "\"VentTube\"",
+				"\"PulmEmbolus\"", "EOF" },
 
-						{ "\"StrokeVolume\"", "\"LVEDVolume\"",
-								"\"LVFailure\"", "EOF" },
+		{ "\"StrokeVolume\"", "\"LVEDVolume\"", "\"LVFailure\"", "EOF" },
 
-						{ "\"LVFailure\"", "\"Hypovolemia\"", "\"CO\"",
-								"\"HR\"", "EOF" },
+		{ "\"LVFailure\"", "\"Hypovolemia\"", "\"CO\"", "\"HR\"", "EOF" },
 
-						{ "\"StrokeVolume\"", "\"LVEDVolume\"", "\"History\"",
-								"\"Hypovolemia\"", "EOF" },
+		{ "\"StrokeVolume\"", "\"LVEDVolume\"", "\"History\"", "\"Hypovolemia\"", "EOF" },
 
-						{ "\"Hypovolemia\"", "\"LVFailure\"", "\"PCWP\"",
-								"\"CVP\"", "EOF" },
+		{ "\"Hypovolemia\"", "\"LVFailure\"", "\"PCWP\"", "\"CVP\"", "EOF" },
 
-						{ "\"LVEDVolume\"", "EOF" },
+		{ "\"LVEDVolume\"", "EOF" },
 
-						{ "\"LVFailure\"", "EOF" },
+		{ "\"LVFailure\"", "EOF" },
 
-						{ "\"VentMach\"", "EOF" },
+		{ "\"VentMach\"", "EOF" },
 
-						{ "\"MinVolSet\"", "\"VentTube\"", "\"Disconnect\"",
-								"EOF" },
+		{ "\"MinVolSet\"", "\"VentTube\"", "\"Disconnect\"", "EOF" },
 
-						{ "\"VentTube\"", "\"VentMach\"", "EOF" },
+		{ "\"VentTube\"", "\"VentMach\"", "EOF" },
 
-						{ "\"VentMach\"", "\"Disconnect\"", "\"Press\"",
-								"\"VentLung\"", "\"KinkedTube\"",
-								"\"Intubation\"", "EOF" },
+		{ "\"VentMach\"", "\"Disconnect\"", "\"Press\"", "\"VentLung\"", "\"KinkedTube\"", "\"Intubation\"", "EOF" },
 
-						{ "\"Press\"", "\"VentLung\"", "\"Intubation\"",
-								"\"VentTube\"", "EOF" },
+		{ "\"Press\"", "\"VentLung\"", "\"Intubation\"", "\"VentTube\"", "EOF" },
 
-						{ "\"KinkedTube\"", "\"Intubation\"", "\"VentTube\"",
-								"EOF" },
+		{ "\"KinkedTube\"", "\"Intubation\"", "\"VentTube\"", "EOF" },
 
-						{ "\"HRBP\"", "\"HR\"", "EOF" },
+		{ "\"HRBP\"", "\"HR\"", "EOF" },
 
-						{ "\"ErrLowOutput\"", "\"HR\"", "EOF" },
+		{ "\"ErrLowOutput\"", "\"HR\"", "EOF" },
 
-						{ "\"HREKG\"", "\"HRSat\"", "\"HR\"", "EOF" },
+		{ "\"HREKG\"", "\"HRSat\"", "\"HR\"", "EOF" },
 
-						{ "\"HR\"", "\"ErrCauter\"", "EOF" },
+		{ "\"HR\"", "\"ErrCauter\"", "EOF" },
 
-						{ "\"CO\"", "\"TPR\"", "EOF" },
+		{ "\"CO\"", "\"TPR\"", "EOF" },
 
-						{ "\"HR\"", "\"StrokeVolume\"", "\"BP\"", "\"TPR\"",
-								"EOF" },
+		{ "\"HR\"", "\"StrokeVolume\"", "\"BP\"", "\"TPR\"", "EOF" },
 
-						{ "\"Catechol\"", "\"HRBP\"", "\"HREKG\"", "\"HRSat\"",
-								"\"CO\"", "\"ErrLowOutput\"", "\"ErrCauter\"",
-								"\"StrokeVolume\"", "EOF" },
+		{ "\"Catechol\"", "\"HRBP\"", "\"HREKG\"", "\"HRSat\"", "\"CO\"", "\"ErrLowOutput\"", "\"ErrCauter\"", "\"StrokeVolume\"", "EOF" },
 
-						{ "\"Anaphylaxis\"", "\"BP\"", "\"Catechol\"",
-								"\"CO\"", "\"InsuffAnesth\"", "\"SaO2\"",
-								"\"ArtCO2\"", "EOF" },
+		{ "\"Anaphylaxis\"", "\"BP\"", "\"Catechol\"", "\"CO\"", "\"InsuffAnesth\"", "\"SaO2\"", "\"ArtCO2\"", "EOF" },
 
-						{ "\"TPR\"", "EOF" },
+		{ "\"TPR\"", "EOF" },
 
-						{ "\"Catechol\"", "\"SaO2\"", "\"TPR\"", "\"ArtCO2\"",
-								"EOF" },
+		{ "\"Catechol\"", "\"SaO2\"", "\"TPR\"", "\"ArtCO2\"", "EOF" },
 
-						{ "\"PulmEmbolus\"", "EOF" },
+		{ "\"PulmEmbolus\"", "EOF" },
 
-						{ "\"PAP\"", "\"Shunt\"", "\"Intubation\"", "EOF" },
+		{ "\"PAP\"", "\"Shunt\"", "\"Intubation\"", "EOF" },
 
-						{ "\"PVSat\"", "\"VentAlv\"", "EOF" },
+		{ "\"PVSat\"", "\"VentAlv\"", "EOF" },
 
-						{ "\"InsuffAnesth\"", "\"SaO2\"", "\"TPR\"",
-								"\"ArtCO2\"", "\"HR\"", "EOF" },
+		{ "\"InsuffAnesth\"", "\"SaO2\"", "\"TPR\"", "\"ArtCO2\"", "\"HR\"", "EOF" },
 
-						{ "\"Shunt\"", "\"PVSat\"", "\"Catechol\"",
-								"\"InsuffAnesth\"", "\"TPR\"", "\"ArtCO2\"",
-								"EOF" },
+		{ "\"Shunt\"", "\"PVSat\"", "\"Catechol\"", "\"InsuffAnesth\"", "\"TPR\"", "\"ArtCO2\"", "EOF" },
 
-						{ "\"PulmEmbolus\"", "\"Intubation\"", "\"SaO2\"",
-								"\"PVSat\"", "EOF" },
+		{ "\"PulmEmbolus\"", "\"Intubation\"", "\"SaO2\"", "\"PVSat\"", "EOF" },
 
-						{ "\"VentAlv\"", "\"FiO2\"", "\"SaO2\"", "\"Shunt\"",
-								"EOF" },
+		{ "\"VentAlv\"", "\"FiO2\"", "\"SaO2\"", "\"Shunt\"", "EOF" },
 
-						{ "\"VentLung\"", "\"Intubation\"", "EOF" },
+		{ "\"VentLung\"", "\"Intubation\"", "EOF" },
 
-						{ "\"ArtCO2\"", "\"VentLung\"", "EOF" },
+		{ "\"ArtCO2\"", "\"VentLung\"", "EOF" },
 
-						{ "\"VentAlv\"", "\"Catechol\"", "\"ExpCO2\"",
-								"\"InsuffAnesth\"", "\"SaO2\"", "\"TPR\"",
-								"\"VentLung\"", "EOF" },
+		{ "\"VentAlv\"", "\"Catechol\"", "\"ExpCO2\"", "\"InsuffAnesth\"", "\"SaO2\"", "\"TPR\"", "\"VentLung\"", "EOF" },
 
-						{ "\"Intubation\"", "\"VentLung\"", "\"PVSat\"",
-								"\"ArtCO2\"", "\"FiO2\"", "EOF" },
+		{ "\"Intubation\"", "\"VentLung\"", "\"PVSat\"", "\"ArtCO2\"", "\"FiO2\"", "EOF" },
 
-						{ "\"KinkedTube\"", "\"VentTube\"", "\"Intubation\"",
-								"\"MinVol\"", "\"ExpCO2\"", "\"VentAlv\"",
-								"\"ArtCO2\"", "EOF" },
+		{ "\"KinkedTube\"", "\"VentTube\"", "\"Intubation\"", "\"MinVol\"", "\"ExpCO2\"", "\"VentAlv\"", "\"ArtCO2\"", "EOF" },
 
-						{ "\"Press\"", "\"Shunt\"", "\"MinVol\"",
-								"\"VentAlv\"", "\"VentLung\"",
-								"\"KinkedTube\"", "\"VentTube\"",
-								"\"PulmEmbolus\"", "EOF" }
+		{ "\"Press\"", "\"Shunt\"", "\"MinVol\"", "\"VentAlv\"", "\"VentLung\"", "\"KinkedTube\"", "\"VentTube\"", "\"PulmEmbolus\"", "EOF" }
 
-				};
+};
 
 // our graph consists of a list of nodes where each node is represented as follows:
 class Graph_Node {
@@ -479,8 +420,7 @@ public:
 		return 1;
 	}
 
-	void permuteStep(vector<int> maxIndicesLeft, int elemAddedAlready,
-			vector<int> v, vector<vector<int> >* final) {
+	void permuteStep(vector<int> maxIndicesLeft, int elemAddedAlready, vector<int> v, vector<vector<int> >* final) {
 		if (maxIndicesLeft.size() == 0) {
 			final->push_back(v);
 			return;
@@ -488,8 +428,7 @@ public:
 		for (int i = 0; i <= maxIndicesLeft[0]; i++) {
 			v.erase(v.begin() + elemAddedAlready, v.end());
 			v.push_back(i);
-			vector<int> leftNow(maxIndicesLeft.begin() + 1,
-					maxIndicesLeft.end());
+			vector<int> leftNow(maxIndicesLeft.begin() + 1, maxIndicesLeft.end());
 			permuteStep(leftNow, elemAddedAlready + 1, v, final);
 		}
 	}
@@ -594,26 +533,25 @@ public:
 
 } Alarm;
 
-class patient {
+class Patient {
 	//    size of this list is the number of nodes in the network
 public:
 	float weight = 1;
 
 	//    details of the unknown field of this patient
-	int uFieldIndex;
-	string uFieldName;
+	//	initially, we assume the patient is fully known until an "?" is encountered
+	string uFieldName = FULLY_KNOWN;
 
 	//vector<string> data;
 	map<string, string> data;
 
-	patient() {
+	Patient() {
 		weight = 1;
 	}
 
 	//    this patient is made from p with "?" replaced by s with weightage as probability
-	patient(patient p, string s, float probability) {
+	Patient(Patient p, string s, float probability) {
 		this->weight = probability;
-		this->uFieldIndex = p.uFieldIndex;
 		this->uFieldName = p.uFieldName;
 		this->data = p.data;
 		this->data[uFieldName] = s;
@@ -627,10 +565,10 @@ public:
 
 };
 
-vector<patient> data;
+vector<Patient> data;
 
 typedef list<Graph_Node>::iterator Graph_NodeIt;
-typedef vector<patient>::iterator patientIt;
+typedef vector<Patient>::iterator patientIt;
 
 void Graph_Node::findCPT() {
 
@@ -680,13 +618,12 @@ void Graph_Node::findCPT() {
 			count_excludingMe = cpt_it_excludingMe->second;
 		}
 
-
 		//-----------getting probability
 		float probability;
 
 		//the node has no parent...i.e. excluding_me is empty
-		if(currentIndices.size() == 1){
-			probability = count_includingMe/data.size();
+		if (currentIndices.size() == 1) {
+			probability = count_includingMe / data.size();
 			newCPT.push_back(probability);
 			continue;
 		}
@@ -813,16 +750,12 @@ void Graph_Node::myInitialization() {
 
 	permutationResult = permute(maxIndices);
 
-	cout << "came here" << endl;
 	//    FIND MARKOV BLANKET
 	//    markovBlanket() sets vector<string> mBProperties and vector< vector<string> > mBValues
 	//    this is required only once
 	markovBlanket();
-	cout << "came here2" << endl;
 
 	mMaxIndices.push_back(nvalues - 1);
-
-	cout << "came here3" << endl;
 
 	for (unsigned int i = 0; i < mbProperties.size(); i++) {
 		Graph_NodeIt gIt = Alarm.search_node(mbProperties[i]);
@@ -889,8 +822,7 @@ void Graph_Node::markovBlanket() {
 			string spouse = gIt->Parents[j];
 
 			//            if this spouse has not already been added OR its not ME as a father of my own child, add it
-			if ((find(mbProperties.begin(), mbProperties.end(), spouse)
-					== mbProperties.end()) && spouse != Node_Name) {
+			if ((find(mbProperties.begin(), mbProperties.end(), spouse) == mbProperties.end()) && spouse != Node_Name) {
 				mbProperties.push_back(spouse);
 				mbPropertyIndices.push_back(Alarm.get_index(spouse));
 			}
@@ -931,8 +863,7 @@ void Graph_Node::display() {
 		cout << "P(" << Node_Name << "=" << values[v[0]] << "|";
 		for (intIt it = v.begin() + 1; it != v.end(); it++) {
 			Graph_NodeIt gIt = Alarm.search_node(Parents[it - v.begin() - 1]);
-			cout << Parents[it - v.begin() - 1] << "=" << (*gIt).values[v[it
-					- v.begin()]];
+			cout << Parents[it - v.begin() - 1] << "=" << (*gIt).values[v[it - v.begin()]];
 		}
 		cout << ") = " << setprecision(6) << CPT[CPTindex++] << "\n";
 	}
@@ -1051,14 +982,13 @@ void read_data() {
 	while (!myfile.eof()) {
 		getline(myfile, line);
 
-		patient p;
+		Patient p;
 		string lin = line;
 		int y;
 
 		for (int i = 0; i < Alarm.netSize(); i++) {
 			y = lin.find(" ");
 			if (lin.substr(0, y) == "\"?\"") {
-				p.uFieldIndex = i;
 				p.uFieldName = getNodeFromIndex( i ).Node_Name;
 			}
 
@@ -1074,7 +1004,7 @@ void read_data() {
 		data.push_back(p);
 	}
 	data.pop_back();
-	dataSize = data.size();
+	initialDataSize = data.size();
 	cout << "Data filled with data size - " << data.size() << endl;
 }
 
@@ -1162,242 +1092,124 @@ int main(int argc, char** argv) {
 
 	int index = 0;
 
-	for (Graph_NodeIt it = Alarm.Pres_Graph.begin(); it
-			!= Alarm.Pres_Graph.end(); it++, index++) {
+	for (Graph_NodeIt it = Alarm.Pres_Graph.begin(); it != Alarm.Pres_Graph.end(); it++, index++) {
 
-		cout << endl << (*it).Node_Name << " has index " << index
-				<< " and has been initialized\n";
+		cout << endl << (*it).Node_Name << " has index " << index << " and has been initialized\n";
 		(*it).myInitialization();
 
 	}
 
 	//    APPLY COUNTING AND IGNORE THE ? VALUES
 
+	while (true) {
 
-	//=================================================M-Step===============================
-	//set_MCPT_MAP();
-	set_CPT_MAP();
+		//=================================================M-Step===============================
+		set_MCPT_MAP();
+		set_CPT_MAP();
 
-	display_CPT_MAP();
+		//display_CPT_MAP();
 
-	for (Graph_NodeIt it = Alarm.Pres_Graph.begin(); it
-			!= Alarm.Pres_Graph.end(); it++, index++) {
+		for (Graph_NodeIt it = Alarm.Pres_Graph.begin(); it != Alarm.Pres_Graph.end(); it++, index++) {
+			it->findCPT();
+		}
 
-		it->findCPT();
-	}
+		output();
+		cin.ignore();
 
-	output();
-	cin.ignore();
+		//display_MCPT_MAP();
 
-	//display_MCPT_MAP();
-	//=================================================E-Step===============================
 
-	/*	if (data.size() == dataSize) { //E-step for the first time
+		//=================================================E-Step===============================
 
-	 for_each	( data.begin(), data.end(), [&](patient p)) {
+		if (data.size() == initialDataSize) { //E-step for the first time
 
-	 //          missing data from the patient
-	 Graph_NodeIt gIt = Alarm.get_nth_node( p.uFieldIndex );
-	 (*gIt).mbValues.clear();
+			vector<Patient> newData;
 
-	 //            for each markov blanket's node
-	 for( stringIt sIt = (*gIt).mbProperties.begin(); sIt != (*gIt).mbProperties.end(); sIt++ ) {
+			for (unsigned int i = 0; i < data.size(); i++) {
+				Patient patient = data[i];
 
-	 //                index of markov blanket's node
-	 int index = Alarm.get_index( *sIt );
+				if (patient.uFieldName.compare(FULLY_KNOWN) == 0) {
+					newData.push_back(patient);
+					continue;
+				}
 
-	 //                this patient has p.data[index] value of this markov blanket's node
-	 //                hence add it to mbValues
-	 (*gIt).mbValues.push_back( p.data[index] );
+				Graph_NodeIt unknownNode = Alarm.search_node(patient.uFieldName);
 
-	 }
+				unknownNode->mbValues.clear();
 
-	 //            now, I have to calculate P(A|B) where A is the node with "?" and B is its markov blanket with the values given
+				vector<string> mbProperties_unknownNode = unknownNode->mbProperties;
 
-	 //            total number of records with only the markov blanket specified
-	 //            this is number of records with B only in P(A|B)
-	 float total = 0;
+				// for each markov blanket's node
+				for (unsigned int j = 0; j < mbProperties_unknownNode.size(); j++) {
+					string current_mbProp_name = mbProperties_unknownNode[j];
+					string current_mbProp_val = patient.data[current_mbProp_name];
 
-	 //            if A can take values "Low" "Medium" "High", this vector contains three counts corresponding to these values
-	 vector<float> countFrequencies;
+					unknownNode->mbValues.push_back(current_mbProp_val);
+				}
 
-	 //            for each possible values of A in P(A|B)
-	 for_each( (*gIt).values.begin(), (*gIt).values.end(), [&](string s) {
-	 vector<string> properties = (*gIt).properties;
-	 vector<string> values = (*gIt).mbValues;
+				for (int j = 0; j < unknownNode->nvalues; j++) {
+					string valueUnderConsideration = unknownNode->values[j];
 
-	 //                add A to calculate number of records with both A=s and B in P(A=s|B)
-	 properties.insert( properties.begin(), (*gIt).Node_Name );)
-	 values.insert( values.begin(), s );
+					vector<string> vector_properties = mbProperties_unknownNode;
+					vector<string> vector_values = unknownNode->mbValues;
 
-	 float probability = (*gIt).retProbValue( properties, values);
-	 patient *newP = new patient( p, s, probability);
-	 newData.push_back( *newP );
-	 newP->view();
-	 delete newP;
-	 //            cout << "value of total -> " << total << endl;
-	 });
+					vector_properties.insert(vector_properties.begin(), unknownNode->Node_Name);
+					vector_values.insert(vector_values.begin(), valueUnderConsideration);
 
-	 });
-	 }*/
+					float probability = unknownNode->retProbValue(vector_properties, vector_values);
+					Patient *newP = new Patient(patient, valueUnderConsideration, probability);
+					newData.push_back(*newP);
+					delete newP;
+				}
 
-	/*
+			}
 
-	 while( true ) {
+			data = newData;
+		}//End of "if" => E-step first time
 
-	 vector<string> p,v;
+		else { //Not the first time
 
-	 index = 0;
-	 //        CPT updated
-	 for( Graph_NodeIt it = Alarm.Pres_Graph.begin(); it != Alarm.Pres_Graph.end(); it++, index++ ) {
+			for (unsigned int i = 0; i < data.size(); i++) {
+				Patient patient = data[i];
 
-	 //        if find the prior probability of this node who has no parent
-	 //        else find the CPT of this node who has some parents
-	 if( (*it).Parents.empty() ) {
+				// no change in weight as this record is fully known
+				if (patient.uFieldName.compare(FULLY_KNOWN) == 0)
+					continue;
 
-	 //            index i of this list is incremented when corresponding value is found in the data
-	 vector<float> countFrequencies((*it).nvalues,0);
-	 vector<float> newCPT((*it).nvalues,0);
+				Graph_NodeIt unknownNode = Alarm.search_node(patient.uFieldName);
 
-	 //            check the value stored in each patient record
-	 for_each( data.begin(), data.end(), [&](patient p){
-	 if( p.data[index] != "\"?\"" ) {
-	 stringIt sIt = find( (*it).values.begin(), (*it).values.end(), p.data[index] );
-	 countFrequencies[ sIt- (*it).values.begin() ]+=p.weight;
-	 }
-	 });
+				unknownNode->mbValues.clear();
 
-	 //            total will be number of patient records - ? corresponding to this patient entry
-	 float total = sumFloatVector( countFrequencies );
+				vector<string> mbProperties_unknownNode = unknownNode->mbProperties;
 
-	 //            assign the CPT values
-	 for( floatIt fIt = newCPT.begin(); fIt != newCPT.end(); fIt++ ) {
-	 (*fIt) = (float)countFrequencies[ fIt - newCPT.begin() ] / (float)total;
-	 }
+				// for each markov blanket's node
+				for (unsigned int j = 0; j < mbProperties_unknownNode.size(); j++) {
+					string current_mbProp_name = mbProperties_unknownNode[j];
+					string current_mbProp_val = patient.data[current_mbProp_name];
 
-	 (*it).set_CPT(newCPT);
-	 } else {
+					unknownNode->mbValues.push_back(current_mbProp_val);
+				}
 
-	 vector<string> properties, values;
-	 vector<float> countFrequencies;
-	 properties.push_back( (*it).Node_Name );
-	 for_each( (*it).Parents.begin(), (*it).Parents.end(), [&](string s){properties.push_back( s );});
+				//string valueUnderConsideration = unknownNode->values[j];
 
-	 for_each( (*it).permutationResult.begin(), (*it).permutationResult.end(), [&](vector<int> v){
-	 values.clear();
-	 values.push_back( (*it).values[ v[0] ] );
+				vector<string> vector_properties = mbProperties_unknownNode;
+				vector<string> vector_values = unknownNode->mbValues;
 
-	 for( intIt iIt = v.begin()+1; iIt != v.end(); iIt++ ) {
-	 Graph_NodeIt gIt = Alarm.search_node( (*it).Parents[iIt-v.begin()-1] );
-	 values.push_back( (*gIt).values[ v[iIt-v.begin()] ] );
-	 }
+				vector_properties.insert(vector_properties.begin(), unknownNode->Node_Name);
+				vector_values.insert(vector_values.begin(), patient.data[patient.uFieldName]);
 
-	 //                the first element here is the A in P(A|B) and the rest of the list is B
-	 //                we have to find P(A,B)/P(B)
-	 //                P(A,B) = number of records with both A and B present / total number of records with both A and B non "?"
-	 //                P(B) = number of records with B present / total number of records with both A and B non "?"
-	 countFrequencies.push_back( countRecords(properties, values) );
-	 });
+				float probability = unknownNode->retProbValue(vector_properties, vector_values);
 
-	 //            now, I have to set the newCPT based on all the countFrequencies I got
-	 (*it).findCPT( countFrequencies );
+				data[i].weight = probability;
 
-	 }
+			}
 
-	 // fill in the MCPT based on the data we have right now
-	 vector<string> mProperties, mValues;
-	 vector<float> mCountFrequencies;
-	 mProperties = it->mbProperties;
-	 mProperties.insert( mProperties.begin(), it->Node_Name );
+		}
 
-	 for_each( (*it).mPermutationResult.begin(), (*it).mPermutationResult.end(), [&](vector<int> v){
-	 mValues.clear();
+	}//End of While(true)
 
-	 //adding currentNode's value
-	 int currentNode_currentValue_index = v[0];
-	 string currentNode_currentValue = (*it).values[ currentNode_currentValue_index ];
-	 mValues.push_back( currentNode_currentValue );
 
-	 int index = 0;
-	 for( intIt iIt = v.begin()+1; iIt != v.end(); iIt++, index++ ) {
-
-	 string mbCurrentNode = (*it).mbProperties[index];
-
-	 Graph_NodeIt gIt = Alarm.search_node( mbCurrentNode );
-	 int mbNode_currentValue_index = v[index+1];
-	 string mbNode_currentValue = (*gIt).values[ mbNode_currentValue_index ];
-	 mValues.push_back( mbNode_currentValue );
-	 }
-
-	 mCountFrequencies.push_back( countRecords(mProperties, mValues) );
-
-	 });
-
-	 (*it).findMCPT( mCountFrequencies );
-	 (*it).display();
-	 //        cin.ignore();
-	 }
-
-	 //        output the updated CPT
-	 output();
-
-	 cin.ignore();
-
-	 //        this newData vector will be written to data after the E step
-	 vector<patient> newData;
-	 index = 0;
-
-	 //        modify input patient data - E step - depending on the markov blanket of the missing value
-	 //        for the first time, weight of each record is 1
-	 //        if expand dataset
-	 //        else change the probability only
-	 if( data.size() == dataSize ) {
-	 for_each( data.begin(), data.end(), [&](patient p){
-	 cout << "\n\nPatient number -> " << ++index;
-	 //            cout << "\nnewData.size() -> " << newData.size() << endl;
-
-	 //            missing data from the patient
-	 Graph_NodeIt gIt = Alarm.get_nth_node( p.uFieldIndex );
-	 (*gIt).mbValues.clear();
-
-	 //            for each markov blanket's node
-	 for( stringIt sIt = (*gIt).mbProperties.begin(); sIt != (*gIt).mbProperties.end(); sIt++ ) {
-
-	 //                index of markov blanket's node
-	 int index = Alarm.get_index( *sIt );
-
-	 //                this patient has p.data[index] value of this markov blanket's node
-	 //                hence add it to mbValues
-	 (*gIt).mbValues.push_back( p.data[index] );
-
-	 }
-
-	 //            now, I have to calculate P(A|B) where A is the node with "?" and B is its markov blanket with the values given
-
-	 //            total number of records with only the markov blanket specified
-	 //            this is number of records with B only in P(A|B)
-	 float total = 0;
-
-	 //            if A can take values "Low" "Medium" "High", this vector contains three counts corresponding to these values
-	 vector<float> countFrequencies;
-
-	 //            for each possible values of A in P(A|B)
-	 for_each( (*gIt).values.begin(), (*gIt).values.end(), [&](string s){
-	 vector<string> values = (*gIt).mbValues;
-
-	 //                add A to calculate number of records with both A=s and B in P(A=s|B)
-	 values.insert( values.begin(), s );
-
-	 float probability = (*gIt).retProbValue(values);
-	 patient *newP = new patient( p, s, probability);
-	 newData.push_back( *newP );
-	 newP->view();
-	 delete newP;
-	 //            cout << "value of total -> " << total << endl;
-	 });
-
-	 });
-	 } else {
+	/*	 } else {
 
 
 	 //        TO BE DONE LATER
@@ -1466,13 +1278,11 @@ void output() {
 	cout << "// Produced by BayesianNetworks package in JavaBayes\n";
 	cout << "// Output created Sun Nov 02 17:58:15 GMT+00:00 1997\n";
 	cout << "// Bayesian network \n";
-	cout
-			<< "network \"Alarm\" { //37 variables and 37 probability distributions\n";
+	cout << "network \"Alarm\" { //37 variables and 37 probability distributions\n";
 	cout << "}\n";
 
 	int index = 0;
-	for (Graph_NodeIt gIt = Alarm.Pres_Graph.begin(); gIt
-			!= Alarm.Pres_Graph.end(); gIt++, index++) {
+	for (Graph_NodeIt gIt = Alarm.Pres_Graph.begin(); gIt != Alarm.Pres_Graph.end(); gIt++, index++) {
 		string nodeName = (*gIt).Node_Name;
 		int nvalues = (*gIt).nvalues;
 		cout << "variable  " << nodeName << " { //" << nvalues << " values\n";
@@ -1484,13 +1294,11 @@ void output() {
 
 		cout << " };\n";
 
-		cout << "\tproperty \"position = (" << position[index][0] << ", "
-				<< position[index][1] << ")\" ;\n";
+		cout << "\tproperty \"position = (" << position[index][0] << ", " << position[index][1] << ")\" ;\n";
 		cout << "}\n";
 	}
 
-	for (Graph_NodeIt gIt = Alarm.Pres_Graph.begin(); gIt
-			!= Alarm.Pres_Graph.end(); gIt++, index++) {
+	for (Graph_NodeIt gIt = Alarm.Pres_Graph.begin(); gIt != Alarm.Pres_Graph.end(); gIt++, index++) {
 		string nodeName = (*gIt).Node_Name;
 		vector<string> parents = (*gIt).Parents;
 		vector<float> CPT = (*gIt).CPT;
@@ -1501,8 +1309,7 @@ void output() {
 		for (unsigned int i = 0; i < parents.size(); i++) {
 			cout << "  " << parents[i];
 		}
-		cout << " ) { //" << 1 + parents.size() << " variable(s) and "
-				<< CPT.size() << " values\n";
+		cout << " ) { //" << 1 + parents.size() << " variable(s) and " << CPT.size() << " values\n";
 		cout << "\ttable ";
 		printFloatVector(CPT);
 		cout << ";\n}\n";

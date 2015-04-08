@@ -153,13 +153,13 @@ variable  "Intubation" { //3 values
 	property "position = (843, 86)" ;
 }
 probability (  "Hypovolemia" ) { //1 variable(s) and 2 values
-	table 0.2 0.78 ;
+	table 0.07 0.27 ;
 }
 probability (  "StrokeVolume"  "LVFailure"  "Hypovolemia" ) { //3 variable(s) and 12 values
 	table 0.95 0.48 0.92 0.05 0.01 0.47 0.04 0.87 0.01 0.02 0.01 0.05 ;
 }
 probability (  "LVFailure" ) { //1 variable(s) and 2 values
-	table 0.05 0.92 ;
+	table 0.02 0.33 ;
 }
 probability (  "LVEDVolume"  "Hypovolemia"  "LVFailure" ) { //3 variable(s) and 12 values
 	table 0.91 0.95 0.01 0.05 0.04 0.01 0.08 0.87 0.02 0.01 0.87 0.05 ;
@@ -174,31 +174,31 @@ probability (  "History"  "LVFailure" ) { //2 variable(s) and 4 values
 	table 0.88 0.01 0.09 0.96 ;
 }
 probability (  "MinVolSet" ) { //1 variable(s) and 3 values
-	table 0.01 0.95 0.01 ;
+	table 0.01 0.34 0.01 ;
 }
 probability (  "VentMach"  "MinVolSet" ) { //2 variable(s) and 12 values
 	table 0.01 0.01 0.01 0.93 0.01 0.01 0.03 0.94 0.01 0.02 0.01 0.98 ;
 }
 probability (  "Disconnect" ) { //1 variable(s) and 2 values
-	table 0.05 0.92 ;
+	table 0.02 0.33 ;
 }
 probability (  "VentTube"  "VentMach"  "Disconnect" ) { //3 variable(s) and 32 values
 	table 0.99 0.9 0.67 0.02 0.94 0.01 0.91 0.01 0.01 0.03 0.17 0.92 0.01 0.01 0.01 0.01 0.01 0.04 0.17 0.01 0.01 0.94 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.96 ;
 }
 probability (  "KinkedTube" ) { //1 variable(s) and 2 values
-	table 0.04 0.93 ;
+	table 0.02 0.33 ;
 }
 probability (  "Press"  "KinkedTube"  "Intubation"  "VentTube" ) { //4 variable(s) and 96 values
 	table 0.88 0.01 0.01 0.01 0.25 0.25 0.01 0.25 0.99 0.01 0.01 0.99 0.93 0.01 0.01 0.01 0.99 0.5 0.2 0.17 0.93 0.01 0.01 0.01 0.01 0.5 0.01 0.01 0.25 0.25 0.27 0.25 0.01 0.01 0.01 0.01 0.01 0.96 0.01 0.01 0.01 0.5 0.69 0.75 0.02 0.82 0.01 0.01 0.01 0.25 0.06 0.01 0.25 0.25 0.4 0.25 0.01 0.01 0.08 0.01 0.01 0.01 0.95 0.01 0.01 0.01 0.06 0.01 0.02 0.12 0.38 0.01 0.06 0.17 0.9 0.99 0.25 0.25 0.33 0.25 0.01 0.99 0.84 0.01 0.01 0.01 0.01 0.95 0.01 0.01 0.02 0.01 0.01 0.01 0.58 0.99 ;
 }
 probability (  "ErrLowOutput" ) { //1 variable(s) and 2 values
-	table 0.05 0.92 ;
+	table 0.02 0.33 ;
 }
 probability (  "HRBP"  "ErrLowOutput"  "HR" ) { //3 variable(s) and 18 values
 	table 0.92 0.35 0.31 0.96 0.01 0.01 0.01 0.62 0.36 0.01 0.95 0.01 0.04 0.01 0.3 0.01 0.01 0.95 ;
 }
 probability (  "ErrCauter" ) { //1 variable(s) and 2 values
-	table 0.1 0.88 ;
+	table 0.03 0.31 ;
 }
 probability (  "HREKG"  "HR"  "ErrCauter" ) { //3 variable(s) and 18 values
 	table 0.36 0.96 0.38 0.01 0.31 0.01 0.27 0.01 0.29 0.94 0.33 0.01 0.36 0.01 0.3 0.01 0.33 0.96 ;
@@ -219,19 +219,19 @@ probability (  "TPR"  "Anaphylaxis" ) { //2 variable(s) and 6 values
 	table 0.97 0.3 0.01 0.38 0.01 0.29 ;
 }
 probability (  "Anaphylaxis" ) { //1 variable(s) and 2 values
-	table 0.01 0.97 ;
+	table 0.01 0.34 ;
 }
 probability (  "InsuffAnesth" ) { //1 variable(s) and 2 values
-	table 0.2 0.78 ;
+	table 0.07 0.27 ;
 }
 probability (  "PAP"  "PulmEmbolus" ) { //2 variable(s) and 6 values
 	table 0.01 0.05 0.18 0.87 0.77 0.05 ;
 }
 probability (  "PulmEmbolus" ) { //1 variable(s) and 2 values
-	table 0.01 0.96 ;
+	table 0.01 0.34 ;
 }
 probability (  "FiO2" ) { //1 variable(s) and 2 values
-	table 0.01 0.96 ;
+	table 0.01 0.34 ;
 }
 probability (  "Catechol"  "InsuffAnesth"  "SaO2"  "TPR"  "ArtCO2" ) { //5 variable(s) and 108 values
 	table 0.12 0.01 0.01 0.01 0.01 0.01 0.01 0.03 0.02 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.06 0.01 0.01 0.01 0.01 0.05 0.1 0.01 0.04 0.01 0.01 0.12 0.04 0.01 0.05 0.04 0.01 0.05 0.04 0.01 0.14 0.11 0.11 0.91 0.92 0.29 0.91 0.93 0.25 0.88 0.88 0.27 0.94 0.96 0.99 0.97 0.99 0.44 0.88 0.94 0.94 0.99 0.96 0.96 0.83 0.9 0.96 0.94 0.96 0.94 0.99 0.96 0.99 0.99 0.91 0.99 0.99 0.99 0.99 0.9 0.9 0.99 0.96 0.99 0.8 0.88 0.91 0.98 0.9 0.94 0.96 0.91 0.9 0.95 0.86 0.86 0.86 0.01 0.05 0.66 0.08 0.04 0.73 0.06 0.05 0.73 0.02 0.01 0.01 0.03 0.01 0.56 ;
@@ -261,5 +261,5 @@ probability (  "VentLung"  "KinkedTube"  "VentTube"  "Intubation" ) { //4 variab
 	table 0.99 0.25 0.99 0.92 0.25 0.99 0.4 0.93 0.64 0.33 0.25 0.99 0.96 0.99 0.95 0.01 0.92 0.01 0.01 0.92 0.01 0.01 0.92 0.01 0.01 0.25 0.01 0.08 0.25 0.01 0.56 0.01 0.36 0.67 0.25 0.01 0.01 0.01 0.01 0.92 0.01 0.94 0.01 0.01 0.01 0.02 0.01 0.01 0.01 0.25 0.01 0.01 0.25 0.01 0.01 0.01 0.01 0.01 0.25 0.01 0.01 0.01 0.01 0.01 0.01 0.06 0.95 0.01 0.94 0.01 0.01 0.01 0.01 0.25 0.01 0.01 0.25 0.01 0.01 0.01 0.01 0.01 0.25 0.01 0.01 0.01 0.02 0.02 0.01 0.01 0.01 0.02 0.01 0.93 0.01 0.75 ;
 }
 probability (  "Intubation" ) { //1 variable(s) and 3 values
-	table 0.89 0.03 0.05 ;
+	table 0.32 0.01 0.02 ;
 }
