@@ -599,25 +599,23 @@ void Graph_Node::myInitialization() {
 
 	permutationResult = permute(maxIndices);
 
+	cout << "came here" << endl;
 	//    FIND MARKOV BLANKET
 	//    markovBlanket() sets vector<string> mBProperties and vector< vector<string> > mBValues
 	//    this is required only once
 	markovBlanket();
+	cout << "came here2" << endl;
 
 	mMaxIndices.push_back(nvalues - 1);
-	/*for_each( mbProperties.begin(), mbProperties.end(), [&]( string s) {
-	 Graph_NodeIt gIt = Alarm.search_node( s );
-	 mMaxIndices.push_back( (*gIt).nvalues-1 );
-	 });*/
+
+	cout << "came here3" << endl;
+
 	for (unsigned int i = 0; i < mbProperties.size(); i++) {
 		Graph_NodeIt gIt = Alarm.search_node(mbProperties[i]);
 		mMaxIndices.push_back((*gIt).nvalues - 1);
 	}
 
 	sizeMCPT = 1;
-	/*for_each( mMaxIndices.begin(), mMaxIndices.end(), [&](int i) {
-	 sizeMCPT *= (i+1);
-	 });*/
 
 	for (unsigned int i = 0; i < mMaxIndices.size(); i++) {
 		sizeMCPT *= (mMaxIndices[i] + 1);
@@ -674,7 +672,7 @@ void Graph_Node::markovBlanket() {
 		Graph_NodeIt gIt = Alarm.get_nth_node(Children[i]);
 		for (unsigned int j = 0; j < gIt->Parents.size(); j++) {
 
-			string spouse = Parents[j];
+			string spouse = gIt->Parents[j];
 
 			//            if this spouse has not already been added OR its not ME as a father of my own child, add it
 			if ((find(mbProperties.begin(), mbProperties.end(), spouse)
