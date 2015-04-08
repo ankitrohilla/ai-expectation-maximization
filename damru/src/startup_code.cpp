@@ -100,7 +100,7 @@ string CPT_Keys[][12] = { { "\"Hypovolemia\"", "EOF" }, { "\"StrokeVolume\"",
 				"\"MinVolSet\"", "EOF" }, { "\"VentMach\"", "\"MinVolSet\"",
 				"EOF" }, { "\"Disconnect\"", "EOF" }, { "\"VentTube\"",
 				"\"VentMach\"", "\"Disconnect\"", "EOF" }, { "\"KinkedTube\"",
-				"EOF" }, { "\"Press\"", "\"\"KinkedTube\"", "\"Intubation\"",
+				"EOF" }, { "\"Press\"", "\"KinkedTube\"", "\"Intubation\"",
 				"\"VentTube\"", "EOF" }, { "\"ErrLowOutput\"", "EOF" }, {
 				"\"HRBP\"", "\"ErrLowOutput\"", "\"HR\"", "EOF" }, {
 				"\"ErrCauter\"", "EOF" }, { "\"HREKG\"", "\"HR\"",
@@ -122,6 +122,7 @@ string CPT_Keys[][12] = { { "\"Hypovolemia\"", "EOF" }, { "\"StrokeVolume\"",
 				"\"KinkedTube\"", "\"VentTube\"", "\"Intubation\"", "EOF" }, {
 				"\"Intubation\"", "EOF" },
 
+		//Below ones are denominator of above ones
 		{ "\"LVFailure\"", "\"Hypovolemia\"", "EOF" }, { "\"Hypovolemia\"",
 				"\"LVFailure\"", "EOF" }, { "\"LVEDVolume\"", "EOF" }, {
 				"\"LVFailure\"", "EOF" }, { "\"MinVolSet\"", "EOF" }, {
@@ -172,7 +173,7 @@ string
 								"\"ErrCauter\"", "EOF" }, { "\"HRSat\"",
 								"\"HR\"", "\"ErrCauter\"", "EOF" }, { "\"BP\"",
 								"\"CO\"", "\"TPR\"", "EOF" }, { "\"CO\"",
-								"\"HR\"", "\"StrokeVolume,BP\"", "\"TPR\"",
+								"\"HR\"", "\"StrokeVolume\"","\"BP\"", "\"TPR\"",
 								"EOF" }, { "\"HR\"", "\"Catechol\"",
 								"\"HRBP\"", "\"HREKG\"", "\"HRSat\"", "\"CO\"",
 								"\"ErrLowOutput\"", "\"ErrCauter\"",
@@ -201,17 +202,18 @@ string
 								"\"VentLung\"", "EOF" }, { "\"ArtCO2\"",
 								"\"VentAlv\"", "\"Catechol\"", "\"ExpCO2\"",
 								"\"InsuffAnesth\"", "\"SaO2\"", "\"TPR\"",
-								"\"VentLung\"", "EOF" }, { "\"VentAlv\"",
-								"\"Intubation\"", "\"VentLung\"", "\"PVSat\"",
-								"\"ArtCO2\"", "\"FiO2\"", "EOF" }, {
-								"\"VentLung\"", "\"KinkedTube\"",
-								"\"VentTube\"", "\"Intubation\"", "\"MinVol\"",
-								"\"ExpCO2\"", "\"VentAlv\"", "\"ArtCO2\"",
-								"EOF" }, { "\"Intubation\"", "\"Press\"",
-								"\"Shunt\"", "\"MinVol\"", "\"VentAlv\"",
-								"\"VentLung\"", "\"KinkedTube\"",
-								"\"VentTube\"", "\"PulmEmbolus\"", "EOF" },
+								"\"VentLung\"", "EOF" },
+						{ "\"VentAlv\"", "\"Intubation\"", "\"VentLung\"",
+								"\"PVSat\"", "\"ArtCO2\"", "\"FiO2\"", "EOF" },
+						{ "\"VentLung\"", "\"KinkedTube\"", "\"VentTube\"",
+								"\"Intubation\"", "\"MinVol\"", "\"ExpCO2\"",
+								"\"VentAlv\"", "\"ArtCO2\"", "EOF" },
+						{ "\"Intubation\"", "\"Press\"", "\"Shunt\"",
+								"\"MinVol\"", "\"VentAlv\"", "\"VentLung\"",
+								"\"KinkedTube\"", "\"VentTube\"",
+								"\"PulmEmbolus\"", "EOF" },
 
+						//Below ones are denominator of above ones
 						{ "\"StrokeVolume\"", "\"LVEDVolume\"",
 								"\"LVFailure\"", "EOF" }, { "\"LVFailure\"",
 								"\"Hypovolemia\"", "\"CO\"", "\"HR\"", "EOF" },
@@ -234,7 +236,7 @@ string
 								"\"HREKG\"", "\"HRSat\"", "\"HR\"", "EOF" }, {
 								"\"HR\"", "\"ErrCauter\"", "EOF" }, { "\"CO\"",
 								"\"TPR\"", "EOF" }, { "\"HR\"",
-								"\"StrokeVolume,BP\"", "\"TPR\"", "EOF" }, {
+								"\"StrokeVolume\"","\"BP\"", "\"TPR\"", "EOF" }, {
 								"\"Catechol\"", "\"HRBP\"", "\"HREKG\"",
 								"\"HRSat\"", "\"CO\"", "\"ErrLowOutput\"",
 								"\"ErrCauter\"", "\"StrokeVolume\"", "EOF" }, {
@@ -519,6 +521,7 @@ void set_MCPT_MAP() {
 		string key_MCPT_map = "";
 
 		for (int j = 0; j < 72; j++) {
+			key_MCPT_map = "";
 			for (int k = 0; k < 12; k++) {
 
 				string curr_prop = mCPT_Keys[j][k];
@@ -539,10 +542,15 @@ void set_MCPT_MAP() {
 
 			if (cMapIt != MCPT_map.end()) {
 				//value existing in the map
+				//cout << "existing value: "; //TODO : cout
+				//cout << key_MCPT_map << " : " << (cMapIt->second
+						//+ data[i].weight) << endl; //TODO : cout
 				MCPT_map[key_MCPT_map] = cMapIt->second + data[i].weight;
 
 			} else {
 				//value is not yet present in the map
+				//cout << "not existing: "; //TODO : cout
+				//cout << key_MCPT_map << " : " << (data[i].weight) << endl; //TODO : cout
 				MCPT_map[key_MCPT_map] = data[i].weight;
 			}
 
@@ -551,12 +559,23 @@ void set_MCPT_MAP() {
 	}//End of data[i]
 }
 
+void display_CPT_MAP() {
+	for (cptMapIt it = CPT_map.begin(); it != CPT_map.end(); ++it)
+		std::cout << it->first << " => " << it->second << '\n';
+}
+
+void display_MCPT_MAP() {
+	for (cptMapIt it = MCPT_map.begin(); it != MCPT_map.end(); ++it)
+		std::cout << it->first << " => " << it->second << '\n';
+}
+
 void set_CPT_MAP() {
 	for (unsigned int i = 0; i < data.size(); i++) {
 
 		string key_CPT_map = "";
 
 		for (int j = 0; j < 60; j++) {
+			key_CPT_map = "";
 			for (int k = 0; k < 12; k++) {
 
 				string curr_prop = CPT_Keys[j][k];
@@ -577,10 +596,14 @@ void set_CPT_MAP() {
 
 			if (cMapIt != CPT_map.end()) {
 				//value existing in the map
+				//cout << "existing value: "; //TODO : cout
+				//cout << key_CPT_map << " : " << (cMapIt->second + data[i].weight) <<endl; //TODO : cout
 				CPT_map[key_CPT_map] = cMapIt->second + data[i].weight;
 
 			} else {
 				//value is not yet present in the map
+				//cout << "not existing: "; //TODO : cout
+				//cout << key_CPT_map << " : " << (data[i].weight) <<endl; //TODO : cout
 				CPT_map[key_CPT_map] = data[i].weight;
 			}
 
@@ -859,6 +882,7 @@ void read_data() {
 		}
 		data.push_back(p);
 	}
+	data.pop_back();
 	dataSize = data.size();
 	cout << "Data filled with data size - " << data.size() << endl;
 }
@@ -960,9 +984,10 @@ int main(int argc, char** argv) {
 
 
 	//=================================================M-Step===============================
-	//set_MCPT_MAP();
-	set_CPT_MAP();
+	set_MCPT_MAP();
+	//set_CPT_MAP();
 
+	display_MCPT_MAP();
 	//=================================================E-Step===============================
 
 	/*	if (data.size() == dataSize) { //E-step for the first time
