@@ -1237,25 +1237,18 @@ int main(int argc, char** argv) {
 		//=================================================M-Step===============================
 		cout << "===============In M-step=============" << endl; //TODO: remove
 
-		set_CPT_MAP();//TODO: remove
-		//display_CPT_MAP();////TODO: remove
-		for (Graph_NodeIt it = Alarm.Pres_Graph.begin(); it != Alarm.Pres_Graph.end(); it++, index++) {//TODO: remove
-			it->findCPT();//TODO: remove
-		}//TODO: remove
-		output(); //TODO: remove
-		exit(1);//TODO: remove
-
 		set_MCPT_MAP();
-		cout << "-----Done with calculating the MCPT_MAP" << endl;
+		cout << "-----Done with calculating the MCPT_MAP" << endl;//TODO: remove
 		set_CPT_MAP();
+		cout << "-----Done with calculating the CPT_MAP" << endl;//TODO: remove
 
-		//display_CPT_MAP();
+		//display_CPT_MAP();//TODO: remove
 
 		for (Graph_NodeIt it = Alarm.Pres_Graph.begin(); it != Alarm.Pres_Graph.end(); it++, index++) {
 			it->findCPT();
 		}
 
-		display_MCPT_MAP();
+		//display_MCPT_MAP();//TODO: remove
 
 		output();
 
