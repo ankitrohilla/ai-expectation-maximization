@@ -12,6 +12,14 @@
 
 #define getNodeFromIndex( i ) (*(Alarm.get_nth_node(i)))
 #define FULLY_KNOWN "KNOWN"
+#define OUTPUT_FILE "solved_alarm.bif"
+
+#define BUFFER_SECONDS 120 //time to calculate & write CPT at the end
+#define TOTAL_TIME 600
+
+#define DELTA_CHANGE 0.01
+
+#define IS_DEBUG_MODE true
 
 // format checker just assumes you have Alarm.bif and Solved_Alarm.bif (your file) in current directory
 using namespace std;
@@ -1008,46 +1016,9 @@ void read_data() {
 	cout << "Data filled with data size - " << data.size() << endl;
 }
 
-//returns the number of patient records where given properties have given values
-/*float countRecords(vector<string> properties, vector<string> values) {
- float x = 0;
- vector<int> propertyIndices;
-
- for_each( properties.begin(), properties.end(), [&](string s) {
- propertyIndices.push_back( Alarm.get_index( s ) );
- });
-
- //    count here for each patient
- for_each( data.begin(), data.end(), [&](patient p) {
- bool present = true;
- for( intIt iIt = propertyIndices.begin(); iIt != propertyIndices.end(); iIt++ ) {
- //            if the value of data present at this index is equal to the one given in the input
- if( p.data[*iIt] != values[iIt-propertyIndices.begin()] )
- present = false;
- }
- if( present )
- x+=p.weight;
- });
-
- //    laplace smoothing
- //    cout << "returning " << setprecision(5) << x+1 << endl;
- return x + 1;
- }*/
-
 float Graph_Node::retProbValue(vector<string> properties, vector<string> values) {
-	/*int impact = 1;
-	 int index = values.size()-1;
-	 int finalIndex = 0;
-	 for( stringIt sIt = mbProperties.end()-1; sIt != mbProperties.begin()-1; sIt--, index-- ) {
-	 Graph_NodeIt gIt = Alarm.search_node( *sIt );
-	 finalIndex += findIndexString( gIt->values, values[index] ) * impact;
-	 impact *= gIt->nvalues;
-	 }
-	 cin.ignore();
-	 return MCPT[ finalIndex ];*/
-
 	string key_includingMe = "", key_excludingMe = "";
-	int count_includingMe = 1, count_excludingMe = 1;
+	int count_includingMe = 1, count_excludingMe = this->nvalues;
 
 	for (unsigned int i = 0; i < properties.size(); i++) {
 		key_includingMe += properties[i] + "=" + values[i] + "|";
