@@ -17,9 +17,7 @@
 #define BUFFER_SECONDS 120 //time to calculate & write CPT at the end
 #define TOTAL_TIME 600
 
-#define DELTA_CHANGE 0.01
-
-#define IS_DEBUG_MODE true
+#define IS_DEBUG_MODE false
 
 // format checker just assumes you have Alarm.bif and Solved_Alarm.bif (your file) in current directory
 using namespace std;
@@ -31,7 +29,7 @@ unsigned int initialDataSize = 0;
 map<string, float> CPT_map;
 map<string, float> MCPT_map;
 
-void output();
+void write_output();
 
 typedef vector<float>::iterator floatIt;
 typedef vector<int>::iterator intIt;
@@ -943,7 +941,6 @@ void Graph_Node::display() {
 		cout << ") = " << setprecision(6) << CPT[CPTindex++] << "\n";
 	}
 
-
 	for (unsigned int i = 0; i < mPermutationResult.size(); i++) {
 		vector<int> v = mPermutationResult[i];
 		cout << "P(" << Node_Name << "=" << values[v[0]] << "|";
@@ -1066,7 +1063,6 @@ void read_data() {
 				p.uFieldName = getNodeFromIndex( i ).Node_Name;
 			}
 
-
 			Graph_NodeIt it = Alarm.get_nth_node(i);
 			string node_name = it->Node_Name;
 			p.data[node_name] = lin.substr(0, y);
@@ -1134,6 +1130,13 @@ int main(int argc, char** argv) {
 		//=================================================M-Step===============================
 		cout << "===============In M-step=============" << endl; //TODO: remove
 
+		time_t currTime;
+		time(&currTime);
+		double elapsedTime = difftime(currTime, startTime);
+		if (elapsedTime >= TOTAL_TIME - BUFFER_SECONDS) {
+			break;
+		}
+
 		set_MCPT_MAP();
 		cout << "-----Done with calculating the MCPT_MAP" << endl;//TODO: remove
 
@@ -1150,7 +1153,7 @@ int main(int argc, char** argv) {
 
 			//display_MCPT_MAP();//TODO: remove
 
-			output();
+			write_output();
 
 		}
 
@@ -1244,31 +1247,43 @@ int main(int argc, char** argv) {
 		}
 
 	}//End of While(true)
+
+	set_CPT_MAP();
+	cout << "-----Done with calculating the CPT_MAP" << endl;
+
+	for (Graph_NodeIt it = Alarm.Pres_Graph.begin(); it != Alarm.Pres_Graph.end(); it++, index++) {
+		it->findCPT();
+	}
+
+	write_output();
 }
 
-void output() {
-	cout << "// Bayesian Network in the Interchange Format\n";
-	cout << "// Produced by BayesianNetworks package in JavaBayes\n";
-	cout << "// Output created Sun Nov 02 17:58:15 GMT+00:00 1997\n";
-	cout << "// Bayesian network \n";
-	cout << "network \"Alarm\" { //37 variables and 37 probability distributions\n";
-	cout << "}\n";
+void write_output() {
+	ofstream outFile;
+	outFile.open(OUTPUT_FILE.c_str());
+
+	outFile << "// Bayesian Network in the Interchange Format\n";
+	outFile << "// Produced by BayesianNetworks package in JavaBayes\n";
+	outFile << "// Output created Sun Nov 02 17:58:15 GMT+00:00 1997\n";
+	outFile << "// Bayesian network \n";
+	outFile << "network \"Alarm\" { //37 variables and 37 probability distributions\n";
+	outFile << "}\n";
 
 	int index = 0;
 	for (Graph_NodeIt gIt = Alarm.Pres_Graph.begin(); gIt != Alarm.Pres_Graph.end(); gIt++, index++) {
 		string nodeName = (*gIt).Node_Name;
 		int nvalues = (*gIt).nvalues;
-		cout << "variable  " << nodeName << " { //" << nvalues << " values\n";
-		cout << "\ttype discrete[" << nvalues << "] {";
+		outFile << "variable  " << nodeName << " { //" << nvalues << " values\n";
+		outFile << "\ttype discrete[" << nvalues << "] {";
 
 		for (unsigned int i = 0; i < gIt->values.size(); i++) {
-			cout << "  " << gIt->values[i];
+			outFile << "  " << gIt->values[i];
 		}
 
-		cout << " };\n";
+		outFile << " };\n";
 
-		cout << "\tproperty \"position = (" << position[index][0] << ", " << position[index][1] << ")\" ;\n";
-		cout << "}\n";
+		outFile << "\tproperty \"position = (" << position[index][0] << ", " << position[index][1] << ")\" ;\n";
+		outFile << "}\n";
 	}
 
 	for (Graph_NodeIt gIt = Alarm.Pres_Graph.begin(); gIt != Alarm.Pres_Graph.end(); gIt++, index++) {
@@ -1276,14 +1291,16 @@ void output() {
 		vector<string> parents = (*gIt).Parents;
 		vector<float> CPT = (*gIt).CPT;
 
-		cout << "probability (  " << nodeName;
+		outFile << "probability (  " << nodeName;
 
 		for (unsigned int i = 0; i < parents.size(); i++) {
-			cout << "  " << parents[i];
+			outFile << "  " << parents[i];
 		}
-		cout << " ) { //" << 1 + parents.size() << " variable(s) and " << CPT.size() << " values\n";
-		cout << "\ttable ";
+		outFile << " ) { //" << 1 + parents.size() << " variable(s) and " << CPT.size() << " values\n";
+		outFile << "\ttable ";
 		printFloatVector(CPT);
-		cout << ";\n}\n";
+		outFile << ";\n}\n";
 	}
+
+	outFile.close();
 }
