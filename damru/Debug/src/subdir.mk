@@ -4,13 +4,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/startup_code.cpp 
+../src/medical_diagnosis.cpp 
 
 OBJS += \
-./src/startup_code.o 
+./src/medical_diagnosis.o 
 
 CPP_DEPS += \
-./src/startup_code.d 
+./src/medical_diagnosis.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

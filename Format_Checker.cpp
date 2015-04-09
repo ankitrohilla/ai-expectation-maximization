@@ -383,7 +383,7 @@ int main()
         for(int j=0;j<cpt1.size();j++)
             score+=fabs(cpt1[j]-cpt2[j]);
     }
-   cout <<"Score is "<<score;
+   cout <<"Score is "<<score <<endl;
 
 	//cout<<Alarm.netSize();
 	

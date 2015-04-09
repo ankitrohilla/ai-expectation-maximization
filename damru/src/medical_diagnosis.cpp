@@ -566,9 +566,9 @@ public:
 	}
 
 	void view() {
-		//        cout << "\nWeight is - " << setprecision(8) << weight;
-		//        cout << "\nMissing property is - " << uFieldName;
-		//        cout << "\nIts Value given is - " << data[uFieldIndex];
+		        cout << "\nWeight is - " << setprecision(8) << weight;
+		        cout << "\nMissing property is - " << uFieldName;
+		        cout << "\nIts Value given is - " << data[uFieldName] <<endl;
 	}
 
 };
@@ -631,7 +631,7 @@ void Graph_Node::findCPT() {
 
 		//the node has no parent...i.e. excluding_me is empty
 		if (currentIndices.size() == 1) {
-			probability = count_includingMe / data.size();
+			probability = count_includingMe / initialDataSize;
 			newCPT.push_back(probability);
 			continue;
 		}
@@ -701,6 +701,7 @@ void display_CPT_MAP() {
 }
 
 void display_MCPT_MAP() {
+	cout << "----------------Displaying MCPT_MAP------------" <<endl;
 	for (cptMapIt it = MCPT_map.begin(); it != MCPT_map.end(); ++it)
 		std::cout << it->first << " => " << it->second << '\n';
 }
@@ -1018,7 +1019,7 @@ void read_data() {
 
 float Graph_Node::retProbValue(vector<string> properties, vector<string> values) {
 	string key_includingMe = "", key_excludingMe = "";
-	int count_includingMe = 1, count_excludingMe = this->nvalues;
+	float count_includingMe = 1.0, count_excludingMe = this->nvalues;
 
 	for (unsigned int i = 0; i < properties.size(); i++) {
 		key_includingMe += properties[i] + "=" + values[i] + "|";
@@ -1039,12 +1040,20 @@ float Graph_Node::retProbValue(vector<string> properties, vector<string> values)
 		count_excludingMe += cMapIt_excludingMe->second;
 	}
 
+//	cout << "countInc"
+
 	return count_includingMe / count_excludingMe;
 }
 
 int main(int argc, char** argv) {
+	cout << "==========Started the Medical Diagnosis===========" <<endl;
 	if (argc != 3)
 		exit(1);
+
+
+	//getting the start time
+	time_t startTime;
+	time(&startTime);
 
 	networkFile = argv[1];
 	recordFile = argv[2];
@@ -1075,7 +1084,10 @@ int main(int argc, char** argv) {
 	while (true) {
 
 		//=================================================M-Step===============================
+		cout  << "===============In M-step=============" <<endl; //TODO: remove
+
 		set_MCPT_MAP();
+		cout << "-----Done with calculating the MCPT_MAP" <<endl;
 		set_CPT_MAP();
 
 		//display_CPT_MAP();
@@ -1084,11 +1096,11 @@ int main(int argc, char** argv) {
 			it->findCPT();
 		}
 
+		display_MCPT_MAP();
+
 		output();
-		cin.ignore();
 
-		//display_MCPT_MAP();
-
+		cout  << "====================Going out of M-step==============" <<endl; //TODO: remove
 
 		//=================================================E-Step===============================
 
