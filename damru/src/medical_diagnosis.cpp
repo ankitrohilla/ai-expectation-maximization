@@ -251,152 +251,173 @@ string CPT_Keys[][2][12] = {
 
 };
 
-string mCPT_Keys[][12] = { { "\"Hypovolemia\"", "\"StrokeVolume\"", "\"LVEDVolume\"", "\"LVFailure\"", "EOF" },
+string
+		mCPT_Keys[][2][12] =
+				{
 
-{ "\"StrokeVolume\"", "\"LVFailure\"", "\"Hypovolemia\"", "\"CO\"", "\"HR\"", "EOF" },
+				{ { "EOF" }, { "\"Hypovolemia\"", "\"StrokeVolume\"", "\"LVEDVolume\"", "\"LVFailure\"", "EOF" } },
 
-{ "\"LVFailure\"", "\"StrokeVolume\"", "\"LVEDVolume\"", "\"History\"", "\"Hypovolemia\"", "EOF" },
+				{ { "EOF" }, { "\"StrokeVolume\"", "\"LVFailure\"", "\"Hypovolemia\"", "\"CO\"", "\"HR\"", "EOF" } },
 
-{ "\"LVEDVolume\"", "\"Hypovolemia\"", "\"LVFailure\"", "\"PCWP\"", "\"CVP\"", "EOF" },
+				{ { "EOF" }, { "\"LVFailure\"", "\"StrokeVolume\"", "\"LVEDVolume\"", "\"History\"", "\"Hypovolemia\"", "EOF" } },
 
-{ "\"PCWP\"", "\"LVEDVolume\"", "EOF" },
+				{ { "EOF" }, { "\"LVEDVolume\"", "\"Hypovolemia\"", "\"LVFailure\"", "\"PCWP\"", "\"CVP\"", "EOF" } },
 
-{ "\"CVP\"", "\"LVEDVolume\"", "EOF" },
+				{ { "EOF" }, { "\"PCWP\"", "\"LVEDVolume\"", "EOF" } },
 
-{ "\"History\"", "\"LVFailure\"", "EOF" },
+				{ { "EOF" }, { "\"CVP\"", "\"LVEDVolume\"", "EOF" } },
 
-{ "\"MinVolSet\"", "\"VentMach\"", "EOF" },
+				{ { "EOF" }, { "\"History\"", "\"LVFailure\"", "EOF" } },
 
-{ "\"VentMach\"", "\"MinVolSet\"", "\"VentTube\"", "\"Disconnect\"", "EOF" },
+				{ { "EOF" }, { "\"MinVolSet\"", "\"VentMach\"", "EOF" } },
 
-{ "\"Disconnect\"", "\"VentTube\"", "\"VentMach\"", "EOF" },
+				{ { "EOF" }, { "\"VentMach\"", "\"MinVolSet\"", "\"VentTube\"", "\"Disconnect\"", "EOF" } },
 
-{ "\"VentTube\"", "\"VentMach\"", "\"Disconnect\"", "\"Press\"", "\"VentLung\"", "\"KinkedTube\"", "\"Intubation\"", "EOF" },
+				{ { "EOF" }, { "\"Disconnect\"", "\"VentTube\"", "\"VentMach\"", "EOF" } },
 
-{ "\"KinkedTube\"", "\"Press\"", "\"VentLung\"", "\"Intubation\"", "\"VentTube\"", "EOF" },
+				{ { "EOF" }, { "\"VentTube\"", "\"VentMach\"", "\"Disconnect\"", "\"Press\"", "\"VentLung\"", "\"KinkedTube\"", "\"Intubation\"",
+						"EOF" } },
 
-{ "\"Press\"", "\"KinkedTube\"", "\"Intubation\"", "\"VentTube\"", "EOF" },
+				{ { "EOF" }, { "\"KinkedTube\"", "\"Press\"", "\"VentLung\"", "\"Intubation\"", "\"VentTube\"", "EOF" } },
 
-{ "\"ErrLowOutput\"", "\"HRBP\"", "\"HR\"", "EOF" },
+				{ { "EOF" }, { "\"Press\"", "\"KinkedTube\"", "\"Intubation\"", "\"VentTube\"", "EOF" } },
 
-{ "\"HRBP\"", "\"ErrLowOutput\"", "\"HR\"", "EOF" },
+				{ { "EOF" }, { "\"ErrLowOutput\"", "\"HRBP\"", "\"HR\"", "EOF" } },
 
-{ "\"ErrCauter\"", "\"HREKG\"", "\"HRSat\"", "\"HR\"", "EOF" },
+				{ { "EOF" }, { "\"HRBP\"", "\"ErrLowOutput\"", "\"HR\"", "EOF" } },
 
-{ "\"HREKG\"", "\"HR\"", "\"ErrCauter\"", "EOF" },
+				{ { "EOF" }, { "\"ErrCauter\"", "\"HREKG\"", "\"HRSat\"", "\"HR\"", "EOF" } },
 
-{ "\"HRSat\"", "\"HR\"", "\"ErrCauter\"", "EOF" },
+				{ { "EOF" }, { "\"HREKG\"", "\"HR\"", "\"ErrCauter\"", "EOF" } },
 
-{ "\"BP\"", "\"CO\"", "\"TPR\"", "EOF" },
+				{ { "EOF" }, { "\"HRSat\"", "\"HR\"", "\"ErrCauter\"", "EOF" } },
 
-{ "\"CO\"", "\"HR\"", "\"StrokeVolume\"", "\"BP\"", "\"TPR\"", "EOF" },
+				{ { "EOF" }, { "\"BP\"", "\"CO\"", "\"TPR\"", "EOF" } },
 
-{ "\"HR\"", "\"Catechol\"", "\"HRBP\"", "\"HREKG\"", "\"HRSat\"", "\"CO\"", "\"ErrLowOutput\"", "\"ErrCauter\"", "\"StrokeVolume\"", "EOF" },
+				{ { "EOF" }, { "\"CO\"", "\"HR\"", "\"StrokeVolume\"", "\"BP\"", "\"TPR\"", "EOF" } },
 
-{ "\"TPR\"", "\"Anaphylaxis\"", "\"BP\"", "\"Catechol\"", "\"CO\"", "\"InsuffAnesth\"", "\"SaO2\"", "\"ArtCO2\"", "EOF" },
+				{ { "EOF" }, { "\"HR\"", "\"Catechol\"", "\"HRBP\"", "\"HREKG\"", "\"HRSat\"", "\"CO\"", "\"ErrLowOutput\"", "\"ErrCauter\"",
+						"\"StrokeVolume\"", "EOF" } },
 
-{ "\"Anaphylaxis\"", "\"TPR\"", "EOF" },
+				{ { "EOF" },
+						{ "\"TPR\"", "\"Anaphylaxis\"", "\"BP\"", "\"Catechol\"", "\"CO\"", "\"InsuffAnesth\"", "\"SaO2\"", "\"ArtCO2\"", "EOF" } },
 
-{ "\"InsuffAnesth\"", "\"Catechol\"", "\"SaO2\"", "\"TPR\"", "\"ArtCO2\"", "EOF" },
+				{ { "EOF" }, { "\"Anaphylaxis\"", "\"TPR\"", "EOF" } },
 
-{ "\"PAP\"", "\"PulmEmbolus\"", "EOF" },
+				{ { "EOF" }, { "\"InsuffAnesth\"", "\"Catechol\"", "\"SaO2\"", "\"TPR\"", "\"ArtCO2\"", "EOF" } },
 
-{ "\"PulmEmbolus\"", "\"PAP\"", "\"Shunt\"", "\"Intubation\"", "EOF" },
+				{ { "EOF" }, { "\"PAP\"", "\"PulmEmbolus\"", "EOF" } },
 
-{ "\"FiO2\"", "\"PVSat\"", "\"VentAlv\"", "EOF" },
+				{ { "EOF" }, { "\"PulmEmbolus\"", "\"PAP\"", "\"Shunt\"", "\"Intubation\"", "EOF" } },
 
-{ "\"Catechol\"", "\"InsuffAnesth\"", "\"SaO2\"", "\"TPR\"", "\"ArtCO2\"", "\"HR\"", "EOF" },
+				{ { "EOF" }, { "\"FiO2\"", "\"PVSat\"", "\"VentAlv\"", "EOF" } },
 
-{ "\"SaO2\"", "\"Shunt\"", "\"PVSat\"", "\"Catechol\"", "\"InsuffAnesth\"", "\"TPR\"", "\"ArtCO2\"", "EOF" },
+				{ { "EOF" }, { "\"Catechol\"", "\"InsuffAnesth\"", "\"SaO2\"", "\"TPR\"", "\"ArtCO2\"", "\"HR\"", "EOF" } },
 
-{ "\"Shunt\"", "\"PulmEmbolus\"", "\"Intubation\"", "\"SaO2\"", "\"PVSat\"", "EOF" },
+				{ { "EOF" }, { "\"SaO2\"", "\"Shunt\"", "\"PVSat\"", "\"Catechol\"", "\"InsuffAnesth\"", "\"TPR\"", "\"ArtCO2\"", "EOF" } },
 
-{ "\"PVSat\"", "\"VentAlv\"", "\"FiO2\"", "\"SaO2\"", "\"Shunt\"", "EOF" },
+				{ { "EOF" }, { "\"Shunt\"", "\"PulmEmbolus\"", "\"Intubation\"", "\"SaO2\"", "\"PVSat\"", "EOF" } },
 
-{ "\"MinVol\"", "\"VentLung\"", "\"Intubation\"", "EOF" },
+				{ { "EOF" }, { "\"PVSat\"", "\"VentAlv\"", "\"FiO2\"", "\"SaO2\"", "\"Shunt\"", "EOF" } },
 
-{ "\"ExpCO2\"", "\"ArtCO2\"", "\"VentLung\"", "EOF" },
+				{ { "EOF" }, { "\"MinVol\"", "\"VentLung\"", "\"Intubation\"", "EOF" } },
 
-{ "\"ArtCO2\"", "\"VentAlv\"", "\"Catechol\"", "\"ExpCO2\"", "\"InsuffAnesth\"", "\"SaO2\"", "\"TPR\"", "\"VentLung\"", "EOF" },
+				{ { "EOF" }, { "\"ExpCO2\"", "\"ArtCO2\"", "\"VentLung\"", "EOF" } },
 
-{ "\"VentAlv\"", "\"Intubation\"", "\"VentLung\"", "\"PVSat\"", "\"ArtCO2\"", "\"FiO2\"", "EOF" },
+				{ { "EOF" }, { "\"ArtCO2\"", "\"VentAlv\"", "\"Catechol\"", "\"ExpCO2\"", "\"InsuffAnesth\"", "\"SaO2\"", "\"TPR\"", "\"VentLung\"",
+						"EOF" } },
 
-{ "\"VentLung\"", "\"KinkedTube\"", "\"VentTube\"", "\"Intubation\"", "\"MinVol\"", "\"ExpCO2\"", "\"VentAlv\"", "\"ArtCO2\"", "EOF" },
+				{ { "EOF" }, { "\"VentAlv\"", "\"Intubation\"", "\"VentLung\"", "\"PVSat\"", "\"ArtCO2\"", "\"FiO2\"", "EOF" } },
 
-		{ "\"Intubation\"", "\"Press\"", "\"Shunt\"", "\"MinVol\"", "\"VentAlv\"", "\"VentLung\"", "\"KinkedTube\"", "\"VentTube\"",
-				"\"PulmEmbolus\"", "EOF" },
+				{ { "EOF" }, { "\"VentLung\"", "\"KinkedTube\"", "\"VentTube\"", "\"Intubation\"", "\"MinVol\"", "\"ExpCO2\"", "\"VentAlv\"",
+						"\"ArtCO2\"", "EOF" } },
 
-		{ "\"StrokeVolume\"", "\"LVEDVolume\"", "\"LVFailure\"", "EOF" },
+				{ { "EOF" }, { "\"Intubation\"", "\"Press\"", "\"Shunt\"", "\"MinVol\"", "\"VentAlv\"", "\"VentLung\"", "\"KinkedTube\"",
+						"\"VentTube\"", "\"PulmEmbolus\"", "EOF" } },
 
-		{ "\"LVFailure\"", "\"Hypovolemia\"", "\"CO\"", "\"HR\"", "EOF" },
+				//below ones are denominator of above
 
-		{ "\"StrokeVolume\"", "\"LVEDVolume\"", "\"History\"", "\"Hypovolemia\"", "EOF" },
+						{ { "\"Hypovolemia\"" }, { "\"StrokeVolume\"", "\"LVEDVolume\"", "\"LVFailure\"", "EOF" } },
 
-		{ "\"Hypovolemia\"", "\"LVFailure\"", "\"PCWP\"", "\"CVP\"", "EOF" },
+						{ { "\"StrokeVolume\"" }, { "\"LVFailure\"", "\"Hypovolemia\"", "\"CO\"", "\"HR\"", "EOF" } },
 
-		{ "\"LVEDVolume\"", "EOF" },
+						{ { "\"LVFailure\"" }, { "\"StrokeVolume\"", "\"LVEDVolume\"", "\"History\"", "\"Hypovolemia\"", "EOF" } },
 
-		{ "\"LVFailure\"", "EOF" },
+						{ { "\"LVEDVolume\"" }, { "\"Hypovolemia\"", "\"LVFailure\"", "\"PCWP\"", "\"CVP\"", "EOF" } },
 
-		{ "\"VentMach\"", "EOF" },
+						{ { "\"PCWP\"" }, { "\"LVEDVolume\"", "EOF" } },
 
-		{ "\"MinVolSet\"", "\"VentTube\"", "\"Disconnect\"", "EOF" },
+						{ { "\"CVP\"" }, { "\"LVEDVolume\"", "EOF" } },
 
-		{ "\"VentTube\"", "\"VentMach\"", "EOF" },
+						{ { "\"History\"" }, { "\"LVFailure\"", "EOF" } },
 
-		{ "\"VentMach\"", "\"Disconnect\"", "\"Press\"", "\"VentLung\"", "\"KinkedTube\"", "\"Intubation\"", "EOF" },
+						{ { "\"MinVolSet\"" }, { "\"VentMach\"", "EOF" } },
 
-		{ "\"Press\"", "\"VentLung\"", "\"Intubation\"", "\"VentTube\"", "EOF" },
+						{ { "\"VentMach\"" }, { "\"MinVolSet\"", "\"VentTube\"", "\"Disconnect\"", "EOF" } },
 
-		{ "\"KinkedTube\"", "\"Intubation\"", "\"VentTube\"", "EOF" },
+						{ { "\"Disconnect\"" }, { "\"VentTube\"", "\"VentMach\"", "EOF" } },
 
-		{ "\"HRBP\"", "\"HR\"", "EOF" },
+						{ { "\"VentTube\"" }, { "\"VentMach\"", "\"Disconnect\"", "\"Press\"", "\"VentLung\"", "\"KinkedTube\"", "\"Intubation\"",
+								"EOF" } },
 
-		{ "\"ErrLowOutput\"", "\"HR\"", "EOF" },
+						{ { "\"KinkedTube\"" }, { "\"Press\"", "\"VentLung\"", "\"Intubation\"", "\"VentTube\"", "EOF" } },
 
-		{ "\"HREKG\"", "\"HRSat\"", "\"HR\"", "EOF" },
+						{ { "\"Press\"" }, { "\"KinkedTube\"", "\"Intubation\"", "\"VentTube\"", "EOF" } },
 
-		{ "\"HR\"", "\"ErrCauter\"", "EOF" },
+						{ { "\"ErrLowOutput\"" }, { "\"HRBP\"", "\"HR\"", "EOF" } },
 
-		{ "\"CO\"", "\"TPR\"", "EOF" },
+						{ { "\"HRBP\"" }, { "\"ErrLowOutput\"", "\"HR\"", "EOF" } },
 
-		{ "\"HR\"", "\"StrokeVolume\"", "\"BP\"", "\"TPR\"", "EOF" },
+						{ { "\"ErrCauter\"" }, { "\"HREKG\"", "\"HRSat\"", "\"HR\"", "EOF" } },
 
-		{ "\"Catechol\"", "\"HRBP\"", "\"HREKG\"", "\"HRSat\"", "\"CO\"", "\"ErrLowOutput\"", "\"ErrCauter\"", "\"StrokeVolume\"", "EOF" },
+						{ { "\"HREKG\"" }, { "\"HR\"", "\"ErrCauter\"", "EOF" } },
 
-		{ "\"Anaphylaxis\"", "\"BP\"", "\"Catechol\"", "\"CO\"", "\"InsuffAnesth\"", "\"SaO2\"", "\"ArtCO2\"", "EOF" },
+						{ { "\"HRSat\"" }, { "\"HR\"", "\"ErrCauter\"", "EOF" } },
 
-		{ "\"TPR\"", "EOF" },
+						{ { "\"BP\"" }, { "\"CO\"", "\"TPR\"", "EOF" } },
 
-		{ "\"Catechol\"", "\"SaO2\"", "\"TPR\"", "\"ArtCO2\"", "EOF" },
+						{ { "\"CO\"", }, { "\"HR\"", "\"StrokeVolume\"", "\"BP\"", "\"TPR\"", "EOF" } },
 
-		{ "\"PulmEmbolus\"", "EOF" },
+						{ { "\"HR\"" }, { "\"Catechol\"", "\"HRBP\"", "\"HREKG\"", "\"HRSat\"", "\"CO\"", "\"ErrLowOutput\"", "\"ErrCauter\"",
+								"\"StrokeVolume\"", "EOF" } },
 
-		{ "\"PAP\"", "\"Shunt\"", "\"Intubation\"", "EOF" },
+						{ { "\"TPR\"" },
+								{ "\"Anaphylaxis\"", "\"BP\"", "\"Catechol\"", "\"CO\"", "\"InsuffAnesth\"", "\"SaO2\"", "\"ArtCO2\"", "EOF" } },
 
-		{ "\"PVSat\"", "\"VentAlv\"", "EOF" },
+						{ { "\"Anaphylaxis\"" }, { "\"TPR\"", "EOF" } },
 
-		{ "\"InsuffAnesth\"", "\"SaO2\"", "\"TPR\"", "\"ArtCO2\"", "\"HR\"", "EOF" },
+						{ { "\"InsuffAnesth\"" }, { "\"Catechol\"", "\"SaO2\"", "\"TPR\"", "\"ArtCO2\"", "EOF" } },
 
-		{ "\"Shunt\"", "\"PVSat\"", "\"Catechol\"", "\"InsuffAnesth\"", "\"TPR\"", "\"ArtCO2\"", "EOF" },
+						{ { "\"PAP\"" }, { "\"PulmEmbolus\"", "EOF" } },
 
-		{ "\"PulmEmbolus\"", "\"Intubation\"", "\"SaO2\"", "\"PVSat\"", "EOF" },
+						{ { "\"PulmEmbolus\"" }, { "\"PAP\"", "\"Shunt\"", "\"Intubation\"", "EOF" } },
 
-		{ "\"VentAlv\"", "\"FiO2\"", "\"SaO2\"", "\"Shunt\"", "EOF" },
+						{ { "\"FiO2\"" }, { "\"PVSat\"", "\"VentAlv\"", "EOF" } },
 
-		{ "\"VentLung\"", "\"Intubation\"", "EOF" },
+						{ { "\"Catechol\"" }, { "\"InsuffAnesth\"", "\"SaO2\"", "\"TPR\"", "\"ArtCO2\"", "\"HR\"", "EOF" } },
 
-		{ "\"ArtCO2\"", "\"VentLung\"", "EOF" },
+						{ { "\"SaO2\"" }, { "\"Shunt\"", "\"PVSat\"", "\"Catechol\"", "\"InsuffAnesth\"", "\"TPR\"", "\"ArtCO2\"", "EOF" } },
 
-		{ "\"VentAlv\"", "\"Catechol\"", "\"ExpCO2\"", "\"InsuffAnesth\"", "\"SaO2\"", "\"TPR\"", "\"VentLung\"", "EOF" },
+						{ { "\"Shunt\"" }, { "\"PulmEmbolus\"", "\"Intubation\"", "\"SaO2\"", "\"PVSat\"", "EOF" } },
 
-		{ "\"Intubation\"", "\"VentLung\"", "\"PVSat\"", "\"ArtCO2\"", "\"FiO2\"", "EOF" },
+						{ { "\"PVSat\"" }, { "\"VentAlv\"", "\"FiO2\"", "\"SaO2\"", "\"Shunt\"", "EOF" } },
 
-		{ "\"KinkedTube\"", "\"VentTube\"", "\"Intubation\"", "\"MinVol\"", "\"ExpCO2\"", "\"VentAlv\"", "\"ArtCO2\"", "EOF" },
+						{ { "\"MinVol\"" }, { "\"VentLung\"", "\"Intubation\"", "EOF" } },
 
-		{ "\"Press\"", "\"Shunt\"", "\"MinVol\"", "\"VentAlv\"", "\"VentLung\"", "\"KinkedTube\"", "\"VentTube\"", "\"PulmEmbolus\"", "EOF" }
+						{ { "\"ExpCO2\"" }, { "\"ArtCO2\"", "\"VentLung\"", "EOF" } },
 
-};
+						{ { "\"ArtCO2\"" }, { "\"VentAlv\"", "\"Catechol\"", "\"ExpCO2\"", "\"InsuffAnesth\"", "\"SaO2\"", "\"TPR\"", "\"VentLung\"",
+								"EOF" } },
+
+						{ { "\"VentAlv\"" }, { "\"Intubation\"", "\"VentLung\"", "\"PVSat\"", "\"ArtCO2\"", "\"FiO2\"", "EOF" } },
+
+						{ { "\"VentLung\"" }, { "\"KinkedTube\"", "\"VentTube\"", "\"Intubation\"", "\"MinVol\"", "\"ExpCO2\"", "\"VentAlv\"",
+								"\"ArtCO2\"", "EOF" } },
+
+						{ { "\"Intubation\"" }, { "\"Press\"", "\"Shunt\"", "\"MinVol\"", "\"VentAlv\"", "\"VentLung\"", "\"KinkedTube\"",
+								"\"VentTube\"", "\"PulmEmbolus\"", "EOF" } },
+
+				};
 
 // our graph consists of a list of nodes where each node is represented as follows:
 class Graph_Node {
@@ -696,42 +717,88 @@ void set_MCPT_MAP() {
 		string key_MCPT_map = "";
 
 		for (int j = 0; j < 74; j++) {
+
 			key_MCPT_map = "";
-			for (int k = 0; k < 12; k++) {
 
-				string curr_prop = mCPT_Keys[j][k];
+			if (mCPT_Keys[j][0][0].compare("EOF") == 0) { //i.e. this is the case for including_me key
 
-				if (curr_prop.compare("EOF") == 0) {
-					break;
+				for (int k = 0; k < 12; k++) {
+
+					string curr_prop = mCPT_Keys[j][1][k];
+
+					if (curr_prop.compare("EOF") == 0) {
+						break;
+					}
+
+					map<string, string> dataMap = data[i].data;
+
+					string curr_prop_value = dataMap.find(curr_prop)->second;
+
+					key_MCPT_map += curr_prop + "=" + curr_prop_value + "|";
+
+				}//End of all properties for a row in MMCPT_keys
+
+				cptMapIt cMapIt = MCPT_map.find(key_MCPT_map);
+
+				if (cMapIt != MCPT_map.end()) {
+					//value existing in the map
+					//cout << "existing value: "; //TODO : cout
+					//cout << key_MCPT_map << " : " << (cMapIt->second + data[i].weight) <<endl; //TODO : cout
+					MCPT_map[key_MCPT_map] = cMapIt->second + data[i].weight;
+
+				} else {
+					//value is not yet present in the map
+					//cout << "not existing: "; //TODO : cout
+					//cout << key_MCPT_map << " : " << (data[i].weight) <<endl; //TODO : cout
+					MCPT_map[key_MCPT_map] = data[i].weight;
 				}
 
-				map<string, string> dataMap = data[i].data;
-
-				string curr_prop_value = dataMap.find(curr_prop)->second;
-
-				key_MCPT_map += curr_prop + "=" + curr_prop_value + "|";
-
-			}//End of all properties for a row in MCPT_keys
-
-			cptMapIt cMapIt = MCPT_map.find(key_MCPT_map);
-
-			if (cMapIt != MCPT_map.end()) {
-				//value existing in the map
-				//cout << "existing value: "; //TODO : cout
-				//cout << key_MCPT_map << " : " << (cMapIt->second
-				//+ data[i].weight) << endl; //TODO : cout
-				MCPT_map[key_MCPT_map] = cMapIt->second + data[i].weight;
-
-			} else {
-				//value is not yet present in the map
-				//cout << "not existing: "; //TODO : cout
-				//cout << key_MCPT_map << " : " << (data[i].weight) << endl; //TODO : cout
-				MCPT_map[key_MCPT_map] = data[i].weight;
 			}
 
-		}//End of row in MCPT_keys
+			else {//case for excluding_me keys
+				map<string, string> dataMap = data[i].data;
 
-	}//End of data[i]
+				string headProperty = mCPT_Keys[j][0][0];
+
+				if (dataMap.find(headProperty)->second.compare("\"?\"") == 0) {
+					continue;
+				}
+
+				key_MCPT_map += headProperty + "!=" + "?" + "|";
+
+				for (int k = 0; k < 12; k++) {
+					string curr_prop = mCPT_Keys[j][1][k];
+
+					if (curr_prop.compare("EOF") == 0) {
+						break;
+					}
+
+					string curr_prop_value = dataMap.find(curr_prop)->second;
+
+					key_MCPT_map += curr_prop + "=" + curr_prop_value + "|";
+
+				}//End of all properties for a row in MMCPT_keys
+
+				cptMapIt cMapIt = MCPT_map.find(key_MCPT_map);
+
+				if (cMapIt != MCPT_map.end()) {
+					//value existing in the map
+					//cout << "existing value: "; //TODO : cout
+					//cout << key_MCPT_map << " : " << (cMapIt->second + data[i].weight) <<endl; //TODO : cout
+					MCPT_map[key_MCPT_map] = cMapIt->second + data[i].weight;
+
+				} else {
+					//value is not yet present in the map
+					//cout << "not existing: "; //TODO : cout
+					//cout << key_MCPT_map << " : " << (data[i].weight) <<endl; //TODO : cout
+					MCPT_map[key_MCPT_map] = data[i].weight;
+				}
+
+			}
+
+		}
+
+	}
 }
 
 void display_CPT_MAP() {
@@ -832,9 +899,9 @@ void set_CPT_MAP() {
 
 		}
 
-	}//End of row in CPT_keys
+	}
 
-}//End of data[i]
+}
 
 void Graph_Node::myInitialization() {
 
@@ -1105,15 +1172,13 @@ void read_data() {
 }
 
 float Graph_Node::retProbValue(vector<string> properties, vector<string> values) {
-	string key_includingMe = "", key_excludingMe = "";
 	float count_includingMe = 1.0, count_excludingMe = this->nvalues;
 
-	for (unsigned int i = 0; i < properties.size(); i++) {
+	string key_includingMe = properties[0] + "=" + values[0] + "|";
+	string key_excludingMe = properties[0] + "!=" + "?" + "|";
+
+	for (unsigned int i = 1; i < properties.size(); i++) {
 		key_includingMe += properties[i] + "=" + values[i] + "|";
-
-		if (i == 0)
-			continue;
-
 		key_excludingMe += properties[i] + "=" + values[i] + "|";
 	}
 
