@@ -94,11 +94,11 @@ class Graph_Node{
 public:
 
     string Node_Name;  // Variable name
-	vector<int> Children; // Children of a particular node - these are index of nodes in graph.
-	vector<string> Parents; // Parents of a particular node- note these are names of parents
-	int nvalues;  // Number of categories a variable represented by this node can take
-	vector<string> values; // Categories of possible values
-	vector<float> CPT; // conditional probability table as a 1-d array . Look for BIF format to understand its meaning
+    vector<int> Children; // Children of a particular node - these are index of nodes in graph.
+    vector<string> Parents; // Parents of a particular node- note these are names of parents
+    int nvalues;  // Number of categories a variable represented by this node can take
+    vector<string> values; // Categories of possible values
+    vector<float> CPT; // conditional probability table as a 1-d array . Look for BIF format to understand its meaning
     vector<vector<int>> permutationResult;
     vector<int> maxIndices;
 
@@ -106,41 +106,41 @@ public:
     vector<int> mbPropertyIndices;
     vector<string> mbValues;
 
-	// Constructor- a node is initialised with its name and its categories
+    // Constructor- a node is initialised with its name and its categories
     Graph_Node(string name,int n,vector<string> vals)
-	{
-		Node_Name=name;
-		nvalues=n;
+    {
+        Node_Name=name;
+        nvalues=n;
         values=vals;
-	}
-	string get_name()
-	{
-		return Node_Name;
-	}
-	vector<int> get_children()
-	{
-		return Children;
-	}
-	vector<string> get_Parents()
-	{
-		return Parents;
-	}
-	vector<float> get_CPT()
-	{
-		return CPT;
-	}
-	int get_nvalues()
-	{
-		return nvalues;
-	}
-	vector<string> get_values()
-	{
-		return values;
-	}
-	void set_CPT(vector<float> new_CPT)
-	{
-		CPT.clear();
-		CPT=new_CPT;
+    }
+    string get_name()
+    {
+        return Node_Name;
+    }
+    vector<int> get_children()
+    {
+        return Children;
+    }
+    vector<string> get_Parents()
+    {
+        return Parents;
+    }
+    vector<float> get_CPT()
+    {
+        return CPT;
+    }
+    int get_nvalues()
+    {
+        return nvalues;
+    }
+    vector<string> get_values()
+    {
+        return values;
+    }
+    void set_CPT(vector<float> new_CPT)
+    {
+        CPT.clear();
+        CPT=new_CPT;
     }
 
     void set_Parents(vector<string> Parent_Nodes)
@@ -224,17 +224,17 @@ public:
 
     list <Graph_Node> Pres_Graph;
 
-	int addNode(Graph_Node node)
-	{
-		Pres_Graph.push_back(node);
-		return 0;
-	}
-    
-    
-	int netSize()
-	{
-		return Pres_Graph.size();
-	}
+    int addNode(Graph_Node node)
+    {
+        Pres_Graph.push_back(node);
+        return 0;
+    }
+
+
+    int netSize()
+    {
+        return Pres_Graph.size();
+    }
     // get the index of node with a given name
     int get_index(string val_name)
     {
@@ -259,7 +259,7 @@ public:
                 return listIt;
             count++;
         }
-        return listIt; 
+        return listIt;
     }
     //get the iterator of a node with a given name
     list<Graph_Node>::iterator search_node(string val_name)
@@ -270,11 +270,11 @@ public:
             if(listIt->get_name().compare(val_name)==0)
                 return listIt;
         }
-    
+
             cout<<"node not found\n";
         return listIt;
     }
-	
+
 
 }Alarm;
 
@@ -390,108 +390,108 @@ void Graph_Node::display()
 
 network read_network()
 {
-	network Alarm;
-	string line;
-	int find=0;
+    network Alarm;
+    string line;
+    int find=0;
     ifstream myfile(networkFile);
-  	string temp;
-  	string name;
-  	vector<string> values;
-  	
+    string temp;
+    string name;
+    vector<string> values;
+
     if (myfile.is_open())
     {
-    	while (! myfile.eof() )
-    	{
-    		stringstream ss;
-      		getline (myfile,line);
-      		
-      		
-      		ss.str(line);
-     		ss>>temp;
-     		
-     		
-     		if(temp.compare("variable")==0)
-     		{
-                    
-     				ss>>name;
-     				getline (myfile,line);
-                   
-     				stringstream ss2;
-     				ss2.str(line);
-     				for(int i=0;i<4;i++)
-     				{
-     					
-     					ss2>>temp;
-     					
-     					
-     				}
-     				values.clear();
-     				while(temp.compare("};")!=0)
-     				{
-     					values.push_back(temp);
-     					
-     					ss2>>temp;
-    				}
-     				Graph_Node new_node(name,values.size(),values);
-     				int pos=Alarm.addNode(new_node);
+        while (! myfile.eof() )
+        {
+            stringstream ss;
+            getline (myfile,line);
 
-     				
-     		}
-     		else if(temp.compare("probability")==0)
-     		{
-                    
-     				ss>>temp;
-     				ss>>temp;
-     				
+
+            ss.str(line);
+            ss>>temp;
+
+
+            if(temp.compare("variable")==0)
+            {
+
+                    ss>>name;
+                    getline (myfile,line);
+
+                    stringstream ss2;
+                    ss2.str(line);
+                    for(int i=0;i<4;i++)
+                    {
+
+                        ss2>>temp;
+
+
+                    }
+                    values.clear();
+                    while(temp.compare("};")!=0)
+                    {
+                        values.push_back(temp);
+
+                        ss2>>temp;
+                    }
+                    Graph_Node new_node(name,values.size(),values);
+                    int pos=Alarm.addNode(new_node);
+
+
+            }
+            else if(temp.compare("probability")==0)
+            {
+
+                    ss>>temp;
+                    ss>>temp;
+
                     list<Graph_Node>::iterator listIt;
                     list<Graph_Node>::iterator listIt1;
-     				listIt=Alarm.search_node(temp);
+                    listIt=Alarm.search_node(temp);
                     int index=Alarm.get_index(temp);
                     ss>>temp;
                     values.clear();
-     				while(temp.compare(")")!=0)
-     				{
+                    while(temp.compare(")")!=0)
+                    {
                         listIt1=Alarm.search_node(temp);
                         listIt1->add_child(index);
-     					values.push_back(temp);
-     					
-     					ss>>temp;
+                        values.push_back(temp);
 
-    				}
+                        ss>>temp;
+
+                    }
                     listIt->set_Parents(values);
-    				getline (myfile,line);
-     				stringstream ss2;
-                    
-     				ss2.str(line);
-     				ss2>> temp;
-                    
-     				ss2>> temp;
-                    
-     				vector<float> curr_CPT;
-                    string::size_type sz;
-     				while(temp.compare(";")!=0)
-     				{
-                        curr_CPT.push_back(atof(temp.c_str()));
-     					
-     					ss2>>temp;
+                    getline (myfile,line);
+                    stringstream ss2;
 
-    				}
-                    
+                    ss2.str(line);
+                    ss2>> temp;
+
+                    ss2>> temp;
+
+                    vector<float> curr_CPT;
+                    string::size_type sz;
+                    while(temp.compare(";")!=0)
+                    {
+                        curr_CPT.push_back(atof(temp.c_str()));
+
+                        ss2>>temp;
+
+                    }
+
                     listIt->set_CPT(curr_CPT);
 
 
-     		}
+            }
             else
             {
-                
+
             }
         }
-    	
-    	if(find==1)
-    	myfile.close();
-  	}
-  	
-  	return Alarm;
+
+        if(find==1)
+        myfile.close();
+    }
+
+    return Alarm;
 }
 
 // reads the input data file and fills up the list named data
@@ -519,6 +519,7 @@ void read_data() {
         data.push_back(p);
     }
     dataSize = data.size();
+    data.pop_back();
     cout << "Data filled with data size - " << data.size() << endl;
 }
 
@@ -544,7 +545,7 @@ float countRecords( vector<string> properties, vector<string> values ) {
 
 //    laplace smoothing
 //    cout << "returning " << setprecision(5) << x+1 << endl;
-    return x+1;
+    return x;
 }
 
 int main( int argc, char** argv )
@@ -555,7 +556,7 @@ int main( int argc, char** argv )
     networkFile = argv[1];
     recordFile = argv[2];
 
-	Alarm=read_network();
+    Alarm=read_network();
 
     read_data();
 
@@ -578,12 +579,8 @@ int main( int argc, char** argv )
 
 //    APPLY COUNTING AND IGNORE THE ? VALUES
 
-    int iterations = 0;
-
     startCounting:
 
-    iterations++;
-    
     vector<string> p,v;
 
     index = 0;
