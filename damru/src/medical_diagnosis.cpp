@@ -1192,7 +1192,7 @@ float Graph_Node::retProbValue(vector<string> properties, vector<string> values)
 		count_excludingMe += cMapIt_excludingMe->second;
 	}
 
-	cout << "countIncludingMe and countExcludingMe are " << setprecision(8) << count_includingMe << " " << count_excludingMe << endl;
+	//cout << "countIncludingMe and countExcludingMe are " << setprecision(8) << count_includingMe << " " << count_excludingMe << endl;//TODO:remove
 
 	return count_includingMe / count_excludingMe;
 }
@@ -1293,8 +1293,6 @@ int main(int argc, char** argv) {
 
 					float probability = unknownNode->retProbValue(vector_properties, vector_values);
 					Patient *newP = new Patient(patient, valueUnderConsideration, probability);
-					newP->view();//TODO
-					cin.ignore();//TODO
 					newData.push_back(*newP);
 					delete newP;
 				}
