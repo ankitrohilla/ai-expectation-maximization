@@ -18,7 +18,7 @@
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="run"/>
 <booleanAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN" value="true"/>
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN_SYMBOL" value="main"/>
-<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_ARGUMENTS" value="data/alarm.bif data/record1.dat"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_ARGUMENTS" value="data/alarm.bif data/recordss.dat"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Debug/damru"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="damru"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="cdt.managedbuild.config.gnu.exe.debug.720211130"/>
