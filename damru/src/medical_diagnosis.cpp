@@ -49,14 +49,12 @@ void printFloatVector(vector<float> v) {
 
 	//for_each( v.begin(), v.end(), [](float i) {
 	for (unsigned int i = 0; i < v.size(); i++) {
-		if (v[i] > 0.99)
-			cout << "0.99 ";
-		else if (v[i] > 0.1)
-			cout << setprecision(2) << v[i] << " ";
-		else if (v[i] > 0.01)
-			cout << setprecision(1) << v[i] << " ";
+		if (v[i] > 0.9999)
+			cout << "0.9999 ";
+		else if(v[i] < 0.0001)
+			cout << "0.0001 ";
 		else
-			cout << "0.01 ";
+			cout << fixed << setprecision(4) << v[i] << " ";
 	}
 
 }
