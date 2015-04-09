@@ -97,117 +97,157 @@ int position[37][2] = { 54, 35, 184, 113, 145, 36, 68, 114, 111, 177, 32, 179, 2
 void set_MCPT_MAP();
 void set_CPT_MAP();
 
-string CPT_Keys[][12] = { { "\"Hypovolemia\"", "EOF" },
+string CPT_Keys[][2][12] = {
 
-{ "\"StrokeVolume\"", "\"LVFailure\"", "\"Hypovolemia\"", "EOF" },
+{ { "EOF" }, { "\"Hypovolemia\"", "EOF" } },
 
-{ "\"LVFailure\"", "EOF" },
+{ { "EOF" }, { "\"StrokeVolume\"", "\"LVFailure\"", "\"Hypovolemia\"", "EOF" } },
 
-{ "\"LVEDVolume\"", "\"Hypovolemia\"", "\"LVFailure\"", "EOF" },
+{ { "EOF" }, { "\"LVFailure\"", "EOF" } },
 
-{ "\"PCWP\"", "\"LVEDVolume\"", "EOF" },
+{ { "EOF" }, { "\"LVEDVolume\"", "\"Hypovolemia\"", "\"LVFailure\"", "EOF" } },
 
-{ "\"CVP\"", "\"LVEDVolume\"", "EOF" },
+{ { "EOF" }, { "\"PCWP\"", "\"LVEDVolume\"", "EOF" } },
 
-{ "\"History\"", "\"LVFailure\"", "EOF" },
+{ { "EOF" }, { "\"CVP\"", "\"LVEDVolume\"", "EOF" } },
 
-{ "\"MinVolSet\"", "EOF" },
+{ { "EOF" }, { "\"History\"", "\"LVFailure\"", "EOF" } },
 
-{ "\"VentMach\"", "\"MinVolSet\"", "EOF" },
+{ { "EOF" }, { "\"MinVolSet\"", "EOF" } },
 
-{ "\"Disconnect\"", "EOF" },
+{ { "EOF" }, { "\"VentMach\"", "\"MinVolSet\"", "EOF" } },
 
-{ "\"VentTube\"", "\"VentMach\"", "\"Disconnect\"", "EOF" },
+{ { "EOF" }, { "\"Disconnect\"", "EOF" } },
 
-{ "\"KinkedTube\"", "EOF" },
+{ { "EOF" }, { "\"VentTube\"", "\"VentMach\"", "\"Disconnect\"", "EOF" } },
 
-{ "\"Press\"", "\"KinkedTube\"", "\"Intubation\"", "\"VentTube\"", "EOF" },
+{ { "EOF" }, { "\"KinkedTube\"", "EOF" } },
 
-{ "\"ErrLowOutput\"", "EOF" },
+{ { "EOF" }, { "\"Press\"", "\"KinkedTube\"", "\"Intubation\"", "\"VentTube\"", "EOF" } },
 
-{ "\"HRBP\"", "\"ErrLowOutput\"", "\"HR\"", "EOF" },
+{ { "EOF" }, { "\"ErrLowOutput\"", "EOF" } },
 
-{ "\"ErrCauter\"", "EOF" },
+{ { "EOF" }, { "\"HRBP\"", "\"ErrLowOutput\"", "\"HR\"", "EOF" } },
 
-{ "\"HREKG\"", "\"HR\"", "\"ErrCauter\"", "EOF" },
+{ { "EOF" }, { "\"ErrCauter\"", "EOF" } },
 
-{ "\"HRSat\"", "\"HR\"", "\"ErrCauter\"", "EOF" },
+{ { "EOF" }, { "\"HREKG\"", "\"HR\"", "\"ErrCauter\"", "EOF" } },
 
-{ "\"BP\"", "\"CO\"", "\"TPR\"", "EOF" },
+{ { "EOF" }, { "\"HRSat\"", "\"HR\"", "\"ErrCauter\"", "EOF" } },
 
-{ "\"CO\"", "\"HR\"", "\"StrokeVolume\"", "EOF" },
+{ { "EOF" }, { "\"BP\"", "\"CO\"", "\"TPR\"", "EOF" } },
 
-{ "\"HR\"", "\"Catechol\"", "EOF" },
+{ { "EOF" }, { "\"CO\"", "\"HR\"", "\"StrokeVolume\"", "EOF" } },
 
-{ "\"TPR\"", "\"Anaphylaxis\"", "EOF" },
+{ { "EOF" }, { "\"HR\"", "\"Catechol\"", "EOF" } },
 
-{ "\"Anaphylaxis\"", "EOF" },
+{ { "EOF" }, { "\"TPR\"", "\"Anaphylaxis\"", "EOF" } },
 
-{ "\"InsuffAnesth\"", "EOF" },
+{ { "EOF" }, { "\"Anaphylaxis\"", "EOF" } },
 
-{ "\"PAP\"", "\"PulmEmbolus\"", "EOF" },
+{ { "EOF" }, { "\"InsuffAnesth\"", "EOF" } },
 
-{ "\"PulmEmbolus\"", "EOF" },
+{ { "EOF" }, { "\"PAP\"", "\"PulmEmbolus\"", "EOF" } },
 
-{ "\"FiO2\"", "EOF" },
+{ { "EOF" }, { "\"PulmEmbolus\"", "EOF" } },
 
-{ "\"Catechol\"", "\"InsuffAnesth\"", "\"SaO2\"", "\"TPR\"", "\"ArtCO2\"", "EOF" },
+{ { "EOF" }, { "\"FiO2\"", "EOF" } },
 
-{ "\"SaO2\"", "\"Shunt\"", "\"PVSat\"", "EOF" },
+{ { "EOF" }, { "\"Catechol\"", "\"InsuffAnesth\"", "\"SaO2\"", "\"TPR\"", "\"ArtCO2\"", "EOF" } },
 
-{ "\"Shunt\"", "\"PulmEmbolus\"", "\"Intubation\"", "EOF" },
+{ { "EOF" }, { "\"SaO2\"", "\"Shunt\"", "\"PVSat\"", "EOF" } },
 
-{ "\"PVSat\"", "\"VentAlv\"", "\"FiO2\"", "EOF" },
+{ { "EOF" }, { "\"Shunt\"", "\"PulmEmbolus\"", "\"Intubation\"", "EOF" } },
 
-{ "\"MinVol\"", "\"VentLung\"", "\"Intubation\"", "EOF" },
+{ { "EOF" }, { "\"PVSat\"", "\"VentAlv\"", "\"FiO2\"", "EOF" } },
 
-{ "\"ExpCO2\"", "\"ArtCO2\"", "\"VentLung\"", "EOF" },
+{ { "EOF" }, { "\"MinVol\"", "\"VentLung\"", "\"Intubation\"", "EOF" } },
 
-{ "\"ArtCO2\"", "\"VentAlv\"", "EOF" },
+{ { "EOF" }, { "\"ExpCO2\"", "\"ArtCO2\"", "\"VentLung\"", "EOF" } },
 
-{ "\"VentAlv\"", "\"Intubation\"", "\"VentLung\"", "EOF" },
+{ { "EOF" }, { "\"ArtCO2\"", "\"VentAlv\"", "EOF" } },
 
-{ "\"VentLung\"", "\"KinkedTube\"", "\"VentTube\"", "\"Intubation\"", "EOF" },
+{ { "EOF" }, { "\"VentAlv\"", "\"Intubation\"", "\"VentLung\"", "EOF" } },
 
-{ "\"Intubation\"", "EOF" },
+{ { "EOF" }, { "\"VentLung\"", "\"KinkedTube\"", "\"VentTube\"", "\"Intubation\"", "EOF" } },
 
-{ "\"LVFailure\"", "\"Hypovolemia\"", "EOF" },
+{ { "EOF" }, { "\"Intubation\"", "EOF" } },
 
-{ "\"Hypovolemia\"", "\"LVFailure\"", "EOF" },
+//----below ones are excluding of aboves
 
-{ "\"LVEDVolume\"", "EOF" },
+		{ { "\"Hypovolemia\"" }, { "EOF" } },
 
-{ "\"VentMach\"", "\"Disconnect\"", "EOF" },
+		{ { "\"StrokeVolume\"" }, { "\"LVFailure\"", "\"Hypovolemia\"", "EOF" } },
 
-{ "\"KinkedTube\"", "\"Intubation\"", "\"VentTube\"", "EOF" },
+		{ { "\"LVFailure\"" }, { "EOF" } },
 
-{ "\"ErrLowOutput\"", "\"HR\"", "EOF" },
+		{ { "\"LVEDVolume\"" }, { "\"Hypovolemia\"", "\"LVFailure\"", "EOF" } },
 
-{ "\"HR\"", "\"ErrCauter\"", "EOF" },
+		{ { "\"PCWP\"" }, { "\"LVEDVolume\"", "EOF" } },
 
-{ "\"CO\"", "\"TPR\"", "EOF" },
+		{ { "\"CVP\"" }, { "\"LVEDVolume\"", "EOF" } },
 
-{ "\"HR\"", "\"StrokeVolume\"", "EOF" },
+		{ { "\"History\"" }, { "\"LVFailure\"", "EOF" } },
 
-{ "\"Catechol\"", "EOF" },
+		{ { "\"MinVolSet\"" }, { "EOF" } },
 
-{ "\"InsuffAnesth\"", "\"SaO2\"", "\"TPR\"", "\"ArtCO2\"", "EOF" },
+		{ { "\"VentMach\"" }, { "\"MinVolSet\"", "EOF" } },
 
-{ "\"Shunt\"", "\"PVSat\"", "EOF" },
+		{ { "\"Disconnect\"" }, { "EOF" } },
 
-{ "\"PulmEmbolus\"", "\"Intubation\"", "EOF" },
+		{ { "\"VentTube\"" }, { "\"VentMach\"", "\"Disconnect\"", "EOF" } },
 
-{ "\"VentAlv\"", "\"FiO2\"", "EOF" },
+		{ { "\"KinkedTube\"" }, { "EOF" } },
 
-{ "\"VentLung\"", "\"Intubation\"", "EOF" },
+		{ { "\"Press\"" }, { "\"KinkedTube\"", "\"Intubation\"", "\"VentTube\"", "EOF" } },
 
-{ "\"ArtCO2\"", "\"VentLung\"", "EOF" },
+		{ { "\"ErrLowOutput\"" }, { "EOF" } },
 
-{ "\"VentAlv\"", "EOF" },
+		{ { "\"HRBP\"" }, { "\"ErrLowOutput\"", "\"HR\"", "EOF" } },
 
-{ "\"Intubation\"", "\"VentLung\"", "EOF" },
+		{ { "\"ErrCauter\"" }, { "EOF" } },
 
-{ "\"KinkedTube\"", "\"VentTube\"", "\"Intubation\"", "EOF" },
+		{ { "\"HREKG\"" }, { "\"HR\"", "\"ErrCauter\"", "EOF" } },
+
+		{ { "\"HRSat\"" }, { "\"HR\"", "\"ErrCauter\"", "EOF" } },
+
+		{ { "\"BP\"" }, { "\"CO\"", "\"TPR\"", "EOF" } },
+
+		{ { "\"CO\"" }, { "\"HR\"", "\"StrokeVolume\"", "EOF" } },
+
+		{ { "\"HR\"" }, { "\"Catechol\"", "EOF" } },
+
+		{ { "\"TPR\"" }, { "\"Anaphylaxis\"", "EOF" } },
+
+		{ { "\"Anaphylaxis\"" }, { "EOF" } },
+
+		{ { "\"InsuffAnesth\"" }, { "EOF" } },
+
+		{ { "\"PAP\"" }, { "\"PulmEmbolus\"", "EOF" } },
+
+		{ { "\"PulmEmbolus\"" }, { "EOF" } },
+
+		{ { "\"FiO2\"" }, { "EOF" } },
+
+		{ { "\"Catechol\"" }, { "\"InsuffAnesth\"", "\"SaO2\"", "\"TPR\"", "\"ArtCO2\"", "EOF" } },
+
+		{ { "\"SaO2\"" }, { "\"Shunt\"", "\"PVSat\"", "EOF" } },
+
+		{ { "\"Shunt\"" }, { "\"PulmEmbolus\"", "\"Intubation\"", "EOF" } },
+
+		{ { "\"PVSat\"" }, { "\"VentAlv\"", "\"FiO2\"", "EOF" } },
+
+		{ { "\"MinVol\"" }, { "\"VentLung\"", "\"Intubation\"", "EOF" } },
+
+		{ { "\"ExpCO2\"" }, { "\"ArtCO2\"", "\"VentLung\"", "EOF" } },
+
+		{ { "\"ArtCO2\"" }, { "\"VentAlv\"", "EOF" } },
+
+		{ { "\"VentAlv\"" }, { "\"Intubation\"", "\"VentLung\"", "EOF" } },
+
+		{ { "\"VentLung\"" }, { "\"KinkedTube\"", "\"VentTube\"", "\"Intubation\"", "EOF" } },
+
+		{ { "\"Intubation\"" }, { "EOF" } }
 
 };
 
@@ -566,9 +606,9 @@ public:
 	}
 
 	void view() {
-		        cout << "\nWeight is - " << setprecision(8) << weight;
-		        cout << "\nMissing property is - " << uFieldName;
-		        cout << "\nIts Value given is - " << data[uFieldName] <<endl;
+		cout << "\nWeight is - " << setprecision(8) << weight;
+		cout << "\nMissing property is - " << uFieldName;
+		cout << "\nIts Value given is - " << data[uFieldName] << endl;
 	}
 
 };
@@ -591,10 +631,9 @@ void Graph_Node::findCPT() {
 		int myValueIndex = currentIndices[0];
 		string myValueName = this->values[myValueIndex];
 
-		string cptMapKey_includingMe = "";
-		cptMapKey_includingMe += this->Node_Name + "=" + myValueName + "|";
+		string cptMapKey_includingMe = this->Node_Name + "=" + myValueName + "|";
+		string cptMapKey_excludingMe = this->Node_Name + "!=" + "?" + "|";
 
-		string cptMapKey_excludingMe = "";
 		for (unsigned int j = 1; j < currentIndices.size(); j++) {
 			string currentParent_name = this->Parents[j - 1];
 			int currentParent_valueIndex = currentIndices[j];
@@ -629,12 +668,12 @@ void Graph_Node::findCPT() {
 		//-----------getting probability
 		float probability;
 
-		//the node has no parent...i.e. excluding_me is empty
-		if (currentIndices.size() == 1) {
-			probability = count_includingMe / initialDataSize;
-			newCPT.push_back(probability);
-			continue;
-		}
+		/*		//the node has no parent...i.e. excluding_me is empty
+		 if (currentIndices.size() == 1) {
+		 probability = count_includingMe / initialDataSize;
+		 newCPT.push_back(probability);
+		 continue;
+		 }*/
 
 		//no exclusingMe...obviously no includingMe as well
 		if (count_excludingMe == 0) {
@@ -656,7 +695,7 @@ void set_MCPT_MAP() {
 
 		string key_MCPT_map = "";
 
-		for (int j = 0; j < 72; j++) {
+		for (int j = 0; j < 74; j++) {
 			key_MCPT_map = "";
 			for (int k = 0; k < 12; k++) {
 
@@ -701,7 +740,7 @@ void display_CPT_MAP() {
 }
 
 void display_MCPT_MAP() {
-	cout << "----------------Displaying MCPT_MAP------------" <<endl;
+	cout << "----------------Displaying MCPT_MAP------------" << endl;
 	for (cptMapIt it = MCPT_map.begin(); it != MCPT_map.end(); ++it)
 		std::cout << it->first << " => " << it->second << '\n';
 }
@@ -711,43 +750,91 @@ void set_CPT_MAP() {
 
 		string key_CPT_map = "";
 
-		for (int j = 0; j < 60; j++) {
+		for (int j = 0; j < 74; j++) {
+
 			key_CPT_map = "";
-			for (int k = 0; k < 12; k++) {
 
-				string curr_prop = CPT_Keys[j][k];
+			if (CPT_Keys[j][0][0].compare("EOF") == 0) { //i.e. this is the case for including_me key
 
-				if (curr_prop.compare("EOF") == 0) {
-					break;
+				for (int k = 0; k < 12; k++) {
+
+					string curr_prop = CPT_Keys[j][1][k];
+
+					if (curr_prop.compare("EOF") == 0) {
+						break;
+					}
+
+					map<string, string> dataMap = data[i].data;
+
+					string curr_prop_value = dataMap.find(curr_prop)->second;
+
+					key_CPT_map += curr_prop + "=" + curr_prop_value + "|";
+
+				}//End of all properties for a row in MCPT_keys
+
+				cptMapIt cMapIt = CPT_map.find(key_CPT_map);
+
+				if (cMapIt != CPT_map.end()) {
+					//value existing in the map
+					//cout << "existing value: "; //TODO : cout
+					//cout << key_CPT_map << " : " << (cMapIt->second + data[i].weight) <<endl; //TODO : cout
+					CPT_map[key_CPT_map] = cMapIt->second + data[i].weight;
+
+				} else {
+					//value is not yet present in the map
+					//cout << "not existing: "; //TODO : cout
+					//cout << key_CPT_map << " : " << (data[i].weight) <<endl; //TODO : cout
+					CPT_map[key_CPT_map] = data[i].weight;
 				}
 
-				map<string, string> dataMap = data[i].data;
-
-				string curr_prop_value = dataMap.find(curr_prop)->second;
-
-				key_CPT_map += curr_prop + "=" + curr_prop_value + "|";
-
-			}//End of all properties for a row in MCPT_keys
-
-			cptMapIt cMapIt = CPT_map.find(key_CPT_map);
-
-			if (cMapIt != CPT_map.end()) {
-				//value existing in the map
-				//cout << "existing value: "; //TODO : cout
-				//cout << key_CPT_map << " : " << (cMapIt->second + data[i].weight) <<endl; //TODO : cout
-				CPT_map[key_CPT_map] = cMapIt->second + data[i].weight;
-
-			} else {
-				//value is not yet present in the map
-				//cout << "not existing: "; //TODO : cout
-				//cout << key_CPT_map << " : " << (data[i].weight) <<endl; //TODO : cout
-				CPT_map[key_CPT_map] = data[i].weight;
 			}
 
-		}//End of row in CPT_keys
+			else {//case for excluding_me keys
+				map<string, string> dataMap = data[i].data;
 
-	}//End of data[i]
-}
+				string headProperty = CPT_Keys[j][0][0];
+
+				if (dataMap.find(headProperty)->second.compare("\"?\"") == 0) {
+					continue;
+				}
+
+				key_CPT_map += headProperty + "!=" + "?" + "|";
+
+				for (int k = 0; k < 12; k++) {
+					string curr_prop = CPT_Keys[j][1][k];
+
+					if (curr_prop.compare("EOF") == 0) {
+						break;
+					}
+
+					string curr_prop_value = dataMap.find(curr_prop)->second;
+
+					key_CPT_map += curr_prop + "=" + curr_prop_value + "|";
+
+				}//End of all properties for a row in MCPT_keys
+
+				cptMapIt cMapIt = CPT_map.find(key_CPT_map);
+
+				if (cMapIt != CPT_map.end()) {
+					//value existing in the map
+					//cout << "existing value: "; //TODO : cout
+					//cout << key_CPT_map << " : " << (cMapIt->second + data[i].weight) <<endl; //TODO : cout
+					CPT_map[key_CPT_map] = cMapIt->second + data[i].weight;
+
+				} else {
+					//value is not yet present in the map
+					//cout << "not existing: "; //TODO : cout
+					//cout << key_CPT_map << " : " << (data[i].weight) <<endl; //TODO : cout
+					CPT_map[key_CPT_map] = data[i].weight;
+				}
+
+			}
+
+		}
+
+	}//End of row in CPT_keys
+
+}//End of data[i]
 
 void Graph_Node::myInitialization() {
 
@@ -1040,16 +1127,15 @@ float Graph_Node::retProbValue(vector<string> properties, vector<string> values)
 		count_excludingMe += cMapIt_excludingMe->second;
 	}
 
-//	cout << "countInc"
+	cout << "countIncludingMe and countExcludingMe are " << setprecision(8) << count_includingMe << " " << count_excludingMe << endl;
 
 	return count_includingMe / count_excludingMe;
 }
 
 int main(int argc, char** argv) {
-	cout << "==========Started the Medical Diagnosis===========" <<endl;
+	cout << "==========Started the Medical Diagnosis===========" << endl;
 	if (argc != 3)
 		exit(1);
-
 
 	//getting the start time
 	time_t startTime;
@@ -1084,10 +1170,18 @@ int main(int argc, char** argv) {
 	while (true) {
 
 		//=================================================M-Step===============================
-		cout  << "===============In M-step=============" <<endl; //TODO: remove
+		cout << "===============In M-step=============" << endl; //TODO: remove
+
+		set_CPT_MAP();//TODO: remove
+		//display_CPT_MAP();////TODO: remove
+		for (Graph_NodeIt it = Alarm.Pres_Graph.begin(); it != Alarm.Pres_Graph.end(); it++, index++) {//TODO: remove
+			it->findCPT();//TODO: remove
+		}//TODO: remove
+		output(); //TODO: remove
+		exit(1);//TODO: remove
 
 		set_MCPT_MAP();
-		cout << "-----Done with calculating the MCPT_MAP" <<endl;
+		cout << "-----Done with calculating the MCPT_MAP" << endl;
 		set_CPT_MAP();
 
 		//display_CPT_MAP();
@@ -1100,7 +1194,7 @@ int main(int argc, char** argv) {
 
 		output();
 
-		cout  << "====================Going out of M-step==============" <<endl; //TODO: remove
+		cout << "====================Going out of M-step==============" << endl; //TODO: remove
 
 		//=================================================E-Step===============================
 
@@ -1141,6 +1235,8 @@ int main(int argc, char** argv) {
 
 					float probability = unknownNode->retProbValue(vector_properties, vector_values);
 					Patient *newP = new Patient(patient, valueUnderConsideration, probability);
+					newP->view();//TODO
+					cin.ignore();//TODO
 					newData.push_back(*newP);
 					delete newP;
 				}
