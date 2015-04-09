@@ -12,7 +12,6 @@
 
 #define getNodeFromIndex( i ) (*(Alarm.get_nth_node(i)))
 #define FULLY_KNOWN "KNOWN"
-#define OUTPUT_FILE "solved_alarm.bif"
 
 #define BUFFER_SECONDS 120 //time to calculate & write CPT at the end
 #define TOTAL_TIME 600
@@ -23,6 +22,8 @@
 using namespace std;
 
 string networkFile, recordFile;
+
+time_t startTime;
 
 unsigned int initialDataSize = 0;
 
@@ -84,7 +85,7 @@ int position[37][2] = { 54, 35, 184, 113, 145, 36, 68, 114, 111, 177, 32, 179, 2
 		237, 229, 305, 366, 278, 289, 305, 220, 396, 154, 396, 195, 176, 308, 171, 120, 301, 31, 239, 329, 37, 1045, 292, 969, 258, 1014, 162, 329,
 		107, 926, 387, 894, 293, 949, 197, 754, 387, 530, 393, 474, 277, 881, 165, 706, 344, 843, 86 };
 
-void set_MCPT_MAP();
+bool set_MCPT_MAP();
 void set_CPT_MAP();
 
 string CPT_Keys[][2][12] = {
@@ -663,8 +664,16 @@ void Graph_Node::findCPT() {
 	this->set_CPT(newCPT);
 }
 
-void set_MCPT_MAP() {
+bool set_MCPT_MAP() {
 	for (unsigned int i = 0; i < data.size(); i++) {
+
+		//Checking whether the time elapsed
+		time_t currTime;
+		time(&currTime);
+		double elapsedTime = difftime(currTime, startTime);
+		if (elapsedTime >= TOTAL_TIME - BUFFER_SECONDS) {
+			return true;
+		}
 
 		string key_MCPT_map = "";
 
@@ -741,8 +750,9 @@ void set_MCPT_MAP() {
 			}
 
 		}
-
 	}
+
+	return false;
 }
 
 void display_CPT_MAP() {
@@ -1106,7 +1116,6 @@ int main(int argc, char** argv) {
 		exit(1);
 
 	//getting the start time
-	time_t startTime;
 	time(&startTime);
 
 	networkFile = argv[1];
@@ -1125,10 +1134,9 @@ int main(int argc, char** argv) {
 
 	}
 
+	int iteration_num = 0;
 	while (true) {
-
-		//=================================================M-Step===============================
-		cout << "===============In M-step=============" << endl; //TODO: remove
+		cout << "iteration : : :" <<++iteration_num <<endl;
 
 		time_t currTime;
 		time(&currTime);
@@ -1137,27 +1145,30 @@ int main(int argc, char** argv) {
 			break;
 		}
 
-		set_MCPT_MAP();
-		cout << "-----Done with calculating the MCPT_MAP" << endl;//TODO: remove
+		//=================================================M-Step===============================
+		cout << "===============In M-step=============" << endl;
+
+		bool isTimeOver = set_MCPT_MAP();
+
+		if (isTimeOver == true) {
+			cout << "----Time Over, breaking out" << endl;
+			break;
+		}
 
 		if (IS_DEBUG_MODE) {
-
+			cout << "-----Done with calculating the MCPT_MAP" << endl;
 			set_CPT_MAP();
-			cout << "-----Done with calculating the CPT_MAP" << endl;//TODO: remove
-
-			//display_CPT_MAP();//TODO: remove
+			cout << "-----Done with calculating the CPT_MAP" << endl;
 
 			for (Graph_NodeIt it = Alarm.Pres_Graph.begin(); it != Alarm.Pres_Graph.end(); it++, index++) {
 				it->findCPT();
 			}
 
-			//display_MCPT_MAP();//TODO: remove
-
 			write_output();
 
 		}
 
-		cout << "====================Going out of M-step==============" << endl; //TODO: remove
+		cout << "====================Going out of M-step==============" << endl;
 
 		//=================================================E-Step===============================
 
@@ -1260,7 +1271,7 @@ int main(int argc, char** argv) {
 
 void write_output() {
 	ofstream outFile;
-	outFile.open(OUTPUT_FILE.c_str());
+	outFile.open("solved_alarm.bif");
 
 	outFile << "// Bayesian Network in the Interchange Format\n";
 	outFile << "// Produced by BayesianNetworks package in JavaBayes\n";
@@ -1298,7 +1309,17 @@ void write_output() {
 		}
 		outFile << " ) { //" << 1 + parents.size() << " variable(s) and " << CPT.size() << " values\n";
 		outFile << "\ttable ";
-		printFloatVector(CPT);
+
+		//print float vector
+		for (unsigned int i = 0; i < CPT.size(); i++) {
+			if (CPT[i] > 0.9999)
+				outFile << "0.9999 ";
+			else if (CPT[i] < 0.0001)
+				outFile << "0.0001 ";
+			else
+				outFile << fixed << setprecision(4) << CPT[i] << " ";
+		}
+
 		outFile << ";\n}\n";
 	}
 

@@ -208,11 +208,11 @@ void check_format()
      				ss2>> temp;
                     testss2>>test_temp;
      				vector<float> curr_CPT;
-                    string::size_type sz;
+                    string::size_type sz;                    
      				while(temp.compare(";")!=0)
      				{
 
-                        if(!atof(test_temp.c_str()))
+                        if((!atof(test_temp.c_str()))&&(test_temp.compare("0")!=0)&&(test_temp.compare(0,3,"0.0")!=0))
                         {
                             cout<<" Probem in Probab values in line "<<line_count<<"\n";
                             exit(0);
